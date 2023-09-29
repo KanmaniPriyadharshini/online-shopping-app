@@ -1,0 +1,864 @@
+/* Variables */
+:root{
+  --bgImgReseller:url('https://i.ibb.co/r0PJX0F/reseller-Bg-Img.jpg');
+  --bgImgSupplier:url('https://i.ibb.co/pQqWW5X/supplier-Bg-Img.jpg');
+  --bgImgMeesho1: url('https://i.ibb.co/x1GBXNV/bg-fashion1.jpg');
+  --bgImgMeesho2: url('https://i.ibb.co/CMX8wcy/bg-fashion2.jpg');
+  --bgImgMeesho3: url('https://i.ibb.co/Y8hqdFH/bg-fashion3.jpg');
+  --MEESHO_PURPLE_COLOR: #9f2089;
+  --BG_COLOR_BLUE: aliceblue;
+}
+
+/* Reset of the page */
+body {
+  margin: 0;
+  width: 100%;  
+  padding-top: 15vh;
+  padding-left: 0;
+  padding-right: 0;
+  /* font-family: 'Helvetica Neue', sans-serif; */
+  font-family: sans-serif, 'Arial Narrow', Arial;
+  background-color: white;
+}
+
+header {
+  background-color: white;
+  /* box-sizing: content-box; */
+  font-family: 'Helvetica Neue', sans-serif; 
+  top:0;
+  position: fixed;
+  width: 100%;
+  height: 15vh;
+  z-index: 99;
+}
+
+#headerContent{
+  height: 100%;
+}
+
+#headerContent hr{
+  margin:0;
+}
+
+/* Start of utility classes */
+
+.bg-aliceblue {
+  background-color: var(--BG_COLOR_BLUE);
+}
+
+.bg-white {
+  background-color: white;
+}
+
+.btn-myPurple {
+  background-color: var(--MEESHO_PURPLE_COLOR) !important;
+}
+
+.fullWidth {
+  width: 100%;
+}
+
+.blockDisplay{
+  display: block;
+}
+
+.no-format {
+  background: none;
+  border: none;
+  text-decoration: none;
+}
+
+/* End of utility classes */
+
+/* Start of top meesho icon part in header section */
+
+#top-header-bar{
+  height: 7vh;
+}
+
+#meesho-name-icon{
+  height: 3.7vh;
+  overflow: hidden !important;
+  margin-right: 2rem;
+}
+
+
+
+#meeshoIconHeader{
+  height: 7vh;
+  display: flex;
+  align-items: center;
+  padding-left: 3%;
+  padding-right: 3%;
+  background-color: white !important;
+}
+
+.bring-on-top{
+  z-index: 999;  
+}
+
+.search-group{
+  position: relative;  
+}
+
+.search-box{
+  height: 4.5vh;
+  padding-left: 30px;
+  color:grey;
+  border-color: grey;
+  border-width: 1px;
+  font-size: medium;
+  background-color: transparent;
+  width:450px;
+}
+
+.search-group label{
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  padding: 7px;
+  cursor: text;
+  
+}
+
+.top-header-btn{
+  font-size:.9rem;
+  font-weight: 550;
+  color: rgba(0, 0, 0, 0.63);  
+}
+
+/* End of top meesho icon part in header section */
+
+
+/* Start of drop down menu in header section */
+
+#dropdownHeader{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 7vh;
+}
+
+.dd-menubar-head-container {
+  position: relative;
+  display: inline-block;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  height: 7vh;
+}
+
+.dd-menubar-head {
+  cursor: pointer;
+  font-size: 1.1rem;
+  height: 7vh;
+}
+
+.dd-items-bg {
+  display: none;
+  position: absolute;
+  background-color: white;
+  left: 0;
+  top: calc(100% + 0.6em);
+  line-height: 2;
+  width: 100%;
+  border-radius: 0.25rem;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.1);
+  padding-left: 0.5em;
+  /* padding-bottom: 1em; */
+  z-index: 1;
+  transform: translateY(-10px);
+  transition: transform 10s ease-in-out;
+}
+
+.dd-items-heading {
+  display: none;
+  color: var(--MEESHO_PURPLE_COLOR);
+  font-weight: bolder;
+  z-index: 1;
+}
+
+.dd-menuitems {  
+  display: none;  
+}
+
+.dd-menuitem {  
+  line-height: 4vh;
+  color: #f665de;
+  
+}
+
+.dd-menuitems h3{  
+  line-height: 4vh;
+  font-size: 1rem;
+  color: gray;
+  font-weight: bold;
+}
+
+.dd-menuitems p{  
+  line-height: 4vh;
+  color: grey;
+  font-size: .8rem;
+}
+
+.dd-menuitems :last-child{
+  padding-bottom: 1em;
+}
+
+.profile-grid {
+  /* gap: 2rem; */
+  width: max-content;
+  /* border: 1px solid grey; */
+  background-color: white;
+  border-radius: 0.25rem;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.1);
+}
+
+.dd-item-grid {
+  display: none;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 2rem;  
+}
+
+.dd-item-grid > .column:nth-child(odd){
+  background-color: var(--BG_COLOR_BLUE);
+  border: 2px solid white;
+}
+
+
+/* Show the dropdown menu on hover */
+
+.start-dropdown:hover
+  .dd-items-bg,
+.start-dropdown:focus
+  .dd-items-bg {
+  display: block;
+}
+
+.start-dropdown:hover
+  .dd-menuitems,
+.start-dropdown:focus
+  .dd-menuitems {
+  display: flex;
+  flex-direction: column;
+}
+
+.start-dropdown:hover
+  .dd-items-heading,
+.start-dropdown:focus
+  .dd-items-heading {
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+  display: block;
+}
+
+.start-dropdown:hover
+  .dd-item-grid,
+.start-dropdown:focus
+  .dd-item-grid {
+  display: grid;
+}
+
+.start-dropdown:hover
+.dd-menubar-head,
+.start-dropdown:focus
+.dd-menubar-head {
+  color: var(--MEESHO_PURPLE_COLOR);
+  text-decoration: underline var(--MEESHO_PURPLE_COLOR);
+  text-decoration-thickness: 2px;
+  text-underline-offset: 0.5em;
+  font-weight: bold;
+}
+
+.dd-menuitems a:hover{
+  color: rgb(247, 29, 171);
+  font-weight: bold;
+}
+
+/* End of drop down menu in header section */
+
+
+/* Start of heading bar with title */
+.headingBar {
+  display: block;
+}
+
+.headingBar h1 {
+  width: 100%;
+  text-align: center;
+  border-bottom: 1px solid #000;
+  line-height: 0.1em;
+  margin: 10px 0 20px;
+}
+
+.heading {
+  background: #fff;
+  padding: 0 10px;  
+  /* font-size: 3rem; */
+}
+/* End of heading bar with title */
+
+/* Start of top categories section */
+
+.topCategoriesItems{
+  margin-top: 9vh;
+  min-height:550px;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;  
+}
+
+.fashionbg1{  
+  background-image: var(--bgImgMeesho1);    
+}
+
+.fashionbg2{
+  background-image: var(--bgImgMeesho2);    
+}
+
+.fashionbg3{
+  background-image: var(--bgImgMeesho3);    
+}
+
+.imgModel1{
+  width: 32%;
+  height: 500px;
+  padding-bottom: 5vh;
+}
+
+.imgModel2{
+  width: 30%;
+  height: 350px;
+  padding-bottom: 5vh;
+}
+
+.imgModel1 img{
+  width: 100%;
+  height: 100%;
+}
+
+.imgModel2 img{
+  width: 100%;
+  height: 100%;
+}
+
+.imgModel3{
+  width: 100%;
+  height: 400px;
+  padding-bottom: 5vh;
+}
+
+/* End of top categories section */
+
+/* Start of Partner With Us section */
+
+.partnerFrame{
+  margin-top: 9vh;
+  margin-bottom: 9vh;
+  padding: 3%;
+  height:400px;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  font-family:Arial, Helvetica, sans-serif;
+}
+
+.resellerBgImg{
+  background-image: var(--bgImgReseller);
+}
+
+#resellerTagStart{
+  font-size: 2rem;
+  font-weight: 200;
+  word-spacing: .1em;
+  color:rgb(28, 102, 241);
+  text-shadow: #000;
+}
+
+.resellerTagEnd{
+  font-size: 2.8rem;
+  font-weight: bold;
+  padding: 0;
+  margin: 0;
+  line-height: 1em;
+  word-spacing: .1em;
+  color:var(--MEESHO_PURPLE_COLOR);
+  text-shadow: #000;
+}
+
+.playstoreIcons{
+  width: fit-content;
+  display: flex;
+  justify-content: end;
+  margin: 5% 0;  
+}
+
+.playstoreIcons a{
+  width: 40%;
+}
+
+.playstoreIcons a img{
+  width: 80%;
+  padding: 0;
+  margin: 0;
+  padding-left: .1em;  
+}
+
+.supplierBgImg{
+  background-image: var(--bgImgSupplier);
+}
+
+#supplierTagTitle{
+  font-size: 2rem;
+  font-weight: 600;
+  word-spacing: .1em;
+  text-shadow: #000;
+  color: white;
+}
+
+#supplierTagline{
+  font-size: 1.2rem;
+  word-spacing: .1em;
+  color: white;
+}
+
+#supplierIcon{
+  color: white;
+  font-weight: bold;
+}
+
+#supplierButton{
+  border: .3px solid grey;
+  height: 2.2em;  
+  margin-top: .5em;
+  border-radius: 12px;
+  background-color: white;
+  color: var(--MEESHO_PURPLE_COLOR);
+  padding: 0 .5em;
+  font-size: 1.2rem;
+  word-spacing: .1em;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+/* End of Partner With Us section */
+
+/* Start of Products For You section */
+
+#offcanvas-toggle-btn{
+  display: none;
+  margin-bottom: 5vh;
+  background-color: var(--MEESHO_PURPLE_COLOR);
+  color: white;
+  font-size: 1.5rem;
+  font-weight: bold;
+  height: 6vh;
+  width: 30%;
+  border-radius: 6px;
+}
+
+/* #products{
+  padding-left: 10%;
+  padding-right: 10%;
+} */
+
+#leftFilterFrame{
+  float: left;
+  width: 20%;
+  overflow: auto !important;  
+}
+
+#leftFilterFrameOffcanvas{
+  float: left;
+  width: 40%;
+  overflow: auto !important;  
+}
+
+
+#filtersAccordion{
+  font: inherit !important;
+}
+
+.accordTitle{
+  font-weight: bold;
+}
+
+.accordBody div label{
+  line-height: 1.5;
+  font-weight:normal;
+  color: grey;  
+  padding-bottom: 1em;
+}
+
+#leftFilterFrameOffcanvas::-webkit-scrollbar{
+  display: none;
+}
+
+.seamlessButton{
+  border: none;
+  text-decoration: none;
+  color: var(--MEESHO_PURPLE_COLOR);
+  font-size: .9rem;
+  font-weight: bold;
+  background-color: white;
+}
+
+.plainButton{
+  border: .3px solid grey;
+  height: 2.2em;
+  border-radius: 12px;
+  margin: .5em;
+  background-color: white;
+  color: grey;
+  padding: 0 .5em;
+  font-size: .9rem;  
+  cursor: pointer;
+}
+
+#rightContentFrame{
+  margin-left: 2%;
+  width: 78%;
+  float: left;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+#rightContentFrame a{
+  width: max(200px,20%);
+}
+
+#more{
+  display: none;
+}
+
+.more{
+  display: none;
+}
+
+.myCard{
+  height: 410px;
+  /* aspect-ratio: 0.5; */
+  /* width: 230px; */
+  /* overflow: auto; */
+  margin: 0.5em;
+  border: 1px solid grey;
+  border-radius: .5rem;
+  font-family: inherit;
+  color: gray;
+  display: block;
+}
+
+.myCardImg{
+  width: 100%;
+  height: 55%;
+  display: flex;
+  justify-self: center;
+  border-radius: .5rem .5rem 0 0;
+  position: relative;
+  /* display: inline-block; */
+}
+
+.myCardImg img{
+  width: 100%;
+}
+
+.myCardImg button{
+  display: inline-block;
+  position: absolute;
+  bottom: 0%;
+  right: 0%;    
+  background-color: white;
+  border: none;
+  border-radius: .5em 0 0 0;    
+}
+
+.button-addon1{
+  background-color: rgb(3, 141, 99);
+  color: white;
+  font-weight: bold;
+  line-height: 1.5rem;
+  border: 0;
+  border-radius: 10rem;
+}
+
+.cardTitle{
+  text-decoration: none;
+  padding: .5em;
+  font-weight:bold;
+  font-size:medium;
+  margin: 0;
+}
+
+.cardList{
+  margin:0;
+  padding: .5em;
+}
+
+.cardListItem{
+  list-style: none;
+  line-height: 1em;
+  padding: .5em;
+  font-size: smaller;
+   
+}
+
+.price{
+  font-weight: bold;
+  font-size:x-large;
+  color: black;
+}
+
+.infoTag{
+  background-color: var(--BG_COLOR_BLUE);
+  border: none;
+  border-radius: 2em;
+}
+
+/* End of Products For You section */
+
+/* Start of Footer Section */
+
+footer{
+  bottom:0;
+  background-color: var(--BG_COLOR_BLUE);
+  padding-top: 4rem;
+  padding-bottom: 4rem;  
+  /* color: grey; */
+}
+
+#footerTitle{
+  font-weight:700;
+  font-size:2rem;
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  margin-bottom: .8em;
+}
+
+.footerTag{
+  font-size:large;
+  font-weight: 540;
+  margin: 0;
+  padding: 0.1em;
+  color:gray;
+}
+
+#footerIcons{
+  width: fit-content;
+  display: flex;
+  justify-content: start;
+  margin: 2em 0;  
+}
+
+#footerIcons a img{
+  height: 5vh;
+  padding: 0;
+  margin-right: 1em;
+  padding-left: .1em;
+  border-radius: 7px;
+}
+
+.footer-links a{
+  color:grey;
+  padding-bottom: 1em;
+  font-weight: 550;
+}
+
+.footer-contact:last-child{
+  max-width: 10%;
+  font-size:small;
+}
+
+.footer-contact h5{
+  color: #000;
+  font-size:normal;
+  font-weight: bold;  
+}
+
+.footer-contact img{
+  height: 3vh;
+}
+
+.footer-contact address{
+  display: flex;
+  flex-wrap: wrap;
+  font-size: small;
+}
+
+#footerAccordionBody h5{
+  font-size: 1.1rem;
+  font-weight: 550;
+  margin-top: 2em;
+  margin-bottom: 1em;
+}
+
+#footerAccordionBody h4{
+  
+  font-weight: 600;
+  margin-top: 2em;
+  margin-bottom: 1em;
+}
+
+#footerAccordionBody p{
+  color: grey;
+  font-size: 0.9rem;
+  font-weight: 550;
+  text-align: justify;
+}
+
+#footerAccordionBody a{
+  text-decoration: none;  
+  font-weight: 550;
+  color: var(--MEESHO_PURPLE_COLOR);
+}
+
+#footerAccordionBody h7{
+  font-size: 1rem;
+  font-weight: 550;
+}
+
+
+/* End of Footer Section */
+
+/* Screen size adjust for top navbar toggle header section */
+
+@media screen and (max-width: 1000px) {
+  #meesho-name-icon{
+    height: 3vh;    
+  }
+  .search-box{
+    margin-bottom: 1.5em;
+    background-color: white;
+  }
+  .smallerSize{
+    height: 2vh;
+    width: 2vh;
+  }
+  .format-dropdown-content{
+    /* background-image: linear-gradient(#eeb9ee,var(--BG_COLOR_BLUE),white); */
+    background-image: linear-gradient(white, var(--BG_COLOR_BLUE), #eeb9ee);
+    border: 1px solid gray;
+    line-height: 2rem;
+    padding:1em;
+    margin: 0;  
+  }  
+}
+
+/* Screen size adjust for drop down menu bar listed items in the grid */
+
+@media screen and (max-width: 550px) {  
+  .dd-menubar-head {
+    font-size: small;    
+  }  
+}
+
+@media screen and (max-width: 500px) {
+  .dd-item-grid {
+    grid-template-columns: repeat(2, max-content);
+  }
+  .dd-menubar-head {
+    font-size: small;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  .dd-item-grid {
+    grid-template-columns: repeat(1, max-content);
+  }
+  .dd-menubar-head {
+    font-size: small;
+  }
+}
+
+/* Screen size adjust for downloadApp frame of section1 */
+
+@media screen and (max-width: 782px) {
+  .half-full-container {
+    width: 100%;
+    padding-left: 0;
+    padding-right: 0;
+  }  
+}
+
+
+/* Screen size adjust for top categories frame of section2 */
+@media screen and (max-width: 600px) {
+  .topCategoriesItems{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+  .imgModel1{
+    flex-grow: 1;
+    width: 100%;
+  }
+  .imgModel2{
+    flex-grow: 1;
+    width: 100%;
+  }
+  .imgModel3{
+    flex-grow: 1;
+    width: 100%;
+  }
+  .viewBtn{
+    width: 60%;
+    display: flex;
+    align-self: center;
+    margin: 0;
+  }
+  
+  /* Screen size adjust for footer - top section */
+  
+  #footerLinksRow{
+    flex-wrap: wrap;
+  }
+  .footer-contact:last-child{
+    max-width: none;
+    width: auto;    
+  }
+}
+
+/* Screen size adjust for Products For You section */
+
+@media screen and (max-width: 1000px) {
+  #leftFilterFrame{
+    display: none;
+  }
+  #offcanvas-toggle-btn{
+    display: block;
+  }
+  #rightContentFrame{
+    width: 100%;
+    margin-left: 3%;
+    margin-right: 3%;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  #rightContentFrame{
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+  }
+  #rightContentFrame a{
+    width: 49%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  #leftFilterFrameOffcanvas{
+    width: 55%;
+  }
+  #offcanvas-toggle-btn{
+    font-size: 1.2rem;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  #rightContentFrame a{
+    width: 85%;
+  }
+  #offcanvas-toggle-btn{
+    font-size: 1rem;
+  }
+}

@@ -1,0 +1,3468 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MeeshoApp</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+    integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"
+    defer></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+    integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"
+    defer></script>
+  <script src="https://kit.fontawesome.com/c4338603d0.js" crossorigin="anonymous" defer></script>
+  <link href="https://fonts.cdnfonts.com/css/helvetica-neue-5" rel="stylesheet">
+
+  <link rel="stylesheet" href="../style sheets/home.css" />
+  <link href="https://i.ibb.co/mtWQSg1/meesho-small-icon.png" rel="icon" />
+  <script src="../scripts/home.js" defer></script>
+</head>
+
+<body>
+  <header>
+    <div id="headerContent">
+      <!-- Start of top part of header bar -->
+      <nav id="top-header-bar" class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid container-md">
+          <a class="navbar-brand" href="#"><img id="meesho-name-icon" src="https://i.ibb.co/2ZHQXpP/new-Meesho-Icon.png"
+              alt="meesho-icon" /></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon smallerSize"></span>
+          </button>
+
+          <div class="collapse navbar-collapse bring-on-top format-dropdown-content" id="navbarSupportedContent">
+            <form class="d-flex search-group" role="search">
+              <input type="text" class="search-box" placeholder="Try Saree, Kurti or Search by Product Code">
+              <label for="name"><img src="https://i.ibb.co/0fsPq5V/search-Icon.png" alt="searchIcon"></label>
+            </form>
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li class="nav-item d-flex align-items-center border-end px-2">
+                <!-- <a href="#"><img src="https://i.ibb.co/x7Jj5MV/download-Icon.png" alt="download icon"></a> -->
+                <div class="dd-menubar-head-container">
+                  <div class="start-dropdown">
+                    <button class="dd-menubar-head no-format">
+                      <img src="https://i.ibb.co/x7Jj5MV/download-Icon.png" alt="download icon">
+                      Download App
+                    </button>
+                    <div class="dd-items-bg">
+                      <div class="row">
+                        <div class="column">
+                          <div class="dd-menuitems w-100">
+                              <h3 class="dd-menuitem no-format disabled">Download From</h3>
+                              <a href="#" class="dd-menuitem no-format mx-3 my-3"><img src="https://i.ibb.co/JdB0Ncp/playstore-Icon.png" alt="playstore icon" class="img-fluid" /></a>
+                              <a href="#" class="dd-menuitem no-format mx-3 my-3"><img src="https://i.ibb.co/ckZtt1m/appstore-Icon.png" alt="appstore icon" class="img-fluid" /></a>                            
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              
+          <!-- <div class="dropdown">
+                  <button class="top-header-btn no-format dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                    Download App
+                  </button>
+                  <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                    <li class="dropdown-item px-2 my-3 disabled">Download From</li>
+                    <li class="dropdown-item px-2 my-3"><a href="#">
+                      <img src="https://i.ibb.co/JdB0Ncp/playstore-Icon.png" alt="playstore icon" class="img-fluid" />
+                    </a></li>
+                    <li class="dropdown-item px-2 my-3"><a href="#">
+                      <img src="https://i.ibb.co/ckZtt1m/appstore-Icon.png" alt="appstore icon" class="img-fluid" />
+                    </a></li>
+                  </ul>
+                </div> -->
+          </li>
+          <li class="nav-item d-flex align-items-center border-end px-2">
+            <button class="download-icon-header top-header-btn no-format">Become a Supplier</button>
+          </li>
+          <li class="nav-item d-flex align-items-center border-end px-2">
+            <button class="download-icon-header top-header-btn no-format">Newsroom</button>
+          </li>
+
+          <li class="nav-item d-flex align-items-center">
+            
+              <!-- <a href="#"><img src="https://i.ibb.co/tMd8dzN/userIcon.png" alt="userIcon"></a>
+              <button class="download-icon-header top-header-btn no-format">Profile</button> -->
+            
+
+              <div class="dd-menubar-head-container">
+                <div class="start-dropdown">                  
+                  <button class="dd-menubar-head no-format">
+                    <div class="d-flex flex-column justify-content-center align-items-center px-2">
+                      <img src="https://i.ibb.co/tMd8dzN/userIcon.png" alt="userIcon">
+                      Profile
+                    </div>
+
+                  </button>
+                  <div class="dd-items-bg">
+                    <div class="row profile-grid">
+                      <div class="column">
+                        <div class="dd-menuitems">
+                            <h3 class="dd-menuitem no-format disabled">Hello User</h3>
+                            <p class="dd-menuitem no-format disabled">To access your Meesho Account</p>
+                            <a href="#" class="dd-menuitem no-format"><button class="btn btn-primary btn-myPurple">Sign Up</button></a>
+                            <hr class="my-2">
+                            <a href="#" class="dd-menuitem no-format mx-2"><i class="fa-solid fa-bag-shopping"></i> My Orders</a>                            
+                          
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            
+
+            <div class="d-flex flex-column  justify-content-center align-items-center">
+              <a href="#"><img src="https://i.ibb.co/XX54WS3/cartIcon.png" alt="cartIcon"></a>
+              <button class="download-icon-header top-header-btn no-format">Cart</button>
+            </div>
+          </li>
+          </ul>
+
+        </div>
+    </div>
+    </nav>
+    <!-- End of top part of header bar -->
+    <hr />
+    <!-- Start of dropdown menu bar -->
+    <div id="dropdownHeader" class="container-fluid container-md">
+      <div class="dd-menubar-head-container">
+        <!-- Start of dropdown for Women -->
+        <div class="start-dropdown">
+          <button class="dd-menubar-head no-format">Women</button>
+          <!-- inside menu bar -->
+          <div class="dd-items-bg">
+            <!-- dropdown items -->
+            <div class="row dd-item-grid">
+              <div class="column">
+                <div class="dd-items-heading">Sarees</div>
+                <div class="dd-menuitems">
+                  <a href="#" class="dd-menuitem no-format">All Sarees</a>
+                  <a href="#" class="dd-menuitem no-format">Silk Sarees</a>
+                  <a href="#" class="dd-menuitem no-format">Cotton Sarees</a>
+                  <a href="#" class="dd-menuitem no-format">Georgette Sarees</a>
+                  <a href="#" class="dd-menuitem no-format">Chiffon Sarees</a>
+                </div>
+              </div>
+
+              <div class="column">
+                <div class="dd-items-heading">Kurtis</div>
+                <div class="dd-menuitems">
+                  <a href="#" class="dd-menuitem no-format">All Kurtis</a>
+                  <a href="#" class="dd-menuitem no-format">Anarkali Kurtis</a>
+                  <a href="#" class="dd-menuitem no-format">Cotton Kurtis</a>
+                  <a href="#" class="dd-menuitem no-format">Embroidered Kurtis</a>
+                </div>
+              </div>
+
+              <div class="column">
+                <div class="dd-items-heading">Western</div>
+                <div class="dd-menuitems">
+                  <a href="#" class="dd-menuitem no-format">Tops</a>
+                  <a href="#" class="dd-menuitem no-format">Jeans</a>
+                  <a href="#" class="dd-menuitem no-format">Jeggings</a>
+                  <a href="#" class="dd-menuitem no-format">Skirts</a>
+                </div>
+              </div>
+
+              <div class="column">
+                <div class="dd-items-heading">Suits & Dress Material</div>
+                <div class="dd-menuitems">
+                  <a href="#" class="dd-menuitem no-format">All Suits & Dress Material</a>
+                  <a href="#" class="dd-menuitem no-format">Cotton Suits</a>
+                  <a href="#" class="dd-menuitem no-format">Embroidered Suits</a>
+                  <a href="#" class="dd-menuitem no-format">Chanderi Suits</a>
+                </div>
+              </div>
+
+              <div class="column">
+                <div class="dd-items-heading">Other Ethnic</div>
+                <div class="dd-menuitems">
+                  <a href="#" class="dd-menuitem no-format">Blouses</a>
+                  <a href="#" class="dd-menuitem no-format">Dupattas</a>
+                  <a href="#" class="dd-menuitem no-format">Lehenga</a>
+                  <a href="#" class="dd-menuitem no-format">Gown</a>
+                  <a href="#" class="dd-menuitem no-format">Ethnic Bottomwear</a>
+                </div>
+              </div>
+
+
+            </div>
+          </div>
+        </div>
+        <!-- End of dropdown for Women -->
+
+        <!-- Start of dropdown for Men -->
+        <div class="start-dropdown">
+          <button class="dd-menubar-head no-format">Men</button>
+          <!-- inside menu bar -->
+          <div class="dd-items-bg">
+            <!-- dropdown items -->
+            <div class="row dd-item-grid">
+              <div class="column">
+                <div class="dd-items-heading">Top Wear</div>
+                <div class="dd-menuitems">
+                  <a href="#" class="dd-menuitem no-format">All Top Wear</a>
+                  <a href="#" class="dd-menuitem no-format">T-Shirts</a>
+                  <a href="#" class="dd-menuitem no-format">Shirts</a>
+                </div>
+              </div>
+
+              <div class="column">
+                <div class="dd-items-heading">Bottom Wear</div>
+                <div class="dd-menuitems">
+                  <a href="#" class="dd-menuitem no-format">Track Pants</a>
+                  <a href="#" class="dd-menuitem no-format">Jeans</a>
+                  <a href="#" class="dd-menuitem no-format">Trousers</a>
+                </div>
+              </div>
+
+              <div class="column">
+                <div class="dd-items-heading">Ethnic Wear</div>
+                <div class="dd-menuitems">
+                  <a href="#" class="dd-menuitem no-format">Men Kurtas</a>
+                  <a href="#" class="dd-menuitem no-format">Ethnic Jackets</a>
+                </div>
+              </div>
+
+              <div class="column">
+                <div class="dd-items-heading">Men Footwear</div>
+                <div class="dd-menuitems">
+                  <a href="#" class="dd-menuitem no-format">Sports Shoes</a>
+                  <a href="#" class="dd-menuitem no-format">Casual Shoes</a>
+                  <a href="#" class="dd-menuitem no-format">Formal</a>
+                  <a href="#" class="dd-menuitem no-format">Sandals</a>
+                </div>
+              </div>
+
+              <div class="column">
+                <div class="dd-items-heading">Men Accessories</div>
+                <div class="dd-menuitems">
+                  <a href="#" class="dd-menuitem no-format">All Men Accessories</a>
+                  <a href="#" class="dd-menuitem no-format">Watches</a>
+                  <a href="#" class="dd-menuitem no-format">Belts</a>
+                  <a href="#" class="dd-menuitem no-format">Wallets</a>
+                  <a href="#" class="dd-menuitem no-format">Bags</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- End of dropdown for Men -->
+
+        <!-- Start of dropdown for Kids -->
+        <div class="start-dropdown">
+          <button class="dd-menubar-head no-format">Kids</button>
+          <!-- inside menu bar -->
+          <div class="dd-items-bg">
+            <!-- dropdown items -->
+            <div class="row dd-item-grid">
+              <div class="column">
+                <div class="dd-items-heading">Boys & Girls</div>
+                <div class="dd-menuitems">
+                  <a href="#" class="dd-menuitem no-format">All Dresses</a>
+                </div>
+              </div>
+
+              <div class="column">
+                <div class="dd-items-heading">Toys & Accessories</div>
+                <div class="dd-menuitems">
+                  <a href="#" class="dd-menuitem no-format">Soft Toys</a>
+                  <a href="#" class="dd-menuitem no-format">Footwear</a>
+                  <a href="#" class="dd-menuitem no-format">Stationery</a>
+                  <a href="#" class="dd-menuitem no-format">Watches</a>
+                  <a href="#" class="dd-menuitem no-format">Bags & Bagpacks</a>
+                </div>
+              </div>
+
+              <div class="column">
+                <div class="dd-items-heading">Baby Care</div>
+                <div class="dd-menuitems">
+                  <a href="#" class="dd-menuitem no-format">All Baby Care</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- End of dropdown for Kids -->
+
+        <!-- Start of dropdown for Beauty & Health -->
+        <div class="start-dropdown">
+          <button class="dd-menubar-head no-format">Beauty & Health</button>
+          <!-- inside menu bar -->
+          <div class="dd-items-bg">
+            <!-- dropdown items -->
+            <div class="row dd-item-grid">
+              <div class="column">
+                <div class="dd-items-heading">Make Up</div>
+                <div class="dd-menuitems">
+                  <a href="#" class="dd-menuitem no-format">Face</a>
+                  <a href="#" class="dd-menuitem no-format">Eyes</a>
+                  <a href="#" class="dd-menuitem no-format">Lips</a>
+                  <a href="#" class="dd-menuitem no-format">Nails</a>
+                </div>
+              </div>
+
+              <div class="column">
+                <div class="dd-items-heading">Wellness</div>
+                <div class="dd-menuitems">
+                  <a href="#" class="dd-menuitem no-format">Sanitizers</a>
+                  <a href="#" class="dd-menuitem no-format">Oral Care</a>
+                  <a href="#" class="dd-menuitem no-format">Feminine Hygiene</a>
+                </div>
+              </div>
+
+              <div class="column">
+                <div class="dd-items-heading">Skin Care</div>
+                <div class="dd-menuitems">
+                  <a href="#" class="dd-menuitem no-format">Deodorants</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- End of dropdown for Beauty & Health -->
+
+        <!-- Start of dropdown for Home & Kitchen -->
+        <div class="start-dropdown">
+          <button class="dd-menubar-head no-format">Home & Kitchen</button>
+          <!-- inside menu bar -->
+          <div class="dd-items-bg">
+            <!-- dropdown items -->
+            <div class="row dd-item-grid">
+              <div class="column">
+                <div class="dd-items-heading">Home Furnishing</div>
+                <div class="dd-menuitems">
+                  <a href="#" class="dd-menuitem no-format">Bed Sheets</a>
+                  <a href="#" class="dd-menuitem no-format">Doormats</a>
+                  <a href="#" class="dd-menuitem no-format">Curtains</a>
+                  <a href="#" class="dd-menuitem no-format">Cushions</a>
+                </div>
+              </div>
+
+              <div class="column">
+                <div class="dd-items-heading">Home Decor</div>
+                <div class="dd-menuitems">
+                  <a href="#" class="dd-menuitem no-format">All Home Decor</a>
+                  <a href="#" class="dd-menuitem no-format">Stickers</a>
+                  <a href="#" class="dd-menuitem no-format">Show Pieces</a>
+                </div>
+              </div>
+
+              <div class="column">
+                <div class="dd-items-heading">Kitchen & Dining</div>
+                <div class="dd-menuitems">
+                  <a href="#" class="dd-menuitem no-format">Kitchen Storage</a>
+                  <a href="#" class="dd-menuitem no-format">Cookware & Bakeware</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- End of dropdown for Home & Kitchen -->
+
+        <!-- Start of dropdown for Jewellery & Accessories -->
+        <div class="start-dropdown">
+          <button class="dd-menubar-head no-format">Jewellery & Accessories</button>
+          <!-- inside menu bar -->
+          <div class="dd-items-bg">
+            <!-- dropdown items -->
+            <div class="row dd-item-grid">
+              <div class="column">
+                <div class="dd-items-heading">Jewellery</div>
+                <div class="dd-menuitems">
+                  <a href="#" class="dd-menuitem no-format">Jewellery Sets</a>
+                  <a href="#" class="dd-menuitem no-format">Earrings</a>
+                  <a href="#" class="dd-menuitem no-format">Mangalsutras</a>
+                  <a href="#" class="dd-menuitem no-format">Studs</a>
+                  <a href="#" class="dd-menuitem no-format">Bangles</a>
+                  <a href="#" class="dd-menuitem no-format">Necklaces</a>
+                  <a href="#" class="dd-menuitem no-format">Rings</a>
+                  <a href="#" class="dd-menuitem no-format">Anklets</a>
+                </div>
+              </div>
+
+              <div class="column">
+                <div class="dd-items-heading">Women Accessory</div>
+                <div class="dd-menuitems">
+                  <a href="#" class="dd-menuitem no-format">Bags</a>
+                  <a href="#" class="dd-menuitem no-format">Watches</a>
+                  <a href="#" class="dd-menuitem no-format">Hair Accessories</a>
+                  <a href="#" class="dd-menuitem no-format">Sunglasses</a>
+                  <a href="#" class="dd-menuitem no-format">Socks</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- End of dropdown for Jewellery & Accessories -->
+
+        <!-- Start of dropdown for Bags & Footwear -->
+        <div class="start-dropdown">
+          <button class="dd-menubar-head no-format">Bags & Footwear</button>
+          <!-- inside menu bar -->
+          <div class="dd-items-bg">
+            <!-- dropdown items -->
+            <div class="row dd-item-grid">
+              <div class="column">
+                <div class="dd-items-heading">Women Bags</div>
+                <div class="dd-menuitems">
+                  <a href="#" class="dd-menuitem no-format">All Women Bags</a>
+                  <a href="#" class="dd-menuitem no-format">Handbags</a>
+                  <a href="#" class="dd-menuitem no-format">Clutches</a>
+                  <a href="#" class="dd-menuitem no-format">Slingbags</a>
+                </div>
+              </div>
+
+              <div class="column">
+                <div class="dd-items-heading">Men Bags</div>
+                <div class="dd-menuitems">
+                  <a href="#" class="dd-menuitem no-format">All Men Bags</a>
+                  <a href="#" class="dd-menuitem no-format">Men Wallets</a>
+                </div>
+              </div>
+
+              <div class="column">
+                <div class="dd-items-heading">Men Footwear</div>
+                <div class="dd-menuitems">
+                  <a href="#" class="dd-menuitem no-format">Sports Shoes</a>
+                  <a href="#" class="dd-menuitem no-format">Casual Shoes</a>
+                  <a href="#" class="dd-menuitem no-format">Formal</a>
+                  <a href="#" class="dd-menuitem no-format">Sandals</a>
+                </div>
+              </div>
+
+              <div class="column">
+                <div class="dd-items-heading">Women Footwear</div>
+                <div class="dd-menuitems">
+                  <a href="#" class="dd-menuitem no-format">Flats</a>
+                  <a href="#" class="dd-menuitem no-format">Bellies</a>
+                  <a href="#" class="dd-menuitem no-format">Heels</a>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+        <!-- End of dropdown for Bags & Footwear -->
+      </div>
+    </div>
+    <!-- End of dropdown menu bar -->
+    <hr />
+    </div>
+  </header>
+
+  <main id="mainDiv">
+    <!-- SECTION 1: Start of Section for Download App Frame -->
+    <section class="container-fluid my-5">
+      <div class="container-fluid d-flex justify-content-center">
+        <div class="row">
+          <!-- Start of left half frame -->
+          <div
+            class="col-container col-xl-6 col-lg-6 col-md-6 d-flex flex-column bg-aliceblue justify-content-center half-full-container">
+            <!-- Start of text area -->
+            <div class="row fs-1 fw-bolder">
+              <div>Lowest Prices</div>
+              <div>Best Quality Shopping</div>
+            </div>
+            <!-- End of text area -->
+            <!-- Start of Row for the icons -->
+            <div class="row rounded d-flex my-5 bg-white m-2">
+              <div class="col border-end">
+                <span>
+                  <img src="https://i.ibb.co/98Cr6Lx/free-Delivery.png" alt="icon" />
+                  <span>Free Delivery</span>
+                </span>
+              </div>
+              <div class="col border-end">
+                <span>
+                  <img src="https://i.ibb.co/ydZgNgh/cash-On-Delivery.png" alt="icon" />
+                  <span>Cash On Delivery</span>
+                </span>
+              </div>
+              <div class="col">
+                <span>
+                  <img src="https://i.ibb.co/zJv5rMb/easy-Returns.png" alt="icon" />
+                  <span>Easy Returns</span>
+                </span>
+              </div>
+            </div>
+            <!-- End of Row for the icons -->
+
+            <!-- Start of Row for download button -->
+            <div class="row">
+              <span><button class="btn btn-primary btn-myPurple">
+                  <a href="#"><img src="https://i.ibb.co/C17W58Q/playstore-Small-Icon.png"
+                      alt="playstore-Small-Icon" /></a>
+                  <span class="fs-4">Download the Meesho App</span>
+                </button>
+              </span>
+            </div>
+            <!-- End of Row for download button -->
+          </div>
+          <!-- End of left half frame -->
+
+          <!--Start of right side image frame -->
+          <div class="col-container col-xl-6 col-lg-6 col-md-6 p-0 half-full-container">
+            <img src="https://i.ibb.co/CHTfRf9/meesho-makeover.webp" alt="Maha Savings Image"
+              class="img-fluid half-full-container fullWidth" />
+          </div>
+          <!--End of right side image frame -->
+        </div>
+      </div>
+    </section>
+    <!-- Section 1: End of Section for Download App Frame -->
+
+    <!-- SECTION 2: Start of Section for Top Categories Frame --- has 3 sub-sections -->
+    <section id="topCategoriesSection" class="container-fluid container-md my-5">
+      <div class="headingBar">
+        <h1><span class="heading">Top Categories</span></h1>
+      </div>
+      <!-- Subsection-2.1 - Fashion -->
+      <section class="topCategoriesFrame container-md my-5">
+        <div class="d-flex align-items-end justify-content-evenly topCategoriesItems fashionbg1">
+          <div class="imgModel1">
+            <a href="#"><img src="https://i.ibb.co/N186Ft7/women-Store.jpg" alt="Women Store" class="img-fluid" /></a>
+          </div>
+          <div class="imgModel2">
+            <a href="#"><img src="https://i.ibb.co/ys2wDg4/menStore.webp" alt="Men Store" class="img-fluid" /></a>
+          </div>
+          <div class="imgModel2">
+            <a href="#"><img src="https://i.ibb.co/S33wXHc/kidStore.jpg" alt="Kid Store" class="img-fluid" /></a>
+          </div>
+        </div>
+      </section>
+
+      <!-- Subsection-2.2 - Essentials -->
+      <section class="topCategoriesFrame container-md my-5">
+        <div
+          class="col-container d-flex align-items-center col-sm-12 col-xs-12 flex-shrink-1 topCategoriesItems fashionbg2 flex-wrap-reverse">
+          <div
+            class="col-container col-xl-4 col-lg-4 col-md-4 col-sm-12 col-xs-12 d-flex justify-content-center half-full-container">
+            <a href="#"><img src="https://i.ibb.co/dWMsT3p/viewallbutton.png" alt="View All"
+                class="img-fluid viewBtn" /></a>
+          </div>
+          <div
+            class="col-container col-xl-8 col-lg-8 col-md-8 col-sm-12 col-xs-12 d-flex justify-content-end p-2 half-full-container">
+            <div class="d-flex flex-column align-items-center">
+              <a href="#"><img src="https://i.ibb.co/cQSWbHQ/home-Decor-Img.jpg" alt="home"
+                  class="imgModel3 img-fluid" /></a>
+              <a href="#"><img src="https://i.ibb.co/vXw6WxV/home-Label.webp" alt="Home Decor" class="img-fluid" /></a>
+            </div>
+
+            <div class="d-flex flex-column align-items-center">
+              <a href="#"><img src="https://i.ibb.co/DPFtFsm/kitchen-Img.jpg" alt="kitchen"
+                  class="imgModel3 img-fluid" /></a>
+              <a href="#"><img src="https://i.ibb.co/rM7MXby/kitchen-Label.webp" alt="Kitchen" class="img-fluid" /></a>
+            </div>
+
+            <div class="d-flex flex-column align-items-center">
+              <a href="#"><img src="https://i.ibb.co/t3kYhzS/health-Img.jpg" alt="health"
+                  class="imgModel3 img-fluid" /></a>
+              <a href="#"><img src="https://i.ibb.co/zP65hSG/health-Label.webp" alt="Health" class="img-fluid" /></a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Subsection-2.3 - New Styles -->
+      <section class="topCategoriesFrame container-md my-5">
+        <div
+          class="col-container d-flex align-items-center col-sm-12 col-xs-12 flex-shrink-1 topCategoriesItems fashionbg3 flex-wrap-reverse">
+          <div
+            class="col-container col-xl-4 col-lg-4 col-md-4 col-sm-12 col-xs-12 d-flex align-items-center justify-content-center half-full-container">
+            <a href="#"><img src="https://i.ibb.co/dWMsT3p/viewallbutton.png" alt="View All"
+                class="img-fluid viewBtn" /></a>
+          </div>
+          <div
+            class="col-container col-xl-8 col-lg-8 col-md-8 col-sm-12 col-xs-12 d-flex justify-content-end p-2 half-full-container">
+            <div class="d-flex flex-column align-items-center">
+              <a href="#"><img src="https://i.ibb.co/YXgpXzh/accessories-Img.jpg" alt="accessories"
+                  class="imgModel3 img-fluid" /></a>
+              <a href="#"><img src="https://i.ibb.co/1v9dxGx/accessories-Label.webp" alt="accessories"
+                  class="img-fluid" /></a>
+            </div>
+
+            <div class="d-flex flex-column align-items-center">
+              <a href="#"><img src="https://i.ibb.co/WBfQ1Gv/footwear-Img.jpg" alt="footwear"
+                  class="imgModel3 img-fluid" /></a>
+              <a href="#"><img src="https://i.ibb.co/nCMKPM6/footwear-Label.webp" alt="footwear"
+                  class="img-fluid" /></a>
+            </div>
+
+            <div class="d-flex flex-column align-items-center">
+              <a href="#"><img src="https://i.ibb.co/KD4zCYp/electronics-Img.jpg" alt="electronics"
+                  class="imgModel3 img-fluid" /></a>
+              <a href="#"><img src="https://i.ibb.co/7gMjbJK/electronics-Label.webp" alt="electronics"
+                  class="img-fluid" /></a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </section>
+    <!-- Section 2: End of Section for Top Categories Frame --- has 3 sub-sections -->
+
+    <!-- Section 3: Start of Section for Partner With Us Frame -->
+
+    <section id="partner" class="container-fluid container-md my-5">
+      <div class="headingBar">
+        <h1><span class="heading">Partner With Us</span></h1>
+      </div>
+      <!-- Section 3.1: Reseller Frame -->
+      <div class="container-md d-flex flex-column align-items-end justify-content-start partnerFrame resellerBgImg">
+        <p id="resellerTagStart">Become a Reseller and</p>
+        <p class="resellerTagEnd">Start Your Online Business</p>
+        <p class="resellerTagEnd">With Zero Investment</p>
+        <div class="playstoreIcons" class="d-flex justify-content-end">
+          <a href="#">
+            <img src="https://i.ibb.co/JdB0Ncp/playstore-Icon.png" alt="playstore icon" class="img-fluid" />
+          </a>
+          <a href="#">
+            <img src="https://i.ibb.co/ckZtt1m/appstore-Icon.png" alt="appstore icon" class="img-fluid" />
+          </a>
+        </div>
+      </div>
+      <!-- Section 3.2: Supplier Frame -->
+      <div class="container-md d-flex flex-column align-items-start justify-content-center partnerFrame supplierBgImg">
+        <p id="supplierTagTitle">Register as a Meesho Supplier</p>
+        <p id="supplierTagline">Sell your products to crores of customers at 0% commission</p>
+        <!-- Start of Row for the icons -->
+        <div id="supplierIcon" class="row rounded d-flex my-4 bg-transparent">
+          <div class="col border-end">
+            <span>
+              <img src="https://i.ibb.co/XjkjRxx/checkmark.png" alt="icon" />
+              <span>Grow your business 10x</span>
+            </span>
+          </div>
+          <div class="col border-end">
+            <span>
+              <img src="https://i.ibb.co/XjkjRxx/checkmark.png" alt="icon" />
+              <span>Enjoy 100% profit</span>
+            </span>
+          </div>
+          <div class="col">
+            <span>
+              <img src="https://i.ibb.co/XjkjRxx/checkmark.png" alt="icon" />
+              <span>Sell all over India</span>
+            </span>
+          </div>
+        </div>
+        <!-- End of Row for the icons -->
+        <button id="supplierButton">Sign up now</button>
+      </div>
+    </section>
+
+    <!-- Section 3: End of Section for Partner With Us Frame -->
+
+    <!-- Section 4: Start of Section for Products For You Frame -->
+    <section id="products" class="container-fluid container-md my-5">
+      <div class="headingBar">
+        <h1><span class="heading">Products For You</span></h1>
+      </div><br><br>
+      <!-- Section 4.1: Start of Offcanvas filter section -->
+
+      <button id="offcanvas-toggle-btn" type="button" data-bs-toggle="offcanvas"
+        data-bs-target="#leftFilterFrameOffcanvas" aria-controls="leftFilterFrameOffcanvas">
+        Filter Search
+      </button>
+
+      <section id="leftFilterFrameOffcanvas" class="container-fluid offcanvas offcanvas-end" data-bs-scroll="true"
+        data-bs-backdrop="false">
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="offcanvasLabel">Sort and Filter</h5>
+          <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="form-floating my-3">
+          <select class="form-select" id="floatingSelect" aria-label="Floating label select example">
+            <option value="relevance" selected>Relevance</option>
+            <option value="newArrivals">New Arrivals</option>
+            <option value="highToLowPrice">Price (High to Low)</option>
+            <option value="lowToHighPrice">Price (Low to High)</option>
+            <option value="ratings">Ratings</option>
+            <option value="discount">Discount</option>
+          </select>
+          <label for="floatingSelect">Sort by : </label>
+        </div>
+
+        <div class="filters w-100">
+          <div class="accordion" id="filtersAccordion">
+            <!-- Accordion Heading -->
+            <div class="accordion-item">
+              <div class="accordion-body">
+                <strong>FILTERS</strong><br />
+                <small>1000+ Products</small>
+              </div>
+            </div>
+            <!-- accordion 1 -->
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button accordTitle collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#categoryData" aria-expanded="false" aria-controls="categoryData">
+                  Category
+                </button>
+              </h2>
+              <div id="categoryData" class="accordion-collapse collapse">
+                <div class="accordion-body accordBody">
+                  <div>
+                    <div class="input-group mb-3">
+                      <button class="btn btn-outline-secondary" type="button" id="button-addon1">
+                        <i class="fa fa-search"></i>
+                      </button>
+                      <input type="text" class="form-control" placeholder="Search"
+                        aria-label="Example text with button addon" aria-describedby="button-addon1" />
+                    </div>
+                    <div>
+                      <input type="checkbox" id="analogWatch" name="categoryFilter" value="analogWatch" />
+                      <label for="analogWatch">Analog Watches</label><br />
+                      <input type="checkbox" id="bangles" name="categoryFilter" value="bangles" />
+                      <label for="bangles">Bangles & Bracelets</label><br />
+                      <input type="checkbox" id="bedsheets" name="categoryFilter" value="bedsheets" />
+                      <label for="bedsheets">Bedsheets</label><br />
+                      <input type="checkbox" id="bike-covers" name="categoryFilter" value="bike-covers" />
+                      <label for="bike-covers">Bike Covers</label><br />
+                      <input type="checkbox" id="blouse" name="categoryFilter" value="blouse" />
+                      <label for="blouse">Blouses</label><br />
+                      <input type="checkbox" id="bluetooth-headphones" name="categoryFilter"
+                        value="bluetooth-headphones" />
+                      <label for="bluetooth-headphones">Bluetooth Headphones</label><br />
+                      <input type="checkbox" id="carCovers" name="categoryFilter" value="carCovers" />
+                      <label for="carCovers">Car Covers</label><br />
+                      <input type="checkbox" id="cups" name="categoryFilter" value="cups" />
+                      <label for="cups">Cups & Mugs</label><br />
+                      <input type="checkbox" id="dresses" name="categoryFilter" value="dresses" />
+                      <label for="dresses">Dresses</label><br />
+                      <input type="checkbox" id="dupatta-sets" name="categoryFilter" value="dupatta-sets" />
+                      <label for="dupatta-sets">Dupatta Sets</label><br />
+                      <input type="checkbox" id="dupatta" name="categoryFilter" value="dupatta" />
+                      <label for="dupatta">Dupatta</label><br />
+                    </div>
+                    <div class="more">
+                      <input type="checkbox" id="studs" name="categoryFilter" value="studs" />
+                      <label for="studs">Earrings & Studs</label><br />
+                      <input type="checkbox" id="slippers" name="categoryFilter" value="slippers" />
+                      <label for="slippers">Flipflops & Slippers</label><br />
+                      <input type="checkbox" id="gowns" name="categoryFilter" value="gowns" />
+                      <label for="gowns">Gowns</label><br />
+                      <input type="checkbox" id="hair-accessories" name="categoryFilter" value="hair-accessories" />
+                      <label for="hair-accessories">Hair Accessories</label><br />
+                      <input type="checkbox" id="hair-oil" name="categoryFilter" value="hair-oil" />
+                      <label for="hair-oil">Hair Oil</label><br />
+                      <input type="checkbox" id="idols" name="categoryFilter" value="idols" />
+                      <label for="idols">Idols & Figurines</label><br />
+                      <input type="checkbox" id="jeans" name="categoryFilter" value="jeans" />
+                      <label for="jeans">Jeans</label><br />
+                      <input type="checkbox" id="jewels" name="categoryFilter" value="jewels" />
+                      <label for="jewels">Jewllery Sets</label><br />
+                      <input type="checkbox" id="sarees" name="categoryFilter" value="sarees" />
+                      <label for="sarees">Sarees</label><br />
+                      <input type="checkbox" id="shirts" name="categoryFilter" value="shirts" />
+                      <label for="shirts">Shirts</label><br />
+                      <input type="checkbox" id="shoes" name="categoryFilter" value="shoes" />
+                      <label for="shoes">Shoes</label><br />
+                      <input type="checkbox" id="shorts" name="categoryFilter" value="shorts" />
+                      <label for="shorts">Shorts</label><br />
+                      <input type="checkbox" id="sun-glasses" name="categoryFilter" value="sun-glasses" />
+                      <label for="sun-glasses">Sun Glasses</label><br />
+                      <input type="checkbox" id="tshirts" name="categoryFilter" value="tshirts" />
+                      <label for="tshirts">T-Shirts</label><br />
+                    </div>
+                    <div>
+                      <!-- <a onclick="showMore()">Show more</a> -->
+                      <button src="../scripts/home.js" class="seamlessButton" onclick="showMore()" class="myBtn">
+                        Show more
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- accordion 2 -->
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button accordTitle collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#genderData" aria-expanded="false" aria-controls="genderData">
+                  Gender
+                </button>
+              </h2>
+              <div id="genderData" class="accordion-collapse collapse">
+                <div class="accordion-body accordBody">
+                  <button class="plainButton">Boys</button>
+                  <button class="plainButton">Girls</button>
+                  <button class="plainButton">Men</button>
+                  <button class="plainButton">Women</button>
+                </div>
+              </div>
+            </div>
+            <!-- accordion 3 -->
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button accordTitle collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#fabricData" aria-expanded="false" aria-controls="fabricData">
+                  Fabric
+                </button>
+              </h2>
+              <div id="fabricData" class="accordion-collapse collapse">
+                <div class="accordion-body accordBody">
+                  <div>
+                    <div class="input-group mb-3">
+                      <button class="btn btn-outline-secondary" type="button" id="button-addon1">
+                        <i class="fa fa-search"></i>
+                      </button>
+                      <input type="text" class="form-control" placeholder="Search"
+                        aria-label="Example text with button addon" aria-describedby="button-addon1" />
+                    </div>
+                    <div>
+                      <input type="checkbox" id="acrylic" name="categoryFilter" value="acrylic" />
+                      <label for="acrylic">Acrylic</label><br />
+                      <input type="checkbox" id="artSilk" name="categoryFilter" value="artSilk" />
+                      <label for="artSilk">Art Silk</label><br />
+                      <input type="checkbox" id="banarasi" name="categoryFilter" value="banarasi" />
+                      <label for="banarasi">Banarasi Silk</label><br />
+                    </div>
+                    <div id="more">
+                      <input type="checkbox" id="chanderiCotton" name="categoryFilter" value="chanderiCotton" />
+                      <label for="chanderiCotton">Chanderi Cotton</label><br />
+                      <input type="checkbox" id="chanderiSilk" name="categoryFilter" value="chanderiSilk" />
+                      <label for="chanderiSilk">Chanderi Silk</label><br />
+                      <input type="checkbox" id="cotton" name="categoryFilter" value="cotton" />
+                      <label for="cotton">Cotton</label><br />
+                    </div>
+                    <div>
+                      <!-- <a onclick="showMore()">Show more</a> -->
+                      <button src="../scripts/home.js" class="seamlessButton" onclick="showMore()" id="myBtn">
+                        Show more
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- accordion 4 -->
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button accordTitle collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#oxfordsData" aria-expanded="false" aria-controls="oxfordsData">
+                  Oxfords
+                </button>
+              </h2>
+              <div id="oxfordsData" class="accordion-collapse collapse">
+                <div class="accordion-body accordBody">
+                  <div>
+                    <input type="checkbox" id="heels" name="categoryFilter" value="heels" />
+                    <label for="heels">Heels</label><br />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- accordion 5 -->
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button accordTitle collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#dialShapeData" aria-expanded="false" aria-controls="dialShapeData">
+                  Dial Shape
+                </button>
+              </h2>
+              <div id="dialShapeData" class="accordion-collapse collapse">
+                <div class="accordion-body accordBody">
+                  <div>
+                    <input type="checkbox" id="roundDial" name="categoryFilter" value="roundDial" />
+                    <label for="roundDial">Round</label><br />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- accordion 6 -->
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button accordTitle collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#colorData" aria-expanded="false" aria-controls="colorData">
+                  Color
+                </button>
+              </h2>
+              <div id="colorData" class="accordion-collapse collapse">
+                <div id="accordion-body accordBody">
+                  <div>
+                    <button class="plainButton">Biege</button>
+                    <button class="plainButton">Black</button>
+                    <button class="plainButton">Blue</button>
+                    <button class="plainButton">Brown</button>
+                    <button class="plainButton">Combo Of Different Colors</button>
+                    <button class="plainButton">Combo Of Maroon Shade</button>
+                    <button class="plainButton">Combo Of Red Shade</button>
+                    <button class="plainButton">Coral</button>
+                    <button class="plainButton">Gold</button>
+                    <button class="plainButton">Red</button>
+                    <button class="plainButton">Khakhi</button>
+                  </div>
+                  <div id="more">
+                    <button class="plainButton">Boys</button>
+                    <button class="plainButton">Girls</button>
+                    <button class="plainButton">Men</button>
+                    <button class="plainButton">Women</button>
+                  </div>
+                  <div>
+                    <button src="../scripts/home.js" class="seamlessButton" onclick="showMore()" id="myBtn">
+                      Show more
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- accordion 7 -->
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button accordTitle collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#smartcoinsData" aria-expanded="false" aria-controls="smartcoinsData">
+                  Smartcoins
+                </button>
+              </h2>
+              <div id="smartcoinsData" class="accordion-collapse collapse">
+                <div class="accordion-body accordBody">
+                  <input type="checkbox" id="smartcoins" name="categoryFilter" value="smartcoins" />
+                  <label for="smartcoins">Get Smartcoins</label><br />
+                </div>
+              </div>
+            </div>
+            <!-- accordion 8 -->
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button accordTitle collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#priceData" aria-expanded="false" aria-controls="priceData">
+                  Price
+                </button>
+              </h2>
+              <div id="priceData" class="accordion-collapse collapse">
+                <div class="accordion-body accordBody">
+                  <div>
+                    <button class="plainButton">Under <i class="fa-solid fa-indian-rupee-sign"></i> 149</button>
+                    <button class="plainButton">Under <i class="fa-solid fa-indian-rupee-sign"></i> 199</button>
+                    <button class="plainButton">Under <i class="fa-solid fa-indian-rupee-sign"></i> 249</button>
+                    <button class="plainButton">Under <i class="fa-solid fa-indian-rupee-sign"></i> 299</button>
+                    <button class="plainButton">Under <i class="fa-solid fa-indian-rupee-sign"></i> 349</button>
+                    <button class="plainButton">Under <i class="fa-solid fa-indian-rupee-sign"></i> 399</button>
+                    <button class="plainButton">Under <i class="fa-solid fa-indian-rupee-sign"></i> 449</button>
+                    <button class="plainButton">Under <i class="fa-solid fa-indian-rupee-sign"></i> 499</button>
+                    <button class="plainButton">Under <i class="fa-solid fa-indian-rupee-sign"></i> 999</button>
+                    <button class="plainButton"><i class="fa-solid fa-indian-rupee-sign"></i> 0 - <i
+                        class="fa-solid fa-indian-rupee-sign"></i> 99</button>
+                    <button class="plainButton"><i class="fa-solid fa-indian-rupee-sign"></i> 100 - <i
+                        class="fa-solid fa-indian-rupee-sign"></i> 149</button>
+                    <button class="plainButton"><i class="fa-solid fa-indian-rupee-sign"></i> 150 - <i
+                        class="fa-solid fa-indian-rupee-sign"></i> 199</button>
+
+                  </div>
+                  <div id="more">
+
+                  </div>
+                  <div>
+                    <button src="../scripts/home.js" class="seamlessButton" onclick="showMore()" id="myBtn">
+                      Show more
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- accordion 9 -->
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button accordTitle collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#meeshoMallData" aria-expanded="false" aria-controls="meeshoMallData">
+                  Meesho Mall
+                </button>
+              </h2>
+              <div id="meeshoMallData" class="accordion-collapse collapse">
+                <div class="accordion-body accordBody">
+                  <input type="checkbox" id="mall" name="categoryFilter" value="mall" />
+                  <label for="mall">Mall Brands</label><br />
+                </div>
+              </div>
+            </div>
+            <!-- accordion 10 -->
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button accordTitle collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#occasionData" aria-expanded="false" aria-controls="occasionData">
+                  Occasion
+                </button>
+              </h2>
+              <div id="occasionData" class="accordion-collapse collapse">
+                <div class="accordion-body accordBody">
+                  <input type="checkbox" id="cotton" name="categoryFilter" value="cotton" />
+                  <label for="cotton">Bridal</label><br />
+                  <input type="checkbox" id="cotton" name="categoryFilter" value="cotton" />
+                  <label for="cotton">Festive</label><br />
+                </div>
+              </div>
+            </div>
+            <!-- accordion 11 -->
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button accordTitle collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#kurtaFabricData" aria-expanded="false" aria-controls="kurtaFabricData">
+                  Kurta Fabric
+                </button>
+              </h2>
+              <div id="kurtaFabricData" class="accordion-collapse collapse">
+                <div class="accordion-body accordBody">
+                  <input type="checkbox" id="cotton" name="categoryFilter" value="cotton" />
+                  <label for="cotton">Bridal</label><br />
+                  <input type="checkbox" id="cotton" name="categoryFilter" value="cotton" />
+                  <label for="cotton">Festive</label><br />
+                </div>
+              </div>
+            </div>
+            <!-- accordion 12 -->
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button accordTitle collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#materialData" aria-expanded="false" aria-controls="materialData">
+                  Material
+                </button>
+              </h2>
+              <div id="materialData" class="accordion-collapse collapse">
+                <div class="accordion-body accordBody">
+                  <div>
+                    <div class="input-group mb-3">
+                      <button class="btn btn-outline-secondary" type="button" id="button-addon1">
+                        <i class="fa fa-search"></i>
+                      </button>
+                      <input type="text" class="form-control" placeholder="Search"
+                        aria-label="Example text with button addon" aria-describedby="button-addon1" />
+                    </div>
+                    <div>
+                      <input type="checkbox" id="acrylic" name="categoryFilter" value="acrylic" />
+                      <label for="acrylic">Acrylic</label><br />
+                      <input type="checkbox" id="artSilk" name="categoryFilter" value="artSilk" />
+                      <label for="artSilk">Alloy</label><br />
+                      <input type="checkbox" id="banarasi" name="categoryFilter" value="banarasi" />
+                      <label for="banarasi">Aluminium</label><br />
+                    </div>
+                    <div id="more">
+                      <input type="checkbox" id="chanderiCotton" name="categoryFilter" value="chanderiCotton" />
+                      <label for="chanderiCotton">Artificial Flowers</label><br />
+                      <input type="checkbox" id="chanderiSilk" name="categoryFilter" value="chanderiSilk" />
+                      <label for="chanderiSilk">Beads</label><br />
+                      <input type="checkbox" id="cotton" name="categoryFilter" value="cotton" />
+                      <label for="cotton">Brass</label><br />
+                    </div>
+                    <div>
+                      <!-- <a onclick="showMore()">Show more</a> -->
+                      <button src="../scripts/home.js" class="seamlessButton" onclick="showMore()" id="myBtn">
+                        Show more
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Section 4.1: End of Offcanvas filter section -->
+
+      <!-- Section 4.2: Start of left side filter section -->
+
+      <section id="leftFilterFrame" class="container-fluid">
+        <div class="form-floating my-3">
+          <select class="form-select" id="floatingSelect" aria-label="Floating label select example">
+            <option value="relevance" selected>Relevance</option>
+            <option value="newArrivals">New Arrivals</option>
+            <option value="highToLowPrice">Price (High to Low)</option>
+            <option value="lowToHighPrice">Price (Low to High)</option>
+            <option value="ratings">Ratings</option>
+            <option value="discount">Discount</option>
+          </select>
+          <label for="floatingSelect">Sort by : </label>
+        </div>
+
+        <div class="filters w-100">
+          <div class="accordion" id="filtersAccordion">
+            <!-- Accordion Heading -->
+            <div class="accordion-item">
+              <div class="accordion-body">
+                <strong>FILTERS</strong><br />
+                <small>1000+ Products</small>
+              </div>
+            </div>
+            <!-- accordion 1 -->
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button accordTitle collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#categoryData" aria-expanded="false" aria-controls="categoryData">
+                  Category
+                </button>
+              </h2>
+              <div id="categoryData" class="accordion-collapse collapse">
+                <div class="accordion-body accordBody">
+                  <div>
+                    <div class="input-group mb-3">
+                      <button class="btn btn-outline-secondary" type="button" id="button-addon1">
+                        <i class="fa fa-search"></i>
+                      </button>
+                      <input type="text" class="form-control" placeholder="Search"
+                        aria-label="Example text with button addon" aria-describedby="button-addon1" />
+                    </div>
+                    <div>
+                      <input type="checkbox" id="analogWatch" name="categoryFilter" value="analogWatch" />
+                      <label for="analogWatch">Analog Watches</label><br />
+                      <input type="checkbox" id="bangles" name="categoryFilter" value="bangles" />
+                      <label for="bangles">Bangles & Bracelets</label><br />
+                      <input type="checkbox" id="bedsheets" name="categoryFilter" value="bedsheets" />
+                      <label for="bedsheets">Bedsheets</label><br />
+                      <input type="checkbox" id="bike-covers" name="categoryFilter" value="bike-covers" />
+                      <label for="bike-covers">Bike Covers</label><br />
+                      <input type="checkbox" id="blouse" name="categoryFilter" value="blouse" />
+                      <label for="blouse">Blouses</label><br />
+                      <input type="checkbox" id="bluetooth-headphones" name="categoryFilter"
+                        value="bluetooth-headphones" />
+                      <label for="bluetooth-headphones">Bluetooth Headphones</label><br />
+                      <input type="checkbox" id="carCovers" name="categoryFilter" value="carCovers" />
+                      <label for="carCovers">Car Covers</label><br />
+                      <input type="checkbox" id="cups" name="categoryFilter" value="cups" />
+                      <label for="cups">Cups & Mugs</label><br />
+                      <input type="checkbox" id="dresses" name="categoryFilter" value="dresses" />
+                      <label for="dresses">Dresses</label><br />
+                      <input type="checkbox" id="dupatta-sets" name="categoryFilter" value="dupatta-sets" />
+                      <label for="dupatta-sets">Dupatta Sets</label><br />
+                      <input type="checkbox" id="dupatta" name="categoryFilter" value="dupatta" />
+                      <label for="dupatta">Dupatta</label><br />
+                    </div>
+                    <div class="more">
+                      <input type="checkbox" id="studs" name="categoryFilter" value="studs" />
+                      <label for="studs">Earrings & Studs</label><br />
+                      <input type="checkbox" id="slippers" name="categoryFilter" value="slippers" />
+                      <label for="slippers">Flipflops & Slippers</label><br />
+                      <input type="checkbox" id="gowns" name="categoryFilter" value="gowns" />
+                      <label for="gowns">Gowns</label><br />
+                      <input type="checkbox" id="hair-accessories" name="categoryFilter" value="hair-accessories" />
+                      <label for="hair-accessories">Hair Accessories</label><br />
+                      <input type="checkbox" id="hair-oil" name="categoryFilter" value="hair-oil" />
+                      <label for="hair-oil">Hair Oil</label><br />
+                      <input type="checkbox" id="idols" name="categoryFilter" value="idols" />
+                      <label for="idols">Idols & Figurines</label><br />
+                      <input type="checkbox" id="jeans" name="categoryFilter" value="jeans" />
+                      <label for="jeans">Jeans</label><br />
+                      <input type="checkbox" id="jewels" name="categoryFilter" value="jewels" />
+                      <label for="jewels">Jewllery Sets</label><br />
+                      <input type="checkbox" id="sarees" name="categoryFilter" value="sarees" />
+                      <label for="sarees">Sarees</label><br />
+                      <input type="checkbox" id="shirts" name="categoryFilter" value="shirts" />
+                      <label for="shirts">Shirts</label><br />
+                      <input type="checkbox" id="shoes" name="categoryFilter" value="shoes" />
+                      <label for="shoes">Shoes</label><br />
+                      <input type="checkbox" id="shorts" name="categoryFilter" value="shorts" />
+                      <label for="shorts">Shorts</label><br />
+                      <input type="checkbox" id="sun-glasses" name="categoryFilter" value="sun-glasses" />
+                      <label for="sun-glasses">Sun Glasses</label><br />
+                      <input type="checkbox" id="tshirts" name="categoryFilter" value="tshirts" />
+                      <label for="tshirts">T-Shirts</label><br />
+                    </div>
+                    
+                      <!-- <a onclick="showMore()">Show more</a> -->
+                      <button src="../scripts/home.js" class="seamlessButton" onclick="showMore()">
+                        Show more
+                      </button>
+                    
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- accordion 2 -->
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button accordTitle collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#genderData" aria-expanded="false" aria-controls="genderData">
+                  Gender
+                </button>
+              </h2>
+              <div id="genderData" class="accordion-collapse collapse">
+                <div class="accordion-body accordBody">
+                  <button class="plainButton">Boys</button>
+                  <button class="plainButton">Girls</button>
+                  <button class="plainButton">Men</button>
+                  <button class="plainButton">Women</button>
+                </div>
+              </div>
+            </div>
+            <!-- accordion 3 -->
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button accordTitle collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#fabricData" aria-expanded="false" aria-controls="fabricData">
+                  Fabric
+                </button>
+              </h2>
+              <div id="fabricData" class="accordion-collapse collapse">
+                <div class="accordion-body accordBody">
+                  <div>
+                    <div class="input-group mb-3">
+                      <button class="btn btn-outline-secondary" type="button" id="button-addon1">
+                        <i class="fa fa-search"></i>
+                      </button>
+                      <input type="text" class="form-control" placeholder="Search"
+                        aria-label="Example text with button addon" aria-describedby="button-addon1" />
+                    </div>
+                    <div>
+                      <input type="checkbox" id="acrylic" name="categoryFilter" value="acrylic" />
+                      <label for="acrylic">Acrylic</label><br />
+                      <input type="checkbox" id="artSilk" name="categoryFilter" value="artSilk" />
+                      <label for="artSilk">Art Silk</label><br />
+                      <input type="checkbox" id="banarasi" name="categoryFilter" value="banarasi" />
+                      <label for="banarasi">Banarasi Silk</label><br />
+                    </div>
+                    <div id="more">
+                      <input type="checkbox" id="chanderiCotton" name="categoryFilter" value="chanderiCotton" />
+                      <label for="chanderiCotton">Chanderi Cotton</label><br />
+                      <input type="checkbox" id="chanderiSilk" name="categoryFilter" value="chanderiSilk" />
+                      <label for="chanderiSilk">Chanderi Silk</label><br />
+                      <input type="checkbox" id="cotton" name="categoryFilter" value="cotton" />
+                      <label for="cotton">Cotton</label><br />
+                    </div>
+                    <div>
+                      <!-- <a onclick="showMore()">Show more</a> -->
+                      <button src="../scripts/home.js" class="seamlessButton" onclick="showMore()" id="myBtn">
+                        Show more
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- accordion 4 -->
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button accordTitle collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#oxfordsData" aria-expanded="false" aria-controls="oxfordsData">
+                  Oxfords
+                </button>
+              </h2>
+              <div id="oxfordsData" class="accordion-collapse collapse">
+                <div class="accordion-body accordBody">
+                  <div>
+                    <input type="checkbox" id="heels" name="categoryFilter" value="heels" />
+                    <label for="heels">Heels</label><br />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- accordion 5 -->
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button accordTitle collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#dialShapeData" aria-expanded="false" aria-controls="dialShapeData">
+                  Dial Shape
+                </button>
+              </h2>
+              <div id="dialShapeData" class="accordion-collapse collapse">
+                <div class="accordion-body accordBody">
+                  <div>
+                    <input type="checkbox" id="roundDial" name="categoryFilter" value="roundDial" />
+                    <label for="roundDial">Round</label><br />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- accordion 6 -->
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button accordTitle collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#colorData" aria-expanded="false" aria-controls="colorData">
+                  Color
+                </button>
+              </h2>
+              <div id="colorData" class="accordion-collapse collapse">
+                <div id="accordion-body accordBody">
+                  <div>
+                    <button class="plainButton">Biege</button>
+                    <button class="plainButton">Black</button>
+                    <button class="plainButton">Blue</button>
+                    <button class="plainButton">Brown</button>
+                    <button class="plainButton">Combo Of Different Colors</button>
+                    <button class="plainButton">Combo Of Maroon Shade</button>
+                    <button class="plainButton">Combo Of Red Shade</button>
+                    <button class="plainButton">Coral</button>
+                    <button class="plainButton">Gold</button>
+                    <button class="plainButton">Red</button>
+                    <button class="plainButton">Khakhi</button>
+                  </div>
+                  <div id="more">
+                    <button class="plainButton">Boys</button>
+                    <button class="plainButton">Girls</button>
+                    <button class="plainButton">Men</button>
+                    <button class="plainButton">Women</button>
+                  </div>
+                  <div>
+                    <button src="../scripts/home.js" class="seamlessButton" onclick="showMore()" id="myBtn">
+                      Show more
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- accordion 7 -->
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button accordTitle collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#smartcoinsData" aria-expanded="false" aria-controls="smartcoinsData">
+                  Smartcoins
+                </button>
+              </h2>
+              <div id="smartcoinsData" class="accordion-collapse collapse">
+                <div class="accordion-body accordBody">
+                  <input type="checkbox" id="smartcoins" name="categoryFilter" value="smartcoins" />
+                  <label for="smartcoins">Get Smartcoins</label><br />
+                </div>
+              </div>
+            </div>
+            <!-- accordion 8 -->
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button accordTitle collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#priceData" aria-expanded="false" aria-controls="priceData">
+                  Price
+                </button>
+              </h2>
+              <div id="priceData" class="accordion-collapse collapse">
+                <div class="accordion-body accordBody">
+                  <div>
+                    <button class="plainButton">Under <i class="fa-solid fa-indian-rupee-sign"></i> 149</button>
+                    <button class="plainButton">Under <i class="fa-solid fa-indian-rupee-sign"></i> 199</button>
+                    <button class="plainButton">Under <i class="fa-solid fa-indian-rupee-sign"></i> 249</button>
+                    <button class="plainButton">Under <i class="fa-solid fa-indian-rupee-sign"></i> 299</button>
+                    <button class="plainButton">Under <i class="fa-solid fa-indian-rupee-sign"></i> 349</button>
+                    <button class="plainButton">Under <i class="fa-solid fa-indian-rupee-sign"></i> 399</button>
+                    <button class="plainButton">Under <i class="fa-solid fa-indian-rupee-sign"></i> 449</button>
+                    <button class="plainButton">Under <i class="fa-solid fa-indian-rupee-sign"></i> 499</button>
+                    <button class="plainButton">Under <i class="fa-solid fa-indian-rupee-sign"></i> 999</button>
+                    <button class="plainButton"><i class="fa-solid fa-indian-rupee-sign"></i> 0 - <i
+                        class="fa-solid fa-indian-rupee-sign"></i> 99</button>
+                    <button class="plainButton"><i class="fa-solid fa-indian-rupee-sign"></i> 100 - <i
+                        class="fa-solid fa-indian-rupee-sign"></i> 149</button>
+                    <button class="plainButton"><i class="fa-solid fa-indian-rupee-sign"></i> 150 - <i
+                        class="fa-solid fa-indian-rupee-sign"></i> 199</button>
+
+                  </div>
+                  <div id="more">
+
+                  </div>
+                  <div>
+                    <button src="../scripts/home.js" class="seamlessButton" onclick="showMore()" id="myBtn">
+                      Show more
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- accordion 9 -->
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button accordTitle collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#meeshoMallData" aria-expanded="false" aria-controls="meeshoMallData">
+                  Meesho Mall
+                </button>
+              </h2>
+              <div id="meeshoMallData" class="accordion-collapse collapse">
+                <div class="accordion-body accordBody">
+                  <input type="checkbox" id="mall" name="categoryFilter" value="mall" />
+                  <label for="mall">Mall Brands</label><br />
+                </div>
+              </div>
+            </div>
+            <!-- accordion 10 -->
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button accordTitle collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#occasionData" aria-expanded="false" aria-controls="occasionData">
+                  Occasion
+                </button>
+              </h2>
+              <div id="occasionData" class="accordion-collapse collapse">
+                <div class="accordion-body accordBody">
+                  <input type="checkbox" id="cotton" name="categoryFilter" value="cotton" />
+                  <label for="cotton">Bridal</label><br />
+                  <input type="checkbox" id="cotton" name="categoryFilter" value="cotton" />
+                  <label for="cotton">Festive</label><br />
+                </div>
+              </div>
+            </div>
+            <!-- accordion 11 -->
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button accordTitle collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#kurtaFabricData" aria-expanded="false" aria-controls="kurtaFabricData">
+                  Kurta Fabric
+                </button>
+              </h2>
+              <div id="kurtaFabricData" class="accordion-collapse collapse">
+                <div class="accordion-body accordBody">
+                  <input type="checkbox" id="cotton" name="categoryFilter" value="cotton" />
+                  <label for="cotton">Bridal</label><br />
+                  <input type="checkbox" id="cotton" name="categoryFilter" value="cotton" />
+                  <label for="cotton">Festive</label><br />
+                </div>
+              </div>
+            </div>
+            <!-- accordion 12 -->
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button accordTitle collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#materialData" aria-expanded="false" aria-controls="materialData">
+                  Material
+                </button>
+              </h2>
+              <div id="materialData" class="accordion-collapse collapse">
+                <div class="accordion-body accordBody">
+                  <div>
+                    <div class="input-group mb-3">
+                      <button class="btn btn-outline-secondary" type="button" id="button-addon1">
+                        <i class="fa fa-search"></i>
+                      </button>
+                      <input type="text" class="form-control" placeholder="Search"
+                        aria-label="Example text with button addon" aria-describedby="button-addon1" />
+                    </div>
+                    <div>
+                      <input type="checkbox" id="acrylic" name="categoryFilter" value="acrylic" />
+                      <label for="acrylic">Acrylic</label><br />
+                      <input type="checkbox" id="artSilk" name="categoryFilter" value="artSilk" />
+                      <label for="artSilk">Alloy</label><br />
+                      <input type="checkbox" id="banarasi" name="categoryFilter" value="banarasi" />
+                      <label for="banarasi">Aluminium</label><br />
+                    </div>
+                    <div id="more">
+                      <input type="checkbox" id="chanderiCotton" name="categoryFilter" value="chanderiCotton" />
+                      <label for="chanderiCotton">Artificial Flowers</label><br />
+                      <input type="checkbox" id="chanderiSilk" name="categoryFilter" value="chanderiSilk" />
+                      <label for="chanderiSilk">Beads</label><br />
+                      <input type="checkbox" id="cotton" name="categoryFilter" value="cotton" />
+                      <label for="cotton">Brass</label><br />
+                    </div>
+                    <div>
+                      <!-- <a onclick="showMore()">Show more</a> -->
+                      <button src="../scripts/home.js" class="seamlessButton" onclick="showMore()" id="myBtn">
+                        Show more
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Section 4.2: End of left side filter section -->
+
+      <!-- Section 4.3: Start of right side content section -->
+      <div id="rightContentFrame" class="d-flex flex-wrap justify-content-left align-content-start">
+
+        <a href="#" class="no-format">
+          <div class="myCard img-fluid">
+            <div class="myCardImg">
+              <img src="https://i.ibb.co/v36884G/women-Gown.webp" alt="model" /><button class="infoTag">+3 more</button>
+            </div>
+            <div class="myCardBody">
+              <h5 class="cardTitle">
+                <span class="d-inline-block text-truncate no-format" style="max-width: 150px;">
+                  Buckly Women Dresses
+                </span>
+              </h5>
+              <ul class="cardList">
+                <li class="cardListItem">
+                  <span class="price"><i class="fa-solid fa-indian-rupee-sign"></i> 204
+                  </span>
+                  onwards
+                </li>
+                <li class="cardListItem">
+                  <button class="infoTag">Free Delivery</button>
+                </li>
+                <li class="cardListItem">
+                  <button type="button" class="button-addon1">
+                    3.7
+                    <i class="fa-solid fa-star"></i></button> 150531 Reviews
+                </li>
+              </ul>
+            </div>
+          </div>
+        </a>
+
+        <a href="#" class="no-format">
+          <div class="myCard img-fluid">
+            <div class="myCardImg">
+              <img src="https://i.ibb.co/hdGQ0Dw/prod2.webp" alt="prod2" alt="model" /><button class="infoTag">+4
+                more</button>
+            </div>
+            <div class="myCardBody">
+              <h5 class="cardTitle">
+                <span class="d-inline-block text-truncate no-format" style="max-width: 150px;">
+                  Myra Petite Women Kurta Sets
+                </span>
+              </h5>
+              <ul class="cardList">
+                <li class="cardListItem">
+                  <span class="price"><i class="fa-solid fa-indian-rupee-sign"></i> 384
+                  </span>
+                  onwards
+                </li>
+                <li class="cardListItem">
+                  <button class="infoTag">Free Delivery</button>
+                </li>
+                <li class="cardListItem">
+                  <button type="button" class="button-addon1">
+                    4.5
+                    <i class="fa-solid fa-star"></i></button> 321526 Reviews
+                </li>
+              </ul>
+            </div>
+          </div>
+        </a>
+
+        <a href="#" class="no-format">
+          <div class="myCard img-fluid">
+            <div class="myCardImg">
+              <img src="https://i.ibb.co/S6FxfKv/prod3.webp" alt="model" /><button class="infoTag">+6 more</button>
+            </div>
+            <div class="myCardBody">
+              <h5 class="cardTitle">
+                <span class="d-inline-block text-truncate no-format" style="max-width: 150px;">
+                  Gorgeous Fashionable Women Bags
+                </span>
+              </h5>
+              <ul class="cardList">
+                <li class="cardListItem">
+                  <span class="price"><i class="fa-solid fa-indian-rupee-sign"></i> 387
+                  </span>
+                  onwards
+                </li>
+                <li class="cardListItem">
+                  <button class="infoTag">Free Delivery</button>
+                </li>
+                <li class="cardListItem">
+                  <button type="button" class="button-addon1">
+                    4.1
+                    <i class="fa-solid fa-star"></i></button> 4467 Reviews
+                </li>
+              </ul>
+            </div>
+          </div>
+        </a>
+
+        <a href="#" class="no-format">
+          <div class="myCard img-fluid">
+            <div class="myCardImg">
+              <img src="https://i.ibb.co/zsXhypK/prod4bag.webp" alt="model" /><button class="infoTag">+6 more</button>
+            </div>
+            <div class="myCardBody">
+              <h5 class="cardTitle">
+                <span class="d-inline-block text-truncate no-format" style="max-width: 150px;">
+                  Elegant Alluring Women Bags
+                </span>
+              </h5>
+              <ul class="cardList">
+                <li class="cardListItem">
+                  <span class="price"><i class="fa-solid fa-indian-rupee-sign"></i> 275
+                  </span>
+                  onwards
+                </li>
+                <li class="cardListItem">
+                  <button class="infoTag">Free Delivery</button>
+                </li>
+                <li class="cardListItem">
+                  <button type="button" class="button-addon1">
+                    4.2
+                    <i class="fa-solid fa-star"></i></button> 3562 Reviews
+                </li>
+              </ul>
+            </div>
+          </div>
+        </a>
+
+        <a href="#" class="no-format">
+          <div class="myCard">
+            <div class="myCardImg">
+              <img src="https://i.ibb.co/2vRPshk/prod5west.webp" alt="model" /><button class="infoTag">+3 more</button>
+            </div>
+            <div class="myCardBody">
+              <h5 class="cardTitle">
+                <span class="d-inline-block text-truncate no-format" style="max-width: 150px;">
+                  Trendy Feminine Women Dresses
+                </span>
+              </h5>
+              <ul class="cardList">
+                <li class="cardListItem">
+                  <span class="price"><i class="fa-solid fa-indian-rupee-sign"></i> 190
+                  </span>
+                  onwards
+                </li>
+                <li class="cardListItem">
+                  <button class="infoTag">Free Delivery</button>
+                </li>
+                <li class="cardListItem">
+                  <button type="button" class="button-addon1">
+                    3.7
+                    <i class="fa-solid fa-star"></i></button> 20354 Reviews
+                </li>
+              </ul>
+            </div>
+          </div>
+        </a>
+
+        <a href="#" class="no-format">
+          <div class="myCard">
+            <div class="myCardImg">
+              <img src="https://i.ibb.co/5vTTc2r/prod6bag.webp" alt="model" /><button class="infoTag">+8 more</button>
+            </div>
+            <div class="myCardBody">
+              <h5 class="cardTitle">
+                <span class="d-inline-block text-truncate no-format" style="max-width: 150px;">
+                  Stylish Backpacks
+                </span>
+              </h5>
+              <ul class="cardList">
+                <li class="cardListItem">
+                  <span class="price"><i class="fa-solid fa-indian-rupee-sign"></i> 196
+                  </span>
+                  onwards
+                </li>
+                <li class="cardListItem">
+                  <button class="infoTag">Free Delivery</button>
+                </li>
+                <li class="cardListItem">
+                  <button type="button" class="button-addon1">
+                    4.1
+                    <i class="fa-solid fa-star"></i></button> 1371 Reviews
+                </li>
+              </ul>
+            </div>
+          </div>
+        </a>
+
+        <a href="#" class="no-format">
+          <div class="myCard">
+            <div class="myCardImg">
+              <img src="https://i.ibb.co/q7cKCzh/prod7sock.webp" alt="model" /><button class="infoTag">+12 more</button>
+            </div>
+            <div class="myCardBody">
+              <h5 class="cardTitle">
+                <span class="d-inline-block text-truncate no-format" style="max-width: 150px;">
+                  Chrome and Coral Socks
+                </span>
+              </h5>
+              <ul class="cardList">
+                <li class="cardListItem">
+                  <span class="price"><i class="fa-solid fa-indian-rupee-sign"></i> 180
+                  </span>
+                  onwards
+                </li>
+                <li class="cardListItem">
+                  <button class="infoTag">Free Delivery</button>
+                </li>
+                <li class="cardListItem">
+                  <button type="button" class="button-addon1">
+                    3.7
+                    <i class="fa-solid fa-star"></i></button> 6148 Reviews
+                </li>
+              </ul>
+            </div>
+          </div>
+        </a>
+
+        <a href="#" class="no-format">
+          <div class="myCard">
+            <div class="myCardImg">
+              <img src="https://i.ibb.co/8xp6F5g/prod8chain.webp" alt="model" /><button class="infoTag">+8 more</button>
+            </div>
+            <div class="myCardBody">
+              <h5 class="cardTitle">
+                <span class="d-inline-block text-truncate no-format" style="max-width: 150px;">
+                  Sizzling Fancy Women Necklace
+                </span>
+              </h5>
+              <ul class="cardList">
+                <li class="cardListItem">
+                  <span class="price"><i class="fa-solid fa-indian-rupee-sign"></i> 175
+                  </span>
+                  onwards
+                </li>
+                <li class="cardListItem">
+                  <button class="infoTag">Free Delivery</button>
+                </li>
+                <li class="cardListItem">
+                  <button type="button" class="button-addon1">
+                    4.0
+                    <i class="fa-solid fa-star"></i></button> 5555 Reviews
+                </li>
+              </ul>
+            </div>
+          </div>
+        </a>
+
+        <a href="#" class="no-format">
+          <div class="myCard">
+            <div class="myCardImg">
+              <img src="https://i.ibb.co/3p3n1F4/prod28men.webp" alt="model" /><button class="infoTag">+6 more</button>
+            </div>
+            <div class="myCardBody">
+              <h5 class="cardTitle">
+                <span class="d-inline-block text-truncate no-format" style="max-width: 150px;">
+                  Urbane Trendy Men Dresses
+                </span>
+              </h5>
+              <ul class="cardList">
+                <li class="cardListItem">
+                  <span class="price"><i class="fa-solid fa-indian-rupee-sign"></i> 194
+                  </span>
+                  onwards
+                </li>
+                <li class="cardListItem">
+                  <button class="infoTag">Free Delivery</button>
+                </li>
+                <li class="cardListItem">
+                  <button type="button" class="button-addon1">
+                    4.1
+                    <i class="fa-solid fa-star"></i></button> 62456 Reviews
+                </li>
+              </ul>
+            </div>
+          </div>
+        </a>
+
+        <a href="#" class="no-format">
+          <div class="myCard">
+            <div class="myCardImg">
+              <img src="https://i.ibb.co/FhBdhvL/prod10chain.webp" alt="model" /><button class="infoTag">+3
+                more</button>
+            </div>
+            <div class="myCardBody">
+              <h5 class="cardTitle">
+                <span class="d-inline-block text-truncate no-format" style="max-width: 150px;">
+                  Allure Fancy Women Jewellery
+                </span>
+              </h5>
+              <ul class="cardList">
+                <li class="cardListItem">
+                  <span class="price"><i class="fa-solid fa-indian-rupee-sign"></i> 210
+                  </span>
+                  onwards
+                </li>
+                <li class="cardListItem">
+                  <button class="infoTag">Free Delivery</button>
+                </li>
+                <li class="cardListItem">
+                  <button type="button" class="button-addon1">
+                    4.1
+                    <i class="fa-solid fa-star"></i></button> 2990 Reviews
+                </li>
+              </ul>
+            </div>
+          </div>
+        </a>
+
+        <a href="#" class="no-format">
+          <div class="myCard">
+            <div class="myCardImg">
+              <img src="https://i.ibb.co/C2GQhFh/prod11blututh.webp" alt="model" /><button class="infoTag">+3
+                more</button>
+            </div>
+            <div class="myCardBody">
+              <h5 class="cardTitle">
+                <span class="d-inline-block text-truncate no-format" style="max-width: 150px;">
+                  Bluetooth Headphones And Wireless Earbuds
+                </span>
+              </h5>
+              <ul class="cardList">
+                <li class="cardListItem">
+                  <span class="price"><i class="fa-solid fa-indian-rupee-sign"></i> 229
+                  </span>
+                  onwards
+                </li>
+                <li class="cardListItem">
+                  <button class="infoTag">
+                    <i class="fa-solid fa-indian-rupee-sign"></i> 93
+                  </button>
+                </li>
+                <li class="cardListItem">
+                  <button type="button" class="button-addon1">
+                    3.8
+                    <i class="fa-solid fa-star"></i></button> 89524 Reviews
+                </li>
+              </ul>
+            </div>
+          </div>
+        </a>
+
+        <a href="#" class="no-format">
+          <div class="myCard">
+            <div class="myCardImg">
+              <img src="https://i.ibb.co/hmFcwJK/prod12sandals.webp" alt="model" /><button class="infoTag">+3
+                more</button>
+            </div>
+            <div class="myCardBody">
+              <h5 class="cardTitle">
+                <span class="d-inline-block text-truncate no-format" style="max-width: 150px;">
+                  Graceful Women Sandals
+                </span>
+              </h5>
+              <ul class="cardList">
+                <li class="cardListItem">
+                  <span class="price"><i class="fa-solid fa-indian-rupee-sign"></i> 198
+                  </span>
+                  onwards
+                </li>
+                <li class="cardListItem">
+                  <button class="infoTag">
+                    Delivery <i class="fa-solid fa-indian-rupee-sign"></i> 68
+                  </button>
+                </li>
+                <li class="cardListItem">
+                  <button type="button" class="button-addon1">
+                    3.6
+                    <i class="fa-solid fa-star"></i></button> 43 Reviews
+                </li>
+              </ul>
+            </div>
+          </div>
+        </a>
+
+        <a href="#" class="no-format">
+          <div class="myCard">
+            <div class="myCardImg">
+              <img src="https://i.ibb.co/wYKvkDp/prod13tshirt.webp" alt="model" /><button class="infoTag">+4
+                more</button>
+            </div>
+            <div class="myCardBody">
+              <h5 class="cardTitle">
+                <span class="d-inline-block text-truncate no-format" style="max-width: 150px;">
+                  Modern Stylus Kids Dresses
+                </span>
+              </h5>
+              <ul class="cardList">
+                <li class="cardListItem">
+                  <span class="price"><i class="fa-solid fa-indian-rupee-sign"></i> 230
+                  </span>
+                  onwards
+                </li>
+                <li class="cardListItem">
+                  <button class="infoTag">Free Delivery</button>
+                </li>
+                <li class="cardListItem">
+                  <button type="button" class="button-addon1">
+                    4.3
+                    <i class="fa-solid fa-star"></i></button> 17181 Reviews
+                </li>
+              </ul>
+            </div>
+          </div>
+        </a>
+
+        <a href="#" class="no-format">
+          <div class="myCard">
+            <div class="myCardImg">
+              <img src="https://i.ibb.co/P9mpwjh/prod14tshirt.webp" alt="model" /><button class="infoTag">+5
+                more</button>
+            </div>
+            <div class="myCardBody">
+              <h5 class="cardTitle">
+                <span class="d-inline-block text-truncate no-format" style="max-width: 150px;">
+                  Comfy Women Tshirts
+                </span>
+              </h5>
+              <ul class="cardList">
+                <li class="cardListItem">
+                  <span class="price"><i class="fa-solid fa-indian-rupee-sign"></i> 250
+                  </span>
+                  onwards
+                </li>
+                <li class="cardListItem">
+                  <button class="infoTag">Free Delivery</button>
+                </li>
+                <li class="cardListItem">
+                  <button type="button" class="button-addon1">
+                    4.1
+                    <i class="fa-solid fa-star"></i></button> 6982 Reviews
+                </li>
+              </ul>
+            </div>
+          </div>
+        </a>
+
+        <a href="#" class="no-format">
+          <div class="myCard">
+            <div class="myCardImg">
+              <img src="https://i.ibb.co/7nQb6JR/prod15bag.webp" alt="model" /><button class="infoTag">+8 more</button>
+            </div>
+            <div class="myCardBody">
+              <h5 class="cardTitle">
+                <span class="d-inline-block text-truncate no-format" style="max-width: 150px;">
+                  Versatile Women Handbags
+                </span>
+              </h5>
+              <ul class="cardList">
+                <li class="cardListItem">
+                  <span class="price"><i class="fa-solid fa-indian-rupee-sign"></i> 259
+                  </span>
+                  onwards
+                </li>
+                <li class="cardListItem">
+                  <button class="infoTag">Free Delivery</button>
+                </li>
+                <li class="cardListItem">
+                  <button type="button" class="button-addon1">
+                    3.9
+                    <i class="fa-solid fa-star"></i></button> 25965 Reviews
+                </li>
+              </ul>
+            </div>
+          </div>
+        </a>
+
+        <a href="#" class="no-format">
+          <div class="myCard">
+            <div class="myCardImg">
+              <img src="https://i.ibb.co/sVDfdY4/prod16gown.webp" alt="model" /><button class="infoTag">+8 more</button>
+            </div>
+            <div class="myCardBody">
+              <h5 class="cardTitle">
+                <span class="d-inline-block text-truncate no-format" style="max-width: 150px;">
+                  Trendy Ravishing Women Dresses
+                </span>
+              </h5>
+              <ul class="cardList">
+                <li class="cardListItem">
+                  <span class="price"><i class="fa-solid fa-indian-rupee-sign"></i> 204
+                  </span>
+                  onwards
+                </li>
+                <li class="cardListItem">
+                  <button class="infoTag">Free Delivery</button>
+                </li>
+                <li class="cardListItem">
+                  <button type="button" class="button-addon1">
+                    4.0
+                    <i class="fa-solid fa-star"></i></button> 42969 Reviews
+                </li>
+              </ul>
+            </div>
+          </div>
+        </a>
+
+        <a href="#" class="no-format">
+          <div class="myCard">
+            <div class="myCardImg">
+              <img src="https://i.ibb.co/2yd2VHf/prod17belt.webp" alt="model" /><button class="infoTag">+6 more</button>
+            </div>
+            <div class="myCardBody">
+              <h5 class="cardTitle">
+                <span class="d-inline-block text-truncate no-format" style="max-width: 150px;">
+                  Styles Trends Men Belts
+                </span>
+              </h5>
+              <ul class="cardList">
+                <li class="cardListItem">
+                  <span class="price"><i class="fa-solid fa-indian-rupee-sign"></i> 139
+                  </span>
+                  onwards
+                </li>
+                <li class="cardListItem">
+                  <button class="infoTag">Free Delivery</button>
+                </li>
+                <li class="cardListItem">
+                  <button type="button" class="button-addon1">
+                    3.8
+                    <i class="fa-solid fa-star"></i></button> 26370 Reviews
+                </li>
+              </ul>
+            </div>
+          </div>
+        </a>
+
+        <a href="#" class="no-format">
+          <div class="myCard">
+            <div class="myCardImg">
+              <img src="https://i.ibb.co/18nV5H9/prod18tshirt.webp" alt="model" /><button class="infoTag">+3
+                more</button>
+            </div>
+            <div class="myCardBody">
+              <h5 class="cardTitle">
+                <span class="d-inline-block text-truncate no-format" style="max-width: 150px;">
+                  Agile Elegant Boys Tops
+                </span>
+              </h5>
+              <ul class="cardList">
+                <li class="cardListItem">
+                  <span class="price"><i class="fa-solid fa-indian-rupee-sign"></i> 193
+                  </span>
+                  onwards
+                </li>
+                <li class="cardListItem">
+                  <button class="infoTag">Free Delivery</button>
+                </li>
+                <li class="cardListItem">
+                  <button type="button" class="button-addon1">
+                    4.0
+                    <i class="fa-solid fa-star"></i></button> 8910 Reviews
+                </li>
+              </ul>
+            </div>
+          </div>
+        </a>
+
+        <a href="#" class="no-format">
+          <div class="myCard">
+            <div class="myCardImg">
+              <img src="https://i.ibb.co/BcW9wJ8/prod19phone.webp" alt="model" /><button class="infoTag">+9
+                more</button>
+            </div>
+            <div class="myCardBody">
+              <h5 class="cardTitle">
+                <span class="d-inline-block text-truncate no-format" style="max-width: 150px;">
+                  Vibrant Mobile Cases And Covers
+                </span>
+              </h5>
+              <ul class="cardList">
+                <li class="cardListItem">
+                  <span class="price"><i class="fa-solid fa-indian-rupee-sign"></i> 168
+                  </span>
+                  onwards
+                </li>
+                <li class="cardListItem">
+                  <button class="infoTag">Free Delivery</button>
+                </li>
+                <li class="cardListItem">
+                  <button type="button" class="button-addon1">
+                    4.2
+                    <i class="fa-solid fa-star"></i></button> 12541 Reviews
+                </li>
+              </ul>
+            </div>
+          </div>
+        </a>
+
+        <a href="#" class="no-format">
+          <div class="myCard">
+            <div class="myCardImg">
+              <img src="https://i.ibb.co/6B3sJx7/prod20longtop.webp" alt="model" /><button class="infoTag">+8
+                more</button>
+            </div>
+            <div class="myCardBody">
+              <h5 class="cardTitle">
+                <span class="d-inline-block text-truncate no-format" style="max-width: 150px;">
+                  Aakarsha Fabulous Kurtis
+                </span>
+              </h5>
+              <ul class="cardList">
+                <li class="cardListItem">
+                  <span class="price"><i class="fa-solid fa-indian-rupee-sign"></i> 310
+                  </span>
+                  onwards
+                </li>
+                <li class="cardListItem">
+                  <button class="infoTag">Free Delivery</button>
+                </li>
+                <li class="cardListItem">
+                  <button type="button" class="button-addon1">
+                    3.9
+                    <i class="fa-solid fa-star"></i></button> 15421 Reviews
+                </li>
+              </ul>
+            </div>
+          </div>
+        </a>
+
+        <a href="#" class="no-format">
+          <div class="myCard">
+            <div class="myCardImg">
+              <img src="https://i.ibb.co/XDSpbCQ/prod21tshirt.webp" alt="model" /><button class="infoTag">+4
+                more</button>
+            </div>
+            <div class="myCardBody">
+              <h5 class="cardTitle">
+                <span class="d-inline-block text-truncate no-format" style="max-width: 150px;">
+                  Swanky Boys Tshirts
+                </span>
+              </h5>
+              <ul class="cardList">
+                <li class="cardListItem">
+                  <span class="price"><i class="fa-solid fa-indian-rupee-sign"></i> 236
+                  </span>
+                  onwards
+                </li>
+                <li class="cardListItem">
+                  <button class="infoTag">Free Delivery</button>
+                </li>
+                <li class="cardListItem">
+                  <button type="button" class="button-addon1">
+                    4.2
+                    <i class="fa-solid fa-star"></i></button> 7237 Reviews
+                </li>
+              </ul>
+            </div>
+          </div>
+        </a>
+
+        <a href="#" class="no-format">
+          <div class="myCard">
+            <div class="myCardImg">
+              <img src="https://i.ibb.co/7K09s40/prod22watch.webp" alt="model" />
+            </div>
+            <div class="myCardBody">
+              <h5 class="cardTitle">
+                <span class="d-inline-block text-truncate no-format" style="max-width: 150px;">
+                  Stylish Men Analog Watches
+                </span>
+              </h5>
+              <ul class="cardList">
+                <li class="cardListItem">
+                  <span class="price"><i class="fa-solid fa-indian-rupee-sign"></i> 160
+                  </span>
+                  onwards
+                </li>
+                <li class="cardListItem">
+                  <button class="infoTag">Free Delivery</button>
+                </li>
+                <li class="cardListItem">
+                  <button type="button" class="button-addon1">
+                    3.5
+                    <i class="fa-solid fa-star"></i></button> 41 Reviews
+                </li>
+              </ul>
+            </div>
+          </div>
+        </a>
+
+        <a href="#" class="no-format">
+          <div class="myCard">
+            <div class="myCardImg">
+              <img src="https://i.ibb.co/kXg03fb/prod23glass.webp" alt="model" />
+            </div>
+            <div class="myCardBody">
+              <h5 class="cardTitle">
+                <span class="d-inline-block text-truncate no-format" style="max-width: 150px;">
+                  Casual Latest Sunglasses
+                </span>
+              </h5>
+              <ul class="cardList">
+                <li class="cardListItem">
+                  <span class="price"><i class="fa-solid fa-indian-rupee-sign"></i> 199
+                  </span>
+                  onwards
+                </li>
+                <li class="cardListItem">
+                  <button class="infoTag">Free Delivery</button>
+                </li>
+                <li class="cardListItem">
+                  <button type="button" class="button-addon1">
+                    3.6
+                    <i class="fa-solid fa-star"></i></button> 3870 Reviews
+                </li>
+              </ul>
+            </div>
+          </div>
+        </a>
+
+        <a href="#" class="no-format">
+          <div class="myCard">
+            <div class="myCardImg">
+              <img src="https://i.ibb.co/swLd5dm/prod24frock.webp" alt="model" /><button class="infoTag">+3
+                more</button>
+            </div>
+            <div class="myCardBody">
+              <h5 class="cardTitle">
+                <span class="d-inline-block text-truncate no-format" style="max-width: 150px;">
+                  Aakarsha Refined Kurtis
+                </span>
+              </h5>
+              <ul class="cardList">
+                <li class="cardListItem">
+                  <span class="price"><i class="fa-solid fa-indian-rupee-sign"></i> 265
+                  </span>
+                  onwards
+                </li>
+                <li class="cardListItem">
+                  <button class="infoTag">Free Delivery</button>
+                </li>
+                <li class="cardListItem">
+                  <button type="button" class="button-addon1">
+                    3.7
+                    <i class="fa-solid fa-star"></i></button> 26541 Reviews
+                </li>
+              </ul>
+            </div>
+          </div>
+        </a>
+
+        <a href="#" class="no-format">
+          <div class="myCard">
+            <div class="myCardImg">
+              <img src="https://i.ibb.co/bQV67LP/prod25kurti.webp" alt="model" /><button class="infoTag">+3
+                more</button>
+            </div>
+            <div class="myCardBody">
+              <h5 class="cardTitle">
+                <span class="d-inline-block text-truncate no-format" style="max-width: 150px;">
+                  Chitrarekha Voguish Kurtis
+                </span>
+              </h5>
+              <ul class="cardList">
+                <li class="cardListItem">
+                  <span class="price"><i class="fa-solid fa-indian-rupee-sign"></i> 256
+                  </span>
+                  onwards
+                </li>
+                <li class="cardListItem">
+                  <button class="infoTag">Free Delivery</button>
+                </li>
+                <li class="cardListItem">
+                  <button type="button" class="button-addon1">
+                    4.1
+                    <i class="fa-solid fa-star"></i></button> 25953 Reviews
+                </li>
+              </ul>
+            </div>
+          </div>
+        </a>
+
+        <a href="#" class="no-format">
+          <div class="myCard">
+            <div class="myCardImg">
+              <img src="https://i.ibb.co/Dzk36Cv/prod26watch.webp" alt="model" /><button class="infoTag">+3
+                more</button>
+            </div>
+            <div class="myCardBody">
+              <h5 class="cardTitle">
+                <span class="d-inline-block text-truncate no-format" style="max-width: 150px;">
+                  Classy Men Watches
+                </span>
+              </h5>
+              <ul class="cardList">
+                <li class="cardListItem">
+                  <span class="price"><i class="fa-solid fa-indian-rupee-sign"></i> 270
+                  </span>
+                  onwards
+                </li>
+                <li class="cardListItem">
+                  <button class="infoTag">Free Delivery</button>
+                </li>
+                <li class="cardListItem">
+                  <button type="button" class="button-addon1">
+                    3.8
+                    <i class="fa-solid fa-star"></i></button> 4670 Reviews
+                </li>
+              </ul>
+            </div>
+          </div>
+        </a>
+
+        <a href="#" class="no-format">
+          <div class="myCard">
+            <div class="myCardImg">
+              <img src="https://i.ibb.co/Cm5ZTt8/prod27kids.webp" alt="model" /><button class="infoTag">+6 more</button>
+            </div>
+            <div class="myCardBody">
+              <h5 class="cardTitle">
+                <span class="d-inline-block text-truncate no-format" style="max-width: 150px;">
+                  Comfy Kids Boys Wear
+                </span>
+              </h5>
+              <ul class="cardList">
+                <li class="cardListItem">
+                  <span class="price"><i class="fa-solid fa-indian-rupee-sign"></i> 229
+                  </span>
+                  onwards
+                </li>
+                <li class="cardListItem">
+                  <button class="infoTag">Free Delivery</button>
+                </li>
+                <li class="cardListItem">
+                  <button type="button" class="button-addon1">
+                    4.0
+                    <i class="fa-solid fa-star"></i></button> 65223 Reviews
+                </li>
+              </ul>
+            </div>
+          </div>
+        </a>
+
+        <a href="#" class="no-format">
+          <div class="myCard">
+            <div class="myCardImg">
+              <img src="https://i.ibb.co/dfDB32T/prod9kurti.webp" alt="model" /><button class="infoTag">+9 more</button>
+            </div>
+            <div class="myCardBody">
+              <h5 class="cardTitle">
+                <span class="d-inline-block text-truncate no-format" style="max-width: 150px;">
+                  Charvi Voguish Salwar Suits
+                </span>
+              </h5>
+              <ul class="cardList">
+                <li class="cardListItem">
+                  <span class="price"><i class="fa-solid fa-indian-rupee-sign"></i> 219
+                  </span>
+                  onwards
+                </li>
+                <li class="cardListItem">
+                  <button class="infoTag">
+                    Delivery <i class="fa-solid fa-indian-rupee-sign"></i> 81
+                  </button>
+                </li>
+                <li class="cardListItem">
+                  <button type="button" class="button-addon1">
+                    3.7
+                    <i class="fa-solid fa-star"></i></button> 807 Reviews
+                </li>
+              </ul>
+            </div>
+          </div>
+        </a>
+
+        <a href="#" class="no-format">
+          <div class="myCard">
+            <div class="myCardImg">
+              <img src="https://i.ibb.co/nMJHyTw/prod29men.webp" alt="model" /><button class="infoTag">+9 more</button>
+            </div>
+            <div class="myCardBody">
+              <h5 class="cardTitle">
+                <span class="d-inline-block text-truncate no-format" style="max-width: 150px;">
+                  Cool Fashionable Men Dresses
+                </span>
+              </h5>
+              <ul class="cardList">
+                <li class="cardListItem">
+                  <span class="price"><i class="fa-solid fa-indian-rupee-sign"></i> 342
+                  </span>
+                  onwards
+                </li>
+                <li class="cardListItem">
+                  <button class="infoTag">Free Delivery</button>
+                </li>
+                <li class="cardListItem">
+                  <button type="button" class="button-addon1">
+                    4.2
+                    <i class="fa-solid fa-star"></i></button> 16845 Reviews
+                </li>
+              </ul>
+            </div>
+          </div>
+        </a>
+
+        <a href="#" class="no-format">
+          <div class="myCard">
+            <div class="myCardImg">
+              <img src="https://i.ibb.co/pdWSLzN/prod30kurti.webp" alt="model" /><button class="infoTag">+5
+                more</button>
+            </div>
+            <div class="myCardBody">
+              <h5 class="cardTitle">
+                <span class="d-inline-block text-truncate no-format" style="max-width: 150px;">
+                  Aishani Voguish Kurti
+                </span>
+              </h5>
+              <ul class="cardList">
+                <li class="cardListItem">
+                  <span class="price"><i class="fa-solid fa-indian-rupee-sign"></i> 248
+                  </span>
+                  onwards
+                </li>
+                <li class="cardListItem">
+                  <button class="infoTag">Free Delivery</button>
+                </li>
+                <li class="cardListItem">
+                  <button type="button" class="button-addon1">
+                    3.9
+                    <i class="fa-solid fa-star"></i></button> 3521 Reviews
+                </li>
+              </ul>
+            </div>
+          </div>
+        </a>
+
+        <a href="#" class="no-format">
+          <div class="myCard">
+            <div class="myCardImg">
+              <img src="https://i.ibb.co/6W0S3GQ/prod31shoes.webp" alt="model" /><button class="infoTag">+4
+                more</button>
+            </div>
+            <div class="myCardBody">
+              <h5 class="cardTitle">
+                <span class="d-inline-block text-truncate no-format" style="max-width: 150px;">
+                  Sprightly Sports Shoes
+                </span>
+              </h5>
+              <ul class="cardList">
+                <li class="cardListItem">
+                  <span class="price"><i class="fa-solid fa-indian-rupee-sign"></i> 487
+                  </span>
+                  onwards
+                </li>
+                <li class="cardListItem">
+                  <button class="infoTag">Free Delivery</button>
+                </li>
+                <li class="cardListItem">
+                  <button type="button" class="button-addon1">
+                    3.9
+                    <i class="fa-solid fa-star"></i></button> 54621 Reviews
+                </li>
+              </ul>
+            </div>
+          </div>
+        </a>
+
+        <a href="#" class="no-format">
+          <div class="myCard">
+            <div class="myCardImg">
+              <img src="https://i.ibb.co/Df0rxX3/prod32kurti.webp" alt="model" /><button class="infoTag">+6
+                more</button>
+            </div>
+            <div class="myCardBody">
+              <h5 class="cardTitle">
+                <span class="d-inline-block text-truncate no-format" style="max-width: 150px;">
+                  Adrika Graceful Kurtis
+                </span>
+              </h5>
+              <ul class="cardList">
+                <li class="cardListItem">
+                  <span class="price"><i class="fa-solid fa-indian-rupee-sign"></i> 264
+                  </span>
+                  onwards
+                </li>
+                <li class="cardListItem">
+                  <button class="infoTag">Free Delivery</button>
+                </li>
+                <li class="cardListItem">
+                  <button type="button" class="button-addon1">
+                    4.3
+                    <i class="fa-solid fa-star"></i></button> 53215 Reviews
+                </li>
+              </ul>
+            </div>
+          </div>
+        </a>
+
+        <a href="#" class="no-format">
+          <div class="myCard">
+            <div class="myCardImg">
+              <img src="https://i.ibb.co/J7BftSx/prod33kurti.webp" alt="model" /><button class="infoTag">+3
+                more</button>
+            </div>
+            <div class="myCardBody">
+              <h5 class="cardTitle">
+                <span class="d-inline-block text-truncate no-format" style="max-width: 150px;">
+                  Holiday Fashion Kurti
+                </span>
+              </h5>
+              <ul class="cardList">
+                <li class="cardListItem">
+                  <span class="price"><i class="fa-solid fa-indian-rupee-sign"></i> 299
+                  </span>
+                  onwards
+                </li>
+                <li class="cardListItem">
+                  <button class="infoTag">Free Delivery</button>
+                </li>
+                <li class="cardListItem">
+                  <button type="button" class="button-addon1">
+                    3.7
+                    <i class="fa-solid fa-star"></i></button> 9554 Reviews
+                </li>
+              </ul>
+            </div>
+          </div>
+        </a>
+
+        <a href="#" class="no-format">
+          <div class="myCard">
+            <div class="myCardImg">
+              <img src="https://i.ibb.co/bbqnVR5/prod34men.webp" alt="model" /><button class="infoTag">+3 more</button>
+            </div>
+            <div class="myCardBody">
+              <h5 class="cardTitle">
+                <span class="d-inline-block text-truncate no-format" style="max-width: 150px;">
+                  Cool Trendy Dresses
+                </span>
+              </h5>
+              <ul class="cardList">
+                <li class="cardListItem">
+                  <span class="price"><i class="fa-solid fa-indian-rupee-sign"></i> 342
+                  </span>
+                  onwards
+                </li>
+                <li class="cardListItem">
+                  <button class="infoTag">Free Delivery</button>
+                </li>
+                <li class="cardListItem">
+                  <button type="button" class="button-addon1">
+                    4.1
+                    <i class="fa-solid fa-star"></i></button> 6548 Reviews
+                </li>
+              </ul>
+            </div>
+          </div>
+        </a>
+
+        <a href="#" class="no-format">
+          <div class="myCard">
+            <div class="myCardImg">
+              <img src="https://i.ibb.co/pJfMXf9/prod35kurti.webp" alt="model" /><button class="infoTag">+3
+                more</button>
+            </div>
+            <div class="myCardBody">
+              <h5 class="cardTitle">
+                <span class="d-inline-block text-truncate no-format" style="max-width: 150px;">
+                  Kashvi Petite Kurtis
+                </span>
+              </h5>
+              <ul class="cardList">
+                <li class="cardListItem">
+                  <span class="price"><i class="fa-solid fa-indian-rupee-sign"></i> 527
+                  </span>
+                  onwards
+                </li>
+                <li class="cardListItem">
+                  <button class="infoTag">Free Delivery</button>
+                </li>
+                <li class="cardListItem">
+                  <button type="button" class="button-addon1">
+                    4.2
+                    <i class="fa-solid fa-star"></i></button> 6542 Reviews
+                </li>
+              </ul>
+            </div>
+          </div>
+        </a>
+
+        <a href="#" class="no-format">
+          <div class="myCard">
+            <div class="myCardImg">
+              <img src="https://i.ibb.co/j4Lvj7H/prod36bedsheets.webp" alt="model" /><button class="infoTag">+5
+                more</button>
+            </div>
+            <div class="myCardBody">
+              <h5 class="cardTitle">
+                <span class="d-inline-block text-truncate no-format" style="max-width: 150px;">
+                  Eva Stylish Bedsheets
+                </span>
+              </h5>
+              <ul class="cardList">
+                <li class="cardListItem">
+                  <span class="price"><i class="fa-solid fa-indian-rupee-sign"></i> 367
+                  </span>
+                  onwards
+                </li>
+                <li class="cardListItem">
+                  <button class="infoTag">Free Delivery</button>
+                </li>
+                <li class="cardListItem">
+                  <button type="button" class="button-addon1">
+                    4.0
+                    <i class="fa-solid fa-star"></i></button> 6912 Reviews
+                </li>
+              </ul>
+            </div>
+          </div>
+        </a>
+
+        <a href="#" class="no-format">
+          <div class="myCard">
+            <div class="myCardImg">
+              <img src="https://i.ibb.co/DwKDnSz/prod37kid.webp" alt="model" /><button class="infoTag">+8 more</button>
+            </div>
+            <div class="myCardBody">
+              <h5 class="cardTitle">
+                <span class="d-inline-block text-truncate no-format" style="max-width: 150px;">
+                  Elegant Girls Dresses
+                </span>
+              </h5>
+              <ul class="cardList">
+                <li class="cardListItem">
+                  <span class="price"><i class="fa-solid fa-indian-rupee-sign"></i> 345
+                  </span>
+                  onwards
+                </li>
+                <li class="cardListItem">
+                  <button class="infoTag">Free Delivery</button>
+                </li>
+                <li class="cardListItem">
+                  <button type="button" class="button-addon1">
+                    3.9
+                    <i class="fa-solid fa-star"></i></button> 21564 Reviews
+                </li>
+              </ul>
+            </div>
+          </div>
+        </a>
+
+        <a href="#" class="no-format">
+          <div class="myCard">
+            <div class="myCardImg">
+              <img src="https://i.ibb.co/Y2vv4bJ/prod38kurti.webp" alt="model" /><button class="infoTag">+5
+                more</button>
+            </div>
+            <div class="myCardBody">
+              <h5 class="cardTitle">
+                <span class="d-inline-block text-truncate no-format" style="max-width: 150px;">
+                  Abhisarika Modern Kurtis
+                </span>
+              </h5>
+              <ul class="cardList">
+                <li class="cardListItem">
+                  <span class="price"><i class="fa-solid fa-indian-rupee-sign"></i> 342
+                  </span>
+                  onwards
+                </li>
+                <li class="cardListItem">
+                  <button class="infoTag">Free Delivery</button>
+                </li>
+                <li class="cardListItem">
+                  <button type="button" class="button-addon1">
+                    4.1
+                    <i class="fa-solid fa-star"></i></button> 150531 Reviews
+                </li>
+              </ul>
+            </div>
+          </div>
+        </a>
+
+        <a href="#" class="no-format">
+          <div class="myCard">
+            <div class="myCardImg">
+              <img src="https://i.ibb.co/Lz4tw78/prod39saree.png" alt="prod39saree" /><button class="infoTag">+8
+                more</button>
+            </div>
+            <div class="myCardBody">
+              <h5 class="cardTitle">
+                <span class="d-inline-block text-truncate no-format" style="max-width: 150px;">
+                  Aagyeyi Pretty Sarees
+                </span>
+              </h5>
+              <ul class="cardList">
+                <li class="cardListItem">
+                  <span class="price"><i class="fa-solid fa-indian-rupee-sign"></i> 244
+                  </span>
+                  onwards
+                </li>
+                <li class="cardListItem">
+                  <button class="infoTag">Free Delivery</button>
+                </li>
+                <li class="cardListItem">
+                  <button type="button" class="button-addon1">
+                    3.8
+                    <i class="fa-solid fa-star"></i></button> 9803 Reviews
+                </li>
+              </ul>
+            </div>
+          </div>
+        </a>
+
+        <a href="#" class="no-format">
+          <div class="myCard">
+            <div class="myCardImg">
+              <img src="https://i.ibb.co/SrvSmLG/prod40skirt.png" alt="model" /><button class="infoTag">+6 more</button>
+            </div>
+            <div class="myCardBody">
+              <h5 class="cardTitle">
+                <span class="d-inline-block text-truncate no-format" style="max-width: 150px;">
+                  Pretty Fabulous Skirts
+                </span>
+              </h5>
+              <ul class="cardList">
+                <li class="cardListItem">
+                  <span class="price"><i class="fa-solid fa-indian-rupee-sign"></i> 291
+                  </span>
+                  onwards
+                </li>
+                <li class="cardListItem">
+                  <button class="infoTag">Free Delivery</button>
+                </li>
+                <li class="cardListItem">
+                  <button type="button" class="button-addon1">
+                    4.3
+                    <i class="fa-solid fa-star"></i></button> 54541 Reviews
+                </li>
+              </ul>
+            </div>
+          </div>
+        </a>
+
+        <a href="#" class="no-format">
+          <div class="myCard">
+            <div class="myCardImg">
+              <img src="https://i.ibb.co/1ZmQbZR/prod41men.png" alt="model" /><button class="infoTag">+14 more</button>
+            </div>
+            <div class="myCardBody">
+              <h5 class="cardTitle">
+                <span class="d-inline-block text-truncate no-format" style="max-width: 150px;">
+                  Austin Wood Men Dresses
+                </span>
+              </h5>
+              <ul class="cardList">
+                <li class="cardListItem">
+                  <span class="price"><i class="fa-solid fa-indian-rupee-sign"></i> 322
+                  </span>
+                  onwards
+                </li>
+                <li class="cardListItem">
+                  <button class="infoTag">Free Delivery</button>
+                </li>
+                <li class="cardListItem">
+                  <button type="button" class="button-addon1">
+                    4.3
+                    <i class="fa-solid fa-star"></i></button> 32454 Reviews
+                </li>
+              </ul>
+            </div>
+          </div>
+        </a>
+
+        <a href="#" class="no-format">
+          <div class="myCard">
+            <div class="myCardImg">
+              <img src="https://i.ibb.co/6Njdnn1/prod42kid.webp" alt="model" /><button class="infoTag">+14 more</button>
+            </div>
+            <div class="myCardBody">
+              <h5 class="cardTitle">
+                <span class="d-inline-block text-truncate no-format" style="max-width: 150px;">
+                  Austin Wood Men Dresses
+                </span>
+              </h5>
+              <ul class="cardList">
+                <li class="cardListItem">
+                  <span class="price"><i class="fa-solid fa-indian-rupee-sign"></i> 322
+                  </span>
+                  onwards
+                </li>
+                <li class="cardListItem">
+                  <button class="infoTag">Free Delivery</button>
+                </li>
+                <li class="cardListItem">
+                  <button type="button" class="button-addon1">
+                    4.3
+                    <i class="fa-solid fa-star"></i></button> 32454 Reviews
+                </li>
+              </ul>
+            </div>
+          </div>
+        </a>
+
+        <a href="#" class="no-format">
+          <div class="myCard">
+            <div class="myCardImg">
+              <img src="https://i.ibb.co/8KKDYRx/prod43men.webp" alt="model" /><button class="infoTag">+14 more</button>
+            </div>
+            <div class="myCardBody">
+              <h5 class="cardTitle">
+                <span class="d-inline-block text-truncate no-format" style="max-width: 150px;">
+                  Austin Wood Men Dresses
+                </span>
+              </h5>
+              <ul class="cardList">
+                <li class="cardListItem">
+                  <span class="price"><i class="fa-solid fa-indian-rupee-sign"></i> 322
+                  </span>
+                  onwards
+                </li>
+                <li class="cardListItem">
+                  <button class="infoTag">Free Delivery</button>
+                </li>
+                <li class="cardListItem">
+                  <button type="button" class="button-addon1">
+                    4.3
+                    <i class="fa-solid fa-star"></i></button> 32454 Reviews
+                </li>
+              </ul>
+            </div>
+          </div>
+        </a>
+
+        <a href="#" class="no-format">
+          <div class="myCard">
+            <div class="myCardImg">
+              <img src="https://i.ibb.co/y09tWsp/prod44dupatta.webp" alt="model" /><button class="infoTag">+14
+                more</button>
+            </div>
+            <div class="myCardBody">
+              <h5 class="cardTitle">
+                <span class="d-inline-block text-truncate no-format" style="max-width: 150px;">
+                  Austin Wood Men Dresses
+                </span>
+              </h5>
+              <ul class="cardList">
+                <li class="cardListItem">
+                  <span class="price"><i class="fa-solid fa-indian-rupee-sign"></i> 322
+                  </span>
+                  onwards
+                </li>
+                <li class="cardListItem">
+                  <button class="infoTag">Free Delivery</button>
+                </li>
+                <li class="cardListItem">
+                  <button type="button" class="button-addon1">
+                    4.3
+                    <i class="fa-solid fa-star"></i></button> 32454 Reviews
+                </li>
+              </ul>
+            </div>
+          </div>
+        </a>
+        <a href="#" class="no-format">
+          <div class="myCard">
+            <div class="myCardImg">
+              <img src="https://i.ibb.co/mCb7YqM/prod45men.webp" alt="model" /><button class="infoTag">+14 more</button>
+            </div>
+            <div class="myCardBody">
+              <h5 class="cardTitle">
+                <span class="d-inline-block text-truncate no-format" style="max-width: 150px;">
+                  Austin Wood Men Dresses
+                </span>
+              </h5>
+              <ul class="cardList">
+                <li class="cardListItem">
+                  <span class="price"><i class="fa-solid fa-indian-rupee-sign"></i> 322
+                  </span>
+                  onwards
+                </li>
+                <li class="cardListItem">
+                  <button class="infoTag">Free Delivery</button>
+                </li>
+                <li class="cardListItem">
+                  <button type="button" class="button-addon1">
+                    4.3
+                    <i class="fa-solid fa-star"></i></button> 32454 Reviews
+                </li>
+              </ul>
+            </div>
+          </div>
+        </a>
+        <a href="#" class="no-format">
+          <div class="myCard">
+            <div class="myCardImg">
+              <img src="https://i.ibb.co/2q4MMdp/prod52kid.webp" alt="model" /><button class="infoTag">+14 more</button>
+            </div>
+            <div class="myCardBody">
+              <h5 class="cardTitle">
+                <span class="d-inline-block text-truncate no-format" style="max-width: 150px;">
+                  Austin Wood Men Dresses
+                </span>
+              </h5>
+              <ul class="cardList">
+                <li class="cardListItem">
+                  <span class="price"><i class="fa-solid fa-indian-rupee-sign"></i> 322
+                  </span>
+                  onwards
+                </li>
+                <li class="cardListItem">
+                  <button class="infoTag">Free Delivery</button>
+                </li>
+                <li class="cardListItem">
+                  <button type="button" class="button-addon1">
+                    4.3
+                    <i class="fa-solid fa-star"></i></button> 32454 Reviews
+                </li>
+              </ul>
+            </div>
+          </div>
+        </a>
+        <a href="#" class="no-format">
+          <div class="myCard">
+            <div class="myCardImg">
+              <img src="https://i.ibb.co/QQzVv8H/prod48kid.webp" alt="model" /><button class="infoTag">+14 more</button>
+            </div>
+            <div class="myCardBody">
+              <h5 class="cardTitle">
+                <span class="d-inline-block text-truncate no-format" style="max-width: 150px;">
+                  Austin Wood Men Dresses
+                </span>
+              </h5>
+              <ul class="cardList">
+                <li class="cardListItem">
+                  <span class="price"><i class="fa-solid fa-indian-rupee-sign"></i> 322
+                  </span>
+                  onwards
+                </li>
+                <li class="cardListItem">
+                  <button class="infoTag">Free Delivery</button>
+                </li>
+                <li class="cardListItem">
+                  <button type="button" class="button-addon1">
+                    4.3
+                    <i class="fa-solid fa-star"></i></button> 32454 Reviews
+                </li>
+              </ul>
+            </div>
+          </div>
+        </a>
+        <a href="#" class="no-format">
+          <div class="myCard">
+            <div class="myCardImg">
+              <img src="https://i.ibb.co/FsRx8wC/prod49kurti.webp" alt="model" /><button class="infoTag">+14
+                more</button>
+            </div>
+            <div class="myCardBody">
+              <h5 class="cardTitle">
+                <span class="d-inline-block text-truncate no-format" style="max-width: 150px;">
+                  Austin Wood Men Dresses
+                </span>
+              </h5>
+              <ul class="cardList">
+                <li class="cardListItem">
+                  <span class="price"><i class="fa-solid fa-indian-rupee-sign"></i> 322
+                  </span>
+                  onwards
+                </li>
+                <li class="cardListItem">
+                  <button class="infoTag">Free Delivery</button>
+                </li>
+                <li class="cardListItem">
+                  <button type="button" class="button-addon1">
+                    4.3
+                    <i class="fa-solid fa-star"></i></button> 32454 Reviews
+                </li>
+              </ul>
+            </div>
+          </div>
+        </a>
+        <a href="#" class="no-format">
+          <div class="myCard">
+            <div class="myCardImg">
+              <img src="https://i.ibb.co/sF18nDn/prod50west.webp" alt="model" /><button class="infoTag">+14
+                more</button>
+            </div>
+            <div class="myCardBody">
+              <h5 class="cardTitle">
+                <span class="d-inline-block text-truncate no-format" style="max-width: 150px;">
+                  Austin Wood Men Dresses
+                </span>
+              </h5>
+              <ul class="cardList">
+                <li class="cardListItem">
+                  <span class="price"><i class="fa-solid fa-indian-rupee-sign"></i> 322
+                  </span>
+                  onwards
+                </li>
+                <li class="cardListItem">
+                  <button class="infoTag">Free Delivery</button>
+                </li>
+                <li class="cardListItem">
+                  <button type="button" class="button-addon1">
+                    4.3
+                    <i class="fa-solid fa-star"></i></button> 32454 Reviews
+                </li>
+              </ul>
+            </div>
+          </div>
+        </a>
+        <a href="#" class="no-format">
+          <div class="myCard">
+            <div class="myCardImg">
+              <img src="https://i.ibb.co/Fhzcr71/prod51men.webp" alt="model" /><button class="infoTag">+14 more</button>
+            </div>
+            <div class="myCardBody">
+              <h5 class="cardTitle">
+                <span class="d-inline-block text-truncate no-format" style="max-width: 150px;">
+                  Austin Wood Men Dresses
+                </span>
+              </h5>
+              <ul class="cardList">
+                <li class="cardListItem">
+                  <span class="price"><i class="fa-solid fa-indian-rupee-sign"></i> 322
+                  </span>
+                  onwards
+                </li>
+                <li class="cardListItem">
+                  <button class="infoTag">Free Delivery</button>
+                </li>
+                <li class="cardListItem">
+                  <button type="button" class="button-addon1">
+                    4.3
+                    <i class="fa-solid fa-star"></i></button> 32454 Reviews
+                </li>
+              </ul>
+            </div>
+          </div>
+        </a>
+        <a href="#" class="no-format">
+          <div class="myCard">
+            <div class="myCardImg">
+              <img src="https://i.ibb.co/28RPc3D/prod53kid.webp" alt="model" /><button class="infoTag">+14 more</button>
+            </div>
+            <div class="myCardBody">
+              <h5 class="cardTitle">
+                <span class="d-inline-block text-truncate no-format" style="max-width: 150px;">
+                  Austin Wood Men Dresses
+                </span>
+              </h5>
+              <ul class="cardList">
+                <li class="cardListItem">
+                  <span class="price"><i class="fa-solid fa-indian-rupee-sign"></i> 322
+                  </span>
+                  onwards
+                </li>
+                <li class="cardListItem">
+                  <button class="infoTag">Free Delivery</button>
+                </li>
+                <li class="cardListItem">
+                  <button type="button" class="button-addon1">
+                    4.3
+                    <i class="fa-solid fa-star"></i></button> 32454 Reviews
+                </li>
+              </ul>
+            </div>
+          </div>
+        </a>
+        <a href="#" class="no-format">
+          <div class="myCard">
+            <div class="myCardImg">
+              <img src="https://i.ibb.co/JsKjy0f/prod54dupatta.webp" alt="model" /><button class="infoTag">+14
+                more</button>
+            </div>
+            <div class="myCardBody">
+              <h5 class="cardTitle">
+                <span class="d-inline-block text-truncate no-format" style="max-width: 150px;">
+                  Austin Wood Men Dresses
+                </span>
+              </h5>
+              <ul class="cardList">
+                <li class="cardListItem">
+                  <span class="price"><i class="fa-solid fa-indian-rupee-sign"></i> 322
+                  </span>
+                  onwards
+                </li>
+                <li class="cardListItem">
+                  <button class="infoTag">Free Delivery</button>
+                </li>
+                <li class="cardListItem">
+                  <button type="button" class="button-addon1">
+                    4.3
+                    <i class="fa-solid fa-star"></i></button> 32454 Reviews
+                </li>
+              </ul>
+            </div>
+          </div>
+        </a>
+        <a href="#" class="no-format">
+          <div class="myCard">
+            <div class="myCardImg">
+              <img src="https://i.ibb.co/XZhBTJd/prod55men.webp" alt="model" /><button class="infoTag">+14 more</button>
+            </div>
+            <div class="myCardBody">
+              <h5 class="cardTitle">
+                <span class="d-inline-block text-truncate no-format" style="max-width: 150px;">
+                  Austin Wood Men Dresses
+                </span>
+              </h5>
+              <ul class="cardList">
+                <li class="cardListItem">
+                  <span class="price"><i class="fa-solid fa-indian-rupee-sign"></i> 322
+                  </span>
+                  onwards
+                </li>
+                <li class="cardListItem">
+                  <button class="infoTag">Free Delivery</button>
+                </li>
+                <li class="cardListItem">
+                  <button type="button" class="button-addon1">
+                    4.3
+                    <i class="fa-solid fa-star"></i></button> 32454 Reviews
+                </li>
+              </ul>
+            </div>
+          </div>
+        </a>
+        <a href="#" class="no-format">
+          <div class="myCard">
+            <div class="myCardImg">
+              <img src="https://i.ibb.co/ysVxs2L/prod56west.webp" alt="model" /><button class="infoTag">+14
+                more</button>
+            </div>
+            <div class="myCardBody">
+              <h5 class="cardTitle">
+                <span class="d-inline-block text-truncate no-format" style="max-width: 150px;">
+                  Austin Wood Men Dresses
+                </span>
+              </h5>
+              <ul class="cardList">
+                <li class="cardListItem">
+                  <span class="price"><i class="fa-solid fa-indian-rupee-sign"></i> 322
+                  </span>
+                  onwards
+                </li>
+                <li class="cardListItem">
+                  <button class="infoTag">Free Delivery</button>
+                </li>
+                <li class="cardListItem">
+                  <button type="button" class="button-addon1">
+                    4.3
+                    <i class="fa-solid fa-star"></i></button> 32454 Reviews
+                </li>
+              </ul>
+            </div>
+          </div>
+        </a>
+
+
+      </div>
+      <!-- Section 4.3: End of right side content section -->
+    </section>
+    <!-- Section 4: End of Section for Products For You Frame -->
+  </main>
+
+  <div style="clear: both;"></div>
+
+  <footer>
+    <!-- Section: Start of basic footer part -->
+    <section id="footerLinks" class="container-fluid container-md">
+      <div id="footerLinksRow" class="container-fluid d-flex align-items-start justify-content-between">
+        <div>
+          <div class="d-flex flex-column align-items-start">
+            <p id="footerTitle">Shop Non-Stop on Meesho</p>
+            <p class="footerTag">Trusted by more than 1 Crore Indians</p>
+            <p class="footerTag">Cash on Delivery | Free Delivery</p>
+          </div>
+          <div id="footerIcons" class=" d-flex justify-content-start">
+            <a href="#">
+              <img src="https://i.ibb.co/JdB0Ncp/playstore-Icon.png" alt="playstore icon" class="img-fluid" />
+            </a>
+            <a href="#">
+              <img src="https://i.ibb.co/ckZtt1m/appstore-Icon.png" alt="appstore icon" class="img-fluid" />
+            </a>
+          </div>
+        </div>
+
+        <div class="footer-links d-flex flex-column align-items-start">
+          <a href="#" class="no-format">Careers</a>
+          <a href="#" class="no-format">Become a Supplier</a>
+          <a href="#" class="no-format">Hall of Fame</a>
+          <a href="#" class="no-format">Sitemap</a>
+        </div>
+
+        <div class="footer-links d-flex flex-column align-items-start">
+          <a href="#" class="no-format">Legal and Policies</a>
+          <a href="#" class="no-format">Meesho Tech Blog</a>
+          <a href="#" class="no-format">Notices and Returns</a>
+        </div>
+
+        <div class="footer-contact d-flex flex-column align-items-start">
+          <h5>Reach out to us</h5>
+          <div>
+            <a href="#"><img src="https://i.ibb.co/g6tR6Wj/facebook.png" alt="facebook" /></a>
+            <a href="#"><img src="https://i.ibb.co/M6JVnMd/insta.png" alt="facebook" /></a>
+            <a href="#"><img src="https://i.ibb.co/Snw2v93/youtube.png" alt="facebook" /></a>
+            <a href="#"><img src="https://i.ibb.co/CwWf3F4/linkedin.png" alt="facebook" /></a>
+            <a href="#"><img src="https://i.ibb.co/HHr7Tzq/twitter.png" alt="facebook" /></a>
+          </div>
+        </div>
+
+        <div class="footer-contact d-flex flex-column align-items-start">
+          <h5>Contact Us</h5>
+          <address>
+            Fashnear Technologies Private Limited,<br>
+            CIN: U74900KA2015PTC082263<br>
+            06-105-B, 06-102, (138 Wu) Vaishnavi Signature,<br>
+            No. 78/9, Outer Ring Road,<br>
+            Bellandur, Varthur Hobli, Bengaluru-560103, Karnataka, India<br>
+            E-mail address: query@meesho.com<br>
+            &copy; 2015-2023 Meesho.com
+          </address>
+        </div>
+
+      </div>
+    </section>
+    <!-- Section: End of basic footer part -->
+
+    <!-- Section: Start of More About Meesho part in footer -->
+    <section id="abtMeeshoFooter" class="container-fluid container-md">
+      <div class="accordion" id="footerAccordion">
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingAbtMeesho">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#abtMeesho"
+              aria-expanded="true" aria-controls="abtMeesho">
+              More About Meesho
+            </button>
+          </h2>
+          <div id="abtMeesho" class="accordion-collapse collapse show" aria-labelledby="headingAbtMeesho"
+            data-bs-parent="#accordionExample">
+            <div id="footerAccordionBody" class="accordion-body">
+              <h5>Meesho: Affordable Online Shopping at Your Fingertips</h5>
+              <p>There are many benefits of shopping online. You can take your time and look at different options to
+                find exactly what you want. It's easy to compare prices online and find exactly what you are looking
+                for. And now with Meesho, you can shop for anything you want at the lowest prices in the market. Even if
+                you want to shop for cool gifts for your friends and family, there are many options that you can find on
+                the Internet.</p>
+
+              <h5>A Huge Selection of Products Across All Categories</h5>
+              <p>We have a vast inventory of products ranging from apparel to cosmetics to home utility and kitchen
+                products and more. With over 50 lakh products and 650+ product categories, Meesho is sure to have
+                everything you need. In our latest collections, you will find all the popular items at an affordable
+                price, so you can be confident you're getting the best deal. Whether you're in the market for new
+                clothes, accessories, or just some daily-use items for home, Meesho has what you need.</p>
+
+              <h4>Latest Women's Fashion Is Right Here</h4>
+
+              <h5>Women&apos;s Ethnic Wear Collection</h5>
+              <p>When it comes to women's ethnic wear, we have everything you need to find the perfect outfit for any
+                occasion. Whether you're looking for traditional sarees and blouses, or something more modern like suits
+                or casual Kurtis, we have it all. And with our stunning collection of accessories, footwear, and
+                jewellery sets, it's easy to put together a complete look that will turn heads at your next wedding or
+                festive celebration. So come and shop with us today!</p>
+
+              <h5>Western Wear for Women</h5>
+              <p>Meesho is the best place to find fashionable and affordable western wear for women. With a constantly
+                updating inventory of casual, formal, and partywear dresses, jeans, tops, T-shirts, skirts, and more,
+                Meesho has all the latest trending outfits you're looking for--plus funky jewelry and accessories.
+                You'll never have to worry about overspending or not being able to find something you love!</p>
+
+              <h5>Accessories, Jewellery, and Footwear</h5>
+              <p>You may have your favorite outfit picked out but accessories can really add a sense of style and
+                individuality that make you stand out! With so many types of accessories available, it can be difficult
+                to find the perfect piece for yourself. Fortunately, Meesho has a wide variety of jewellery sets,
+                handbags, belts, heels, casual footwear, watches, etc. With so many options, you'll be sure to find the
+                perfect accessories for any outfit!</p>
+
+              <h5>Men's Ethnic Wear</h5>
+              <p>Do you need a new Sherwani? Are you heading to a wedding and want to look your best? If you answered
+                yes, look no further than our latest men&apos;s ethnic wear collection! Whether you want a Kurta set,
+                Pajamas, Sherwani set, or any other Indian attire, we have an array of budget-friendly styles that are
+                sure to fit your needs.</p>
+
+              <h4>Largest Collection of Menswear and Accessories</h4>
+
+              <h5>Men&apos;s Western Wear</h5>
+              <p>Through our large selection of menswear products we offer, you&apos;re sure to find something you love.
+                We have a vast collection of t-shirts, jeans, polos, coats, and shirts. We have sizes in stock that fit
+                any man&apos;s body type, and the best news of all is that they&apos;re all affordable. We make it easy
+                to find exactly what you&apos;re looking for, too. Our search tool lets you filter our selection down by
+                size, color, material, and more.</p>
+
+              <h5>Ethnic Wear for Men</h5>
+              <p>If you're on the hunt for a new sherwani or any other type of Indian attire for an upcoming wedding,
+                our latest men's ethnic wear collection has got you covered. We have a range of budget-friendly styles
+                to choose from, so you're sure to find something that fits your needs. Whether you're looking for a
+                Sherwani set, Kurta pajamas, or an ethnic jacket, we've got it all!</p>
+
+              <h5>Men&apos;s Accessories and Footwear</h5>
+              <p>When it comes to fashion, no one knows how to help you gain the upper hand in style better than us.
+                Shop our online collection of accessories for men and pick out something for yourself or for your other
+                half! Our accessories collection includes items like men's wallets, cufflinks, bags for men, and more.
+                So don't waste another minute and get yourself some accessories today! Do not forget to check out our
+                latest footwear for men. We have everything from colorful sneakers to formal footwear to flip-flops for
+                men.</p>
+
+              <h5>Affordable and Top Quality Beauty Products</h5>
+              <p>With so many different cosmetics brands, products, and items to choose from, it can be overwhelming
+                when trying to find the right makeup for you. Sometimes it's nice to try out new products, but if you
+                buy bad quality makeup that breaks you out, it's not very cost-effective. We are only concerned with the
+                best products. We only stock up on the best makeup and skincare that won't damage your skin or make you
+                break out. We have everything from foundations, makeup removers, concealers to primer, mascara, eye
+                shadow, and lipsticks.</p>
+
+              <h5>Cute and Trendy Kidswear Collection</h5>
+              <p>Kids grow so fast, it feels like you're constantly buying new clothes for them! Whether you're looking
+                for the latest trends or just want something practical and affordable, our kidswear collection has got
+                you covered. You'll find everything from rompers and dresses for girls to sets and jeans for boys. Plus,
+                we have ethnic wear and accessories for kids of all ages. And don't forget to check out our baby care
+                collection for all the basic products for baby care.</p>
+
+              <h4>Shop Home & Kitchen Products, Electronics, and More</h4>
+
+              <h5>Kitchen Products</h5>
+              <p>If you're looking to spice up your kitchen, then you've come to the right place! We carry a wide
+                variety of home and kitchen essentials like cooking utensils and serveware, kitchen storage, appliances
+                like blenders, choppers, cooktops, and more! We are dedicated to providing the highest quality products
+                for a reasonable price. We're confident that we have everything you're looking for in your kitchen or
+                home!</p>
+
+              <h5>Home Utility and Essentials</h5>
+              <p>It's always a good idea to switch up your home's style every now and then - it keeps things fresh and
+                also allows you to try out new trends. But of course, you never want to spend more money than you have
+                to. That's where Meesho comes in! We've got amazing prices on all kinds of home furnishing items like
+                bedsheets, curtains, cushions, and more. Plus, we have a constantly rotating selection of the best home
+                decor items so you can always stay on top of the latest trends. So be sure to check out our home decor
+                section today!</p>
+
+              <h5>Electronics and Accessories</h5>
+              <p>At Meesho, we give you access to a huge selection of gadgets and essentials for your electronic
+                devices. Here you'll find everything from chargers and headphones to data cables and even external
+                battery packs. Every month, we offer different sales and discounts on products, allowing you to save on
+                your favorite essentials. Here you can find the perfect gift for everyone on your list without breaking
+                your budget!</p>
+
+              <h5>Health, Fitness & Sports</h5>
+              <p>We know how important it is to take care of your health and keep yourself fit. We have everything you
+                need to start your journey towards fitness. At our store, you will find a wide variety of fitness
+                equipment at very affordable prices. We have everything you need to get started with your home workouts,
+                including dumbbell sets, exercise bands, exercise mats, skipping ropes, sports kits and more!</p>
+
+              <h5>Office Supplies and Stationery</h5>
+              <p>We have a wide range of stationery items which will help you stay tidy and organised. You can buy
+                notebooks, diaries and notepads and craft supplies which are great for school and college, or you can
+                buy office supplies which are great for adults. We have a variety of pens, pencils, and other stationery
+                supplies to ensure that you have what you need to write down your thoughts, make lists and so much more.
+              </p>
+
+              <h5>Get the Meesho App for Hassle Free Online Shopping</h5>
+              <p>If you want a seamless shopping experience, you should also consider downloading Meesho&apos;s App.
+                While you may think that it's unnecessary to have an app for shopping, there are plenty of features that
+                will make your life easier. If you find yourself preferring to shop from home, this is the app for you.
+                It makes shopping online easier than ever. You can browse through a plethora of products and even get
+                great deals with more discounts than you can count. You can even share products you like with your
+                friends on social media in just seconds.</p>
+
+              <a href="#">
+                <h4>Download Meesho App Now</h4>
+              </a>
+
+              <h5>Become a Reseller: Start Making Money In Three Simple Steps</h5>
+              <p>Now you know all about different categories and products Meesho has to offer. It's time to explore and
+                understand Meesho&apos;s reselling option. Apart from using Meesho as an online shopping platform, you
+                also have the option to start your online business with us. Here&apos;s how you can begin your
+                entrepreneurial journey.
+
+                Browse: You can register for a new account or log in to an existing one on the Meesho app or website.
+                Once you're logged in, you can browse through our catalog and select products that you want to purchase
+                at wholesale rates!
+
+                Share: With a single click, you can share catalogs and product images over Whatsapp, Facebook, or
+                Instagram to your contacts using the share option.
+
+                Earn: After sharing the products and catalogs with your customers, you will start getting orders from
+                them. You can add a profit margin to Meesho&apos;s prices and quote that to your customers.This will be
+                your profit. You can quote product prices with an added margin, which will include a profit for you.
+                Once you place the orders on your customer&apos;s behalf, Meesho will take care of the delivery process
+                for you.</p>
+
+              <h5>Don't Miss Out! Start Shopping Online on Meesho Now</h5>
+              <p>Meesho offers multiple payment options including debit and credit cards, UPI, and COD to help you with
+                a smooth checkout process. If you are unhappy with any of the products you order you can immediately
+                return them and get a full refund with no questions asked. In case you have any queries or concerns,
+                simply send us an email at query@meesho.com. Or you can contact us on social media through Facebook,
+                Instagram, or Twitter. We're here to help you!</p>
+
+              <a href="#">
+                <h4>Online Shopping</h4>
+              </a>
+
+              <h7>Home & Living</h7>
+              <p><a href="#">Curtains & Sheers</a> | <a href="#">Round Cushions</a> | <a href="#">Sofa Covers</a> | <a
+                  href="#">Cotton Bedsheets</a> | <a href="#">Bedding Sets</a> | <a href="#">Pillow Covers</a> | <a
+                  href="#">Decorative Items</a> | <a href="#">Duvet Covers</a> | <a href="#">Blankets</a> | <a
+                  href="#">Home Temple</a> | <a href="#">Yoga mats</a> | <a href="#">Bean Bags</a> | <a href="#">Single
+                  Bed Sheet</a> | <a href="#">Cushions</a> | <a href="#">Face Towels</a> | <a href="#">Cotton Towel</a>
+                | <a href="#">Trays</a> | <a href="#">Coasters</a></p>
+
+              <h7>Men Ethnicwear</h7>
+              <p><a href="#">Men Dhoti Kurtas</a> | <a href="#">Men Indo Western Dresses</a> | <a href="#">Men Velvet
+                  Sherwanis</a> | <a href="#">Men Dhotis</a></p>
+
+              <h7>Women Western Wear</h7>
+              <p><a href="#">Women Frocks</a> | <a href="#">Long Tops Women</a> | <a href="#">Tshirt Dresses</a> | <a
+                  href="#">Designer Gown</a> | <a href="#">Pencil Skirts</a> | <a href="#">Women Trousers</a> | <a
+                  href="#">Flared Jeans</a> | <a href="#">Women Sweatshirts</a> | <a href="#">Shrugs</a> | <a
+                  href="#">Capris</a> | <a href="#">Jacket Dresses</a> | <a href="#">Fancy Ladies Sweater</a> | <a
+                  href="#">Chikankari Palazzos</a> | <a href="#">Ankle Length Leggings</a> | <a href="#">Tights/a> | <a
+                    href="#">Printed Leggings</a> | <a href="#">Kaftans</a> | <a href="#">Maternity Wear</a> | <a
+                    href="#">Denim Women Shorts</a> | <a href="#">Black Jeggings</a> | <a href="#">Short Night Dress</a>
+                  | <a href="#">Women Night Suits</a> | <a href="#">Lace Lingerie Sets</a> | <a href="#">Lingerie
+                    Sets</a> | <a href="#">Push Up Bra</a> | <a href="#">Stockings</a> | <a href="#">Black Camisoles</a>
+                  | <a href="#">Cotton Bathrobes</a> | <a href="#">Satin Night Suit</a> | <a href="#">Body shapers</a> |
+                  <a href="#">Women Pyjamas</a> | <a href="#">Swimwear</a> | <a href="#">Women Jackets</a> | <a
+                    href="#">Women Thermal Set</a></p>
+
+              <h7>Women Ethnicwear</h7>
+              <p><a href="#">Silk Saree</a> | <a href="#">Puff Sleeve Blouses</a> | <a href="#">Chikankari Kurtis</a> |
+                <a href="#">Designer Lehenga</a> | <a href="#">Sharara</a> | <a href="#">Phulkari Dupatta</a> | <a
+                  href="#">Petticoats</a> | <a href="#">Abaya</a> | <a href="#">Black Kurta</a> | <a href="#">Velvet
+                  Shawls</a> | <a href="#">Blouse Piece</a> | <a href="#">Kurti Fabric</a> | <a href="#">Designer
+                  Suits</a></p>
+
+              <h7>Women Footwear</h7>
+              <p><a href="#">Women Slippers</a> | <a href="#">Bellies</a> | <a href="#">Juttis & Mojaris</a></p>
+
+              <h7>Women Accessories</h7>
+              <p><a href="#">Hoop Earrings</a> | <a href="#">Stud Earrings Women</a> | <a href="#">Oxidised Ring</a> |
+                <a href="#">Handbags</a> | <a href="#">Umbrellas</a> | <a href="#">Cateye Sunglasses</a> | <a
+                  href="#">Jewellery Set</a> | <a href="#">Slingbags</a> | <a href="#">Trolley Bags</a> | <a
+                  href="#">Hijabs</a> | <a href="#">Ankle Socks Women</a> | <a href="#">Clutches</a> | <a href="#">Hair
+                  Accessories</a> | <a href="#">Maangtika</a> | <a href="#">Pouches</a> | <a href="#">Duffle Bags</a> |
+                <a href="#">Pashmina Shawls</a> | <a href="#">Bindis</a> | <a href="#">Waist Bags</a> | <a
+                  href="#">Rucksacks</a> | <a href="#">Briefcases</a> | <a href="#">Small Travel Bags</a> | <a
+                  href="#">Potlis</a> | <a href="#">Nosepins</a> | <a href="#">Gold Bangles</a> | <a href="#">Bridal
+                  Anklets</a> | <a href="#">Chandbali Earrings</a> | <a href="#">Necklaces</a> | <a href="#">Multi
+                  Necklace</a></p>
+
+              <h7>Electronics & Accessories</h7>
+              <p><a href="#">Android Smart Watches</a> | <a href="#">On Ear Headphones</a> | <a href="#">Bluetooth
+                  Speakers</a> | <a href="#">Bluetooth Earphones</a> | <a href="#">Sport Headphones</a> | <a
+                  href="#">CCTV Cameras</a> | <a href="#">Spy Cameras</a> | <a href="#">Keyboard</a> | <a
+                  href="#">Laptop Bags</a> | <a href="#">Mouse</a> | <a href="#">Laptop Accessories</a> | <a
+                  href="#">Pen Drives</a> | <a href="#">Earphones</a> | <a href="#">Fast Charging Power Banks</a> | <a
+                  href="#">Headphones</a> | <a href="#">Data Cables</a> | <a href="#">Bike Mobile Holders</a> | <a
+                  href="#">Car Mobile Holders</a> | <a href="#">Mobile Chargers</a> | <a href="#">Speakers</a> | <a
+                  href="#">Diwali Lightings</a> | <a href="#">Microphone</a> | <a href="#">Memory Cards</a> | <a
+                  href="#">Digital Photo Frames</a> | <a href="#">Dongle</a> | <a href="#">VR Box</a></p>
+
+              <h7>Men Western Wear</h7>
+              <p><a href="#">Cotton Shorts Men</a> | <a href="#">Denim Jeans Men</a> | <a href="#">Formal Trousers
+                  Men</a> | <a href="#">Men Active Shorts</a> | <a href="#">Sport Jackets Men</a> | <a href="#">Printed
+                  Tshirts</a> | <a href="#">Formal Shirts Men</a> | <a href="#">Sleeveless Sweatshirts Men</a> | <a
+                  href="#">Leather Jackets Men</a> | <a href="#">Grey Blazers</a> | <a href="#">Men Sweaters</a> | <a
+                  href="#">Sport Tracksuits Men</a> | <a href="#">Vests</a> | <a href="#">Printed Briefs Men</a> | <a
+                  href="#">Men Trunks</a> | <a href="#">Wool Jackets Men</a></p>
+
+              <h7>Men Footwear</h7>
+              <p><a href="#">Reebok Sports Shoes Men</a> | <a href="#">Men Sandals</a> | <a href="#">Leather Loafers
+                  Men</a></p>
+
+              <h7>Men Accessories</h7>
+              <p><a href="#">Leather Watches Men</a> | <a href="#">Gold Jewellery Men</a> | <a href="#">Hair Spray For
+                  Men</a> | <a href="#">Men Keychains</a> | <a href="#">Men Socks</a> | <a href="#">Men Scarves</a> | <a
+                  href="#">Men Wrist Bands</a> | <a href="#">Men Crossbody Bags</a> | <a href="#">Men Shirt Studs</a>
+              </p>
+
+              <h7>Kids</h7>
+              <p><a href="#">Kids Lunch Boxes</a> | <a href="#">Kids Ethnic Jackets</a> | <a href="#">Kids Blazers</a> |
+                <a href="#">Rompers</a> | <a href="#">Kids Kurtis & Kurtas</a> | <a href="#">Kids Salwar Suit Sets</a> |
+                <a href="#">Kids Ethnic Gowns</a> | <a href="#">Tshirts Boys</a> | <a href="#">Girls Stylish Tops</a>
+              </p>
+
+              <h7>Baby</h7>
+              <p><a href="#">Baby Pillows</a> | <a href="#">Baby Towels</a> | <a href="#">Baby Hanging Cradle</a> | <a
+                  href="#">Baby Sleeping Bag</a> | <a href="#">Baby Blanket</a></p>
+
+              <h7>Home & Kitchen</h7>
+              <p><a href="#">Toaster</a> | <a href="#">Mixer Grinder</a> | <a href="#">Cookers</a> | <a
+                  href="#">Juicer</a> | <a href="#">Food Processors</a> | <a href="#">Roti Maker</a> | <a
+                  href="#">Sandwich Maker</a> | <a href="#">Kettles</a> | <a href="#">Hand Blender</a> | <a
+                  href="#">Table Cover</a> | <a href="#">Napkins Holder</a> | <a href="#">Kitchen Mat</a> | <a
+                  href="#">Kitchen Towel</a> | <a href="#">Aprons</a> | <a href="#">Kitchen Gloves</a> | <a
+                  href="#">Racks & Holders</a> | <a href="#">Spice Racks</a> | <a href="#">Jars & Container</a> | <a
+                  href="#">Water Bottles</a> | <a href="#">Thermos & Flasks</a> | <a href="#">Lunch Boxes</a> | <a
+                  href="#">Salt & Pepper Shakers</a> | <a href="#">Knives</a> | <a href="#">Food Strainers</a> | <a
+                  href="#">Choppers</a> | <a href="#">Mashers</a> | <a href="#">Graters</a> | <a href="#">Cutlery</a> |
+                <a href="#">Chopping Boards</a> | <a href="#">Kitchen Scissors</a> | <a href="#">Ice Cube Trays</a> | <a
+                  href="#">Measuring Cups</a> | <a href="#">Tongs</a> | <a href="#">Ice Cream Scoops</a> | <a
+                  href="#">Funnels</a> | <a href="#">Trivets</a></p>
+
+              <h7>Personal Care & Wellness</h7>
+              <p><a href="#">Tummy trimmer</a> | <a href="#">Makeup Kits</a> | <a href="#">Hair Color</a> | <a
+                  href="#">Hair Steamers</a> | <a href="#">Hair Care</a> | <a href="#">Oral Care</a> | <a href="#">Beard
+                  Oil</a> | <a href="#">Deodorants</a> | <a href="#">Eye Lenses</a> | <a href="#">Soap</a> | <a
+                  href="#">Oximeter</a> | <a href="#">Bb Cream</a> | <a href="#">Body Scrub</a> | <a href="#">Olive
+                  Oils</a> | <a href="#">Talcum Powder</a> | <a href="#">Face Steamers</a> | <a href="#">Compact</a> |
+                <a href="#">Nail Cutter</a> | <a href="#">Lip Balm</a></p>
+
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+    <!-- Section: End of More About Meesho part in footer -->
+  </footer>
+</body>
+
+</html>
