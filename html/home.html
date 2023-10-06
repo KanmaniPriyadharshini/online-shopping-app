@@ -29,6 +29,8 @@
         <div class="container-fluid container-md">
           <a class="navbar-brand" href="#"><img id="meesho-name-icon" src="https://i.ibb.co/2ZHQXpP/new-Meesho-Icon.png"
               alt="meesho-icon" /></a>
+          <button onclick="changeMode()" class="no-format px-3"><i id="darkModeButton" class="fa-regular fa-moon">Dark
+              Mode</i></button>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
             data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
             aria-label="Toggle navigation">
@@ -40,429 +42,422 @@
               <input type="text" class="search-box" placeholder="Try Saree, Kurti or Search by Product Code">
               <label for="name"><img src="https://i.ibb.co/0fsPq5V/search-Icon.png" alt="searchIcon"></label>
             </form>
+
             <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-              <li class="nav-item d-flex align-items-center border-end px-2">
+              <li class="nav-item d-flex align-items-center border-end">
                 <!-- <a href="#"><img src="https://i.ibb.co/x7Jj5MV/download-Icon.png" alt="download icon"></a> -->
                 <div class="dd-menubar-head-container">
                   <div class="start-dropdown">
-                    <button class="dd-menubar-head no-format h6">
-                      <img src="https://i.ibb.co/x7Jj5MV/download-Icon.png" alt="download icon">
-                      Download App
+                    <button class="download-icon-header top-header-btn dd-menubar-head no-format">
+                      <img class="img-fluid" src="https://i.ibb.co/x7Jj5MV/download-Icon.png" alt="download icon">
+                      <span class="top-header-btn">Download App</span>
                     </button>
                     <div class="dd-items-bg">
                       <div class="row">
                         <div class="column">
                           <div class="dd-menuitems w-100">
-                              <h3 class="dd-menuitem no-format disabled">Download From</h3>
-                              <a href="#" class="dd-menuitem no-format mx-3 my-3"><img src="https://i.ibb.co/JdB0Ncp/playstore-Icon.png" alt="playstore icon" class="img-fluid" /></a>
-                              <a href="#" class="dd-menuitem no-format mx-3 my-3"><img src="https://i.ibb.co/ckZtt1m/appstore-Icon.png" alt="appstore icon" class="img-fluid" /></a>                            
+                            <h3 class="dd-menuitem no-format disabled">Download From</h3>
+                            <a href="#" class="dd-menuitem no-format mx-3 my-3"><img
+                                src="https://i.ibb.co/JdB0Ncp/playstore-Icon.png" alt="playstore icon"
+                                class="img-fluid" /></a>
+                            <a href="#" class="dd-menuitem no-format mx-3 my-3"><img
+                                src="https://i.ibb.co/ckZtt1m/appstore-Icon.png" alt="appstore icon"
+                                class="img-fluid" /></a>
                           </div>
                         </div>
                       </div>
                     </div>
                   </div>
                 </div>
-              
-          <!-- <div class="dropdown">
-                  <button class="top-header-btn no-format dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-                    Download App
-                  </button>
-                  <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                    <li class="dropdown-item px-2 my-3 disabled">Download From</li>
-                    <li class="dropdown-item px-2 my-3"><a href="#">
-                      <img src="https://i.ibb.co/JdB0Ncp/playstore-Icon.png" alt="playstore icon" class="img-fluid" />
-                    </a></li>
-                    <li class="dropdown-item px-2 my-3"><a href="#">
-                      <img src="https://i.ibb.co/ckZtt1m/appstore-Icon.png" alt="appstore icon" class="img-fluid" />
-                    </a></li>
-                  </ul>
-                </div> -->
-          </li>
-          <li class="nav-item d-flex align-items-center border-end px-2">
-            <button class="download-icon-header top-header-btn no-format">Become a Supplier</button>
-          </li>
-          <li class="nav-item d-flex align-items-center border-end px-2">
-            <button class="download-icon-header top-header-btn no-format">Newsroom</button>
-          </li>
+              </li>
 
-          <li class="nav-item d-flex align-items-center">
-            
-              <!-- <a href="#"><img src="https://i.ibb.co/tMd8dzN/userIcon.png" alt="userIcon"></a>
-              <button class="download-icon-header top-header-btn no-format">Profile</button> -->
-            
+              <li class="nav-item d-flex align-items-center border-end">
+                <button class="download-icon-header top-header-btn no-format">Become a Supplier</button>
+              </li>
+              <li class="nav-item d-flex align-items-center border-end">
+                <button class="download-icon-header top-header-btn no-format">Newsroom</button>
+              </li>
 
-              <div class="dd-menubar-head-container">
-                <div class="start-dropdown">                  
-                  <button class="dd-menubar-head no-format">
-                    <div class="d-flex flex-column justify-content-center align-items-center px-2">
-                      <img src="https://i.ibb.co/tMd8dzN/userIcon.png" alt="userIcon">
-                      Profile
-                    </div>
+              <li class="nav-item d-flex align-items-center">
+                <div class="dd-menubar-head-container">
+                  <div class="start-dropdown">
+                    <button class="download-icon-header top-header-btn dd-menubar-head no-format">
+                      <div class="d-flex flex-column justify-content-center align-items-center">
+                        <img src="https://i.ibb.co/tMd8dzN/userIcon.png" alt="userIcon">
+                        <span class="top-header-btn">Profile</span>
+                      </div>
 
-                  </button>
-                  <div class="dd-items-bg">
-                    <div class="row profile-grid">
-                      <div class="column">
-                        <div class="dd-menuitems">
+                    </button>
+                    <div class="dd-items-bg">
+                      <div class="row profile-grid">
+                        <div class="column">
+                          <div class="dd-menuitems">
                             <h3 class="dd-menuitem no-format disabled">Hello User</h3>
                             <p class="dd-menuitem no-format disabled">To access your Meesho Account</p>
-                            <a href="#" class="dd-menuitem no-format"><button class="btn btn-primary btn-myPurple">Sign Up</button></a>
+                            <a href="#" class="dd-menuitem no-format"><button class="btn btn-primary btn-myPurple">Sign
+                                Up</button></a>
                             <hr class="my-2">
-                            <a href="#" class="dd-menuitem no-format mx-2"><i class="fa-solid fa-bag-shopping"></i> My Orders</a>                            
-                          
+                            <a href="#" class="dd-menuitem no-format mx-2"><i class="fa-solid fa-bag-shopping"></i> My
+                              Orders</a>
+
+                          </div>
                         </div>
                       </div>
                     </div>
                   </div>
                 </div>
-              </div>
-            
 
-            <div class="d-flex flex-column  justify-content-center align-items-center">
-              <a href="#"><img src="https://i.ibb.co/XX54WS3/cartIcon.png" alt="cartIcon"></a>
-              <button class="download-icon-header top-header-btn no-format">Cart</button>
-            </div>
-          </li>
-          </ul>
 
-        </div>
-    </div>
-    </nav>
-    <!-- End of top part of header bar -->
-    <hr />
-    <!-- Start of dropdown menu bar -->
-    <div id="dropdownHeader" class="container-fluid container-md">
-      <div class="dd-menubar-head-container">
-        <!-- Start of dropdown for Women -->
-        <div class="start-dropdown">
-          <button class="dd-menubar-head no-format">Women</button>
-          <!-- inside menu bar -->
-          <div class="dd-items-bg">
-            <!-- dropdown items -->
-            <div class="row dd-item-grid">
-              <div class="column">
-                <div class="dd-items-heading">Sarees</div>
-                <div class="dd-menuitems">
-                  <a href="#" class="dd-menuitem no-format">All Sarees</a>
-                  <a href="#" class="dd-menuitem no-format">Silk Sarees</a>
-                  <a href="#" class="dd-menuitem no-format">Cotton Sarees</a>
-                  <a href="#" class="dd-menuitem no-format">Georgette Sarees</a>
-                  <a href="#" class="dd-menuitem no-format">Chiffon Sarees</a>
+                <div class="d-flex flex-column  justify-content-center align-items-center">
+                  <a href="#"><img src="https://i.ibb.co/XX54WS3/cartIcon.png" alt="cartIcon"></a>
+                  <button class="download-icon-header top-header-btn no-format"><span
+                      class="top-header-btn">Cart</span></button>
                 </div>
-              </div>
+              </li>
+            </ul>
 
-              <div class="column">
-                <div class="dd-items-heading">Kurtis</div>
-                <div class="dd-menuitems">
-                  <a href="#" class="dd-menuitem no-format">All Kurtis</a>
-                  <a href="#" class="dd-menuitem no-format">Anarkali Kurtis</a>
-                  <a href="#" class="dd-menuitem no-format">Cotton Kurtis</a>
-                  <a href="#" class="dd-menuitem no-format">Embroidered Kurtis</a>
-                </div>
-              </div>
-
-              <div class="column">
-                <div class="dd-items-heading">Western</div>
-                <div class="dd-menuitems">
-                  <a href="#" class="dd-menuitem no-format">Tops</a>
-                  <a href="#" class="dd-menuitem no-format">Jeans</a>
-                  <a href="#" class="dd-menuitem no-format">Jeggings</a>
-                  <a href="#" class="dd-menuitem no-format">Skirts</a>
-                </div>
-              </div>
-
-              <div class="column">
-                <div class="dd-items-heading">Suits & Dress Material</div>
-                <div class="dd-menuitems">
-                  <a href="#" class="dd-menuitem no-format">All Suits & Dress Material</a>
-                  <a href="#" class="dd-menuitem no-format">Cotton Suits</a>
-                  <a href="#" class="dd-menuitem no-format">Embroidered Suits</a>
-                  <a href="#" class="dd-menuitem no-format">Chanderi Suits</a>
-                </div>
-              </div>
-
-              <div class="column">
-                <div class="dd-items-heading">Other Ethnic</div>
-                <div class="dd-menuitems">
-                  <a href="#" class="dd-menuitem no-format">Blouses</a>
-                  <a href="#" class="dd-menuitem no-format">Dupattas</a>
-                  <a href="#" class="dd-menuitem no-format">Lehenga</a>
-                  <a href="#" class="dd-menuitem no-format">Gown</a>
-                  <a href="#" class="dd-menuitem no-format">Ethnic Bottomwear</a>
-                </div>
-              </div>
-
-
-            </div>
           </div>
         </div>
-        <!-- End of dropdown for Women -->
-
-        <!-- Start of dropdown for Men -->
-        <div class="start-dropdown">
-          <button class="dd-menubar-head no-format">Men</button>
-          <!-- inside menu bar -->
-          <div class="dd-items-bg">
-            <!-- dropdown items -->
-            <div class="row dd-item-grid">
-              <div class="column">
-                <div class="dd-items-heading">Top Wear</div>
-                <div class="dd-menuitems">
-                  <a href="#" class="dd-menuitem no-format">All Top Wear</a>
-                  <a href="#" class="dd-menuitem no-format">T-Shirts</a>
-                  <a href="#" class="dd-menuitem no-format">Shirts</a>
+      </nav>
+      <!-- End of top part of header bar -->
+      <hr />
+      <!-- Start of dropdown menu bar -->
+      <div id="dropdownHeader" class="container-fluid container-md">
+        <div class="dd-menubar-head-container">
+          <!-- Start of dropdown for Women -->
+          <div class="start-dropdown">
+            <button class="dd-menubar-head no-format">Women</button>
+            <!-- inside menu bar -->
+            <div class="dd-items-bg">
+              <!-- dropdown items -->
+              <div class="row dd-item-grid">
+                <div class="column">
+                  <div class="dd-items-heading">Sarees</div>
+                  <div class="dd-menuitems">
+                    <a href="#" class="dd-menuitem no-format">All Sarees</a>
+                    <a href="#" class="dd-menuitem no-format">Silk Sarees</a>
+                    <a href="#" class="dd-menuitem no-format">Cotton Sarees</a>
+                    <a href="#" class="dd-menuitem no-format">Georgette Sarees</a>
+                    <a href="#" class="dd-menuitem no-format">Chiffon Sarees</a>
+                  </div>
                 </div>
-              </div>
 
-              <div class="column">
-                <div class="dd-items-heading">Bottom Wear</div>
-                <div class="dd-menuitems">
-                  <a href="#" class="dd-menuitem no-format">Track Pants</a>
-                  <a href="#" class="dd-menuitem no-format">Jeans</a>
-                  <a href="#" class="dd-menuitem no-format">Trousers</a>
+                <div class="column">
+                  <div class="dd-items-heading">Kurtis</div>
+                  <div class="dd-menuitems">
+                    <a href="#" class="dd-menuitem no-format">All Kurtis</a>
+                    <a href="#" class="dd-menuitem no-format">Anarkali Kurtis</a>
+                    <a href="#" class="dd-menuitem no-format">Cotton Kurtis</a>
+                    <a href="#" class="dd-menuitem no-format">Embroidered Kurtis</a>
+                  </div>
                 </div>
-              </div>
 
-              <div class="column">
-                <div class="dd-items-heading">Ethnic Wear</div>
-                <div class="dd-menuitems">
-                  <a href="#" class="dd-menuitem no-format">Men Kurtas</a>
-                  <a href="#" class="dd-menuitem no-format">Ethnic Jackets</a>
+                <div class="column">
+                  <div class="dd-items-heading">Western</div>
+                  <div class="dd-menuitems">
+                    <a href="#" class="dd-menuitem no-format">Tops</a>
+                    <a href="#" class="dd-menuitem no-format">Jeans</a>
+                    <a href="#" class="dd-menuitem no-format">Jeggings</a>
+                    <a href="#" class="dd-menuitem no-format">Skirts</a>
+                  </div>
                 </div>
-              </div>
 
-              <div class="column">
-                <div class="dd-items-heading">Men Footwear</div>
-                <div class="dd-menuitems">
-                  <a href="#" class="dd-menuitem no-format">Sports Shoes</a>
-                  <a href="#" class="dd-menuitem no-format">Casual Shoes</a>
-                  <a href="#" class="dd-menuitem no-format">Formal</a>
-                  <a href="#" class="dd-menuitem no-format">Sandals</a>
+                <div class="column">
+                  <div class="dd-items-heading">Suits & Dress Material</div>
+                  <div class="dd-menuitems">
+                    <a href="#" class="dd-menuitem no-format">All Suits & Dress Material</a>
+                    <a href="#" class="dd-menuitem no-format">Cotton Suits</a>
+                    <a href="#" class="dd-menuitem no-format">Embroidered Suits</a>
+                    <a href="#" class="dd-menuitem no-format">Chanderi Suits</a>
+                  </div>
                 </div>
-              </div>
 
-              <div class="column">
-                <div class="dd-items-heading">Men Accessories</div>
-                <div class="dd-menuitems">
-                  <a href="#" class="dd-menuitem no-format">All Men Accessories</a>
-                  <a href="#" class="dd-menuitem no-format">Watches</a>
-                  <a href="#" class="dd-menuitem no-format">Belts</a>
-                  <a href="#" class="dd-menuitem no-format">Wallets</a>
-                  <a href="#" class="dd-menuitem no-format">Bags</a>
+                <div class="column">
+                  <div class="dd-items-heading">Other Ethnic</div>
+                  <div class="dd-menuitems">
+                    <a href="#" class="dd-menuitem no-format">Blouses</a>
+                    <a href="#" class="dd-menuitem no-format">Dupattas</a>
+                    <a href="#" class="dd-menuitem no-format">Lehenga</a>
+                    <a href="#" class="dd-menuitem no-format">Gown</a>
+                    <a href="#" class="dd-menuitem no-format">Ethnic Bottomwear</a>
+                  </div>
                 </div>
+
+
               </div>
             </div>
           </div>
-        </div>
-        <!-- End of dropdown for Men -->
+          <!-- End of dropdown for Women -->
 
-        <!-- Start of dropdown for Kids -->
-        <div class="start-dropdown">
-          <button class="dd-menubar-head no-format">Kids</button>
-          <!-- inside menu bar -->
-          <div class="dd-items-bg">
-            <!-- dropdown items -->
-            <div class="row dd-item-grid">
-              <div class="column">
-                <div class="dd-items-heading">Boys & Girls</div>
-                <div class="dd-menuitems">
-                  <a href="#" class="dd-menuitem no-format">All Dresses</a>
+          <!-- Start of dropdown for Men -->
+          <div class="start-dropdown">
+            <button class="dd-menubar-head no-format">Men</button>
+            <!-- inside menu bar -->
+            <div class="dd-items-bg">
+              <!-- dropdown items -->
+              <div class="row dd-item-grid">
+                <div class="column">
+                  <div class="dd-items-heading">Top Wear</div>
+                  <div class="dd-menuitems">
+                    <a href="#" class="dd-menuitem no-format">All Top Wear</a>
+                    <a href="#" class="dd-menuitem no-format">T-Shirts</a>
+                    <a href="#" class="dd-menuitem no-format">Shirts</a>
+                  </div>
                 </div>
-              </div>
 
-              <div class="column">
-                <div class="dd-items-heading">Toys & Accessories</div>
-                <div class="dd-menuitems">
-                  <a href="#" class="dd-menuitem no-format">Soft Toys</a>
-                  <a href="#" class="dd-menuitem no-format">Footwear</a>
-                  <a href="#" class="dd-menuitem no-format">Stationery</a>
-                  <a href="#" class="dd-menuitem no-format">Watches</a>
-                  <a href="#" class="dd-menuitem no-format">Bags & Bagpacks</a>
+                <div class="column">
+                  <div class="dd-items-heading">Bottom Wear</div>
+                  <div class="dd-menuitems">
+                    <a href="#" class="dd-menuitem no-format">Track Pants</a>
+                    <a href="#" class="dd-menuitem no-format">Jeans</a>
+                    <a href="#" class="dd-menuitem no-format">Trousers</a>
+                  </div>
                 </div>
-              </div>
 
-              <div class="column">
-                <div class="dd-items-heading">Baby Care</div>
-                <div class="dd-menuitems">
-                  <a href="#" class="dd-menuitem no-format">All Baby Care</a>
+                <div class="column">
+                  <div class="dd-items-heading">Ethnic Wear</div>
+                  <div class="dd-menuitems">
+                    <a href="#" class="dd-menuitem no-format">Men Kurtas</a>
+                    <a href="#" class="dd-menuitem no-format">Ethnic Jackets</a>
+                  </div>
+                </div>
+
+                <div class="column">
+                  <div class="dd-items-heading">Men Footwear</div>
+                  <div class="dd-menuitems">
+                    <a href="#" class="dd-menuitem no-format">Sports Shoes</a>
+                    <a href="#" class="dd-menuitem no-format">Casual Shoes</a>
+                    <a href="#" class="dd-menuitem no-format">Formal</a>
+                    <a href="#" class="dd-menuitem no-format">Sandals</a>
+                  </div>
+                </div>
+
+                <div class="column">
+                  <div class="dd-items-heading">Men Accessories</div>
+                  <div class="dd-menuitems">
+                    <a href="#" class="dd-menuitem no-format">All Men Accessories</a>
+                    <a href="#" class="dd-menuitem no-format">Watches</a>
+                    <a href="#" class="dd-menuitem no-format">Belts</a>
+                    <a href="#" class="dd-menuitem no-format">Wallets</a>
+                    <a href="#" class="dd-menuitem no-format">Bags</a>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
-        </div>
-        <!-- End of dropdown for Kids -->
+          <!-- End of dropdown for Men -->
 
-        <!-- Start of dropdown for Beauty & Health -->
-        <div class="start-dropdown">
-          <button class="dd-menubar-head no-format">Beauty & Health</button>
-          <!-- inside menu bar -->
-          <div class="dd-items-bg">
-            <!-- dropdown items -->
-            <div class="row dd-item-grid">
-              <div class="column">
-                <div class="dd-items-heading">Make Up</div>
-                <div class="dd-menuitems">
-                  <a href="#" class="dd-menuitem no-format">Face</a>
-                  <a href="#" class="dd-menuitem no-format">Eyes</a>
-                  <a href="#" class="dd-menuitem no-format">Lips</a>
-                  <a href="#" class="dd-menuitem no-format">Nails</a>
+          <!-- Start of dropdown for Kids -->
+          <div class="start-dropdown">
+            <button class="dd-menubar-head no-format">Kids</button>
+            <!-- inside menu bar -->
+            <div class="dd-items-bg">
+              <!-- dropdown items -->
+              <div class="row dd-item-grid">
+                <div class="column">
+                  <div class="dd-items-heading">Boys & Girls</div>
+                  <div class="dd-menuitems">
+                    <a href="#" class="dd-menuitem no-format">All Dresses</a>
+                  </div>
                 </div>
-              </div>
 
-              <div class="column">
-                <div class="dd-items-heading">Wellness</div>
-                <div class="dd-menuitems">
-                  <a href="#" class="dd-menuitem no-format">Sanitizers</a>
-                  <a href="#" class="dd-menuitem no-format">Oral Care</a>
-                  <a href="#" class="dd-menuitem no-format">Feminine Hygiene</a>
+                <div class="column">
+                  <div class="dd-items-heading">Toys & Accessories</div>
+                  <div class="dd-menuitems">
+                    <a href="#" class="dd-menuitem no-format">Soft Toys</a>
+                    <a href="#" class="dd-menuitem no-format">Footwear</a>
+                    <a href="#" class="dd-menuitem no-format">Stationery</a>
+                    <a href="#" class="dd-menuitem no-format">Watches</a>
+                    <a href="#" class="dd-menuitem no-format">Bags & Bagpacks</a>
+                  </div>
                 </div>
-              </div>
 
-              <div class="column">
-                <div class="dd-items-heading">Skin Care</div>
-                <div class="dd-menuitems">
-                  <a href="#" class="dd-menuitem no-format">Deodorants</a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <!-- End of dropdown for Beauty & Health -->
-
-        <!-- Start of dropdown for Home & Kitchen -->
-        <div class="start-dropdown">
-          <button class="dd-menubar-head no-format">Home & Kitchen</button>
-          <!-- inside menu bar -->
-          <div class="dd-items-bg">
-            <!-- dropdown items -->
-            <div class="row dd-item-grid">
-              <div class="column">
-                <div class="dd-items-heading">Home Furnishing</div>
-                <div class="dd-menuitems">
-                  <a href="#" class="dd-menuitem no-format">Bed Sheets</a>
-                  <a href="#" class="dd-menuitem no-format">Doormats</a>
-                  <a href="#" class="dd-menuitem no-format">Curtains</a>
-                  <a href="#" class="dd-menuitem no-format">Cushions</a>
-                </div>
-              </div>
-
-              <div class="column">
-                <div class="dd-items-heading">Home Decor</div>
-                <div class="dd-menuitems">
-                  <a href="#" class="dd-menuitem no-format">All Home Decor</a>
-                  <a href="#" class="dd-menuitem no-format">Stickers</a>
-                  <a href="#" class="dd-menuitem no-format">Show Pieces</a>
-                </div>
-              </div>
-
-              <div class="column">
-                <div class="dd-items-heading">Kitchen & Dining</div>
-                <div class="dd-menuitems">
-                  <a href="#" class="dd-menuitem no-format">Kitchen Storage</a>
-                  <a href="#" class="dd-menuitem no-format">Cookware & Bakeware</a>
+                <div class="column">
+                  <div class="dd-items-heading">Baby Care</div>
+                  <div class="dd-menuitems">
+                    <a href="#" class="dd-menuitem no-format">All Baby Care</a>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
-        </div>
-        <!-- End of dropdown for Home & Kitchen -->
+          <!-- End of dropdown for Kids -->
 
-        <!-- Start of dropdown for Jewellery & Accessories -->
-        <div class="start-dropdown">
-          <button class="dd-menubar-head no-format">Jewellery & Accessories</button>
-          <!-- inside menu bar -->
-          <div class="dd-items-bg">
-            <!-- dropdown items -->
-            <div class="row dd-item-grid">
-              <div class="column">
-                <div class="dd-items-heading">Jewellery</div>
-                <div class="dd-menuitems">
-                  <a href="#" class="dd-menuitem no-format">Jewellery Sets</a>
-                  <a href="#" class="dd-menuitem no-format">Earrings</a>
-                  <a href="#" class="dd-menuitem no-format">Mangalsutras</a>
-                  <a href="#" class="dd-menuitem no-format">Studs</a>
-                  <a href="#" class="dd-menuitem no-format">Bangles</a>
-                  <a href="#" class="dd-menuitem no-format">Necklaces</a>
-                  <a href="#" class="dd-menuitem no-format">Rings</a>
-                  <a href="#" class="dd-menuitem no-format">Anklets</a>
+          <!-- Start of dropdown for Beauty & Health -->
+          <div class="start-dropdown">
+            <button class="dd-menubar-head no-format">Beauty & Health</button>
+            <!-- inside menu bar -->
+            <div class="dd-items-bg">
+              <!-- dropdown items -->
+              <div class="row dd-item-grid">
+                <div class="column">
+                  <div class="dd-items-heading">Make Up</div>
+                  <div class="dd-menuitems">
+                    <a href="#" class="dd-menuitem no-format">Face</a>
+                    <a href="#" class="dd-menuitem no-format">Eyes</a>
+                    <a href="#" class="dd-menuitem no-format">Lips</a>
+                    <a href="#" class="dd-menuitem no-format">Nails</a>
+                  </div>
                 </div>
-              </div>
 
-              <div class="column">
-                <div class="dd-items-heading">Women Accessory</div>
-                <div class="dd-menuitems">
-                  <a href="#" class="dd-menuitem no-format">Bags</a>
-                  <a href="#" class="dd-menuitem no-format">Watches</a>
-                  <a href="#" class="dd-menuitem no-format">Hair Accessories</a>
-                  <a href="#" class="dd-menuitem no-format">Sunglasses</a>
-                  <a href="#" class="dd-menuitem no-format">Socks</a>
+                <div class="column">
+                  <div class="dd-items-heading">Wellness</div>
+                  <div class="dd-menuitems">
+                    <a href="#" class="dd-menuitem no-format">Sanitizers</a>
+                    <a href="#" class="dd-menuitem no-format">Oral Care</a>
+                    <a href="#" class="dd-menuitem no-format">Feminine Hygiene</a>
+                  </div>
+                </div>
+
+                <div class="column">
+                  <div class="dd-items-heading">Skin Care</div>
+                  <div class="dd-menuitems">
+                    <a href="#" class="dd-menuitem no-format">Deodorants</a>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
-        </div>
-        <!-- End of dropdown for Jewellery & Accessories -->
+          <!-- End of dropdown for Beauty & Health -->
 
-        <!-- Start of dropdown for Bags & Footwear -->
-        <div class="start-dropdown">
-          <button class="dd-menubar-head no-format">Bags & Footwear</button>
-          <!-- inside menu bar -->
-          <div class="dd-items-bg">
-            <!-- dropdown items -->
-            <div class="row dd-item-grid">
-              <div class="column">
-                <div class="dd-items-heading">Women Bags</div>
-                <div class="dd-menuitems">
-                  <a href="#" class="dd-menuitem no-format">All Women Bags</a>
-                  <a href="#" class="dd-menuitem no-format">Handbags</a>
-                  <a href="#" class="dd-menuitem no-format">Clutches</a>
-                  <a href="#" class="dd-menuitem no-format">Slingbags</a>
+          <!-- Start of dropdown for Home & Kitchen -->
+          <div class="start-dropdown">
+            <button class="dd-menubar-head no-format">Home & Kitchen</button>
+            <!-- inside menu bar -->
+            <div class="dd-items-bg">
+              <!-- dropdown items -->
+              <div class="row dd-item-grid">
+                <div class="column">
+                  <div class="dd-items-heading">Home Furnishing</div>
+                  <div class="dd-menuitems">
+                    <a href="#" class="dd-menuitem no-format">Bed Sheets</a>
+                    <a href="#" class="dd-menuitem no-format">Doormats</a>
+                    <a href="#" class="dd-menuitem no-format">Curtains</a>
+                    <a href="#" class="dd-menuitem no-format">Cushions</a>
+                  </div>
+                </div>
+
+                <div class="column">
+                  <div class="dd-items-heading">Home Decor</div>
+                  <div class="dd-menuitems">
+                    <a href="#" class="dd-menuitem no-format">All Home Decor</a>
+                    <a href="#" class="dd-menuitem no-format">Stickers</a>
+                    <a href="#" class="dd-menuitem no-format">Show Pieces</a>
+                  </div>
+                </div>
+
+                <div class="column">
+                  <div class="dd-items-heading">Kitchen & Dining</div>
+                  <div class="dd-menuitems">
+                    <a href="#" class="dd-menuitem no-format">Kitchen Storage</a>
+                    <a href="#" class="dd-menuitem no-format">Cookware & Bakeware</a>
+                  </div>
                 </div>
               </div>
-
-              <div class="column">
-                <div class="dd-items-heading">Men Bags</div>
-                <div class="dd-menuitems">
-                  <a href="#" class="dd-menuitem no-format">All Men Bags</a>
-                  <a href="#" class="dd-menuitem no-format">Men Wallets</a>
-                </div>
-              </div>
-
-              <div class="column">
-                <div class="dd-items-heading">Men Footwear</div>
-                <div class="dd-menuitems">
-                  <a href="#" class="dd-menuitem no-format">Sports Shoes</a>
-                  <a href="#" class="dd-menuitem no-format">Casual Shoes</a>
-                  <a href="#" class="dd-menuitem no-format">Formal</a>
-                  <a href="#" class="dd-menuitem no-format">Sandals</a>
-                </div>
-              </div>
-
-              <div class="column">
-                <div class="dd-items-heading">Women Footwear</div>
-                <div class="dd-menuitems">
-                  <a href="#" class="dd-menuitem no-format">Flats</a>
-                  <a href="#" class="dd-menuitem no-format">Bellies</a>
-                  <a href="#" class="dd-menuitem no-format">Heels</a>
-                </div>
-              </div>
-
             </div>
           </div>
+          <!-- End of dropdown for Home & Kitchen -->
+
+          <!-- Start of dropdown for Jewellery & Accessories -->
+          <div class="start-dropdown">
+            <button class="dd-menubar-head no-format">Jewellery & Accessories</button>
+            <!-- inside menu bar -->
+            <div class="dd-items-bg">
+              <!-- dropdown items -->
+              <div class="row dd-item-grid">
+                <div class="column">
+                  <div class="dd-items-heading">Jewellery</div>
+                  <div class="dd-menuitems">
+                    <a href="#" class="dd-menuitem no-format">Jewellery Sets</a>
+                    <a href="#" class="dd-menuitem no-format">Earrings</a>
+                    <a href="#" class="dd-menuitem no-format">Mangalsutras</a>
+                    <a href="#" class="dd-menuitem no-format">Studs</a>
+                    <a href="#" class="dd-menuitem no-format">Bangles</a>
+                    <a href="#" class="dd-menuitem no-format">Necklaces</a>
+                    <a href="#" class="dd-menuitem no-format">Rings</a>
+                    <a href="#" class="dd-menuitem no-format">Anklets</a>
+                  </div>
+                </div>
+
+                <div class="column">
+                  <div class="dd-items-heading">Women Accessory</div>
+                  <div class="dd-menuitems">
+                    <a href="#" class="dd-menuitem no-format">Bags</a>
+                    <a href="#" class="dd-menuitem no-format">Watches</a>
+                    <a href="#" class="dd-menuitem no-format">Hair Accessories</a>
+                    <a href="#" class="dd-menuitem no-format">Sunglasses</a>
+                    <a href="#" class="dd-menuitem no-format">Socks</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- End of dropdown for Jewellery & Accessories -->
+
+          <!-- Start of dropdown for Bags & Footwear -->
+          <div class="start-dropdown">
+            <button class="dd-menubar-head no-format">Bags & Footwear</button>
+            <!-- inside menu bar -->
+            <div class="dd-items-bg">
+              <!-- dropdown items -->
+              <div class="row dd-item-grid">
+                <div class="column">
+                  <div class="dd-items-heading">Women Bags</div>
+                  <div class="dd-menuitems">
+                    <a href="#" class="dd-menuitem no-format">All Women Bags</a>
+                    <a href="#" class="dd-menuitem no-format">Handbags</a>
+                    <a href="#" class="dd-menuitem no-format">Clutches</a>
+                    <a href="#" class="dd-menuitem no-format">Slingbags</a>
+                  </div>
+                </div>
+
+                <div class="column">
+                  <div class="dd-items-heading">Men Bags</div>
+                  <div class="dd-menuitems">
+                    <a href="#" class="dd-menuitem no-format">All Men Bags</a>
+                    <a href="#" class="dd-menuitem no-format">Men Wallets</a>
+                  </div>
+                </div>
+
+                <div class="column">
+                  <div class="dd-items-heading">Men Footwear</div>
+                  <div class="dd-menuitems">
+                    <a href="#" class="dd-menuitem no-format">Sports Shoes</a>
+                    <a href="#" class="dd-menuitem no-format">Casual Shoes</a>
+                    <a href="#" class="dd-menuitem no-format">Formal</a>
+                    <a href="#" class="dd-menuitem no-format">Sandals</a>
+                  </div>
+                </div>
+
+                <div class="column">
+                  <div class="dd-items-heading">Women Footwear</div>
+                  <div class="dd-menuitems">
+                    <a href="#" class="dd-menuitem no-format">Flats</a>
+                    <a href="#" class="dd-menuitem no-format">Bellies</a>
+                    <a href="#" class="dd-menuitem no-format">Heels</a>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </div>
+          <!-- End of dropdown for Bags & Footwear -->
         </div>
-        <!-- End of dropdown for Bags & Footwear -->
       </div>
-    </div>
-    <!-- End of dropdown menu bar -->
-    <hr />
+      <!-- End of dropdown menu bar -->
+      <hr />
     </div>
   </header>
 
   <main id="mainDiv">
+    <div id="coupon">
+      <a href="#"><button id="couponCloseBtn" onclick="closeCoupon()"><i class="fa-solid fa-xmark"></i></button><img
+          id="couponImage" src="https://i.ibb.co/JR9w6GH/meesho-Coupon.jpg" alt="meesho-Coupon"></a>
+    </div>
     <!-- SECTION 1: Start of Section for Download App Frame -->
     <section class="container-fluid my-5">
       <div class="container-fluid d-flex justify-content-center">
-        <div class="row">
+        <div id="downloadFrame" class="row">
           <!-- Start of left half frame -->
           <div
             class="col-container col-xl-6 col-lg-6 col-md-6 d-flex flex-column bg-aliceblue justify-content-center half-full-container">
@@ -609,7 +604,6 @@
     <!-- Section 2: End of Section for Top Categories Frame --- has 3 sub-sections -->
 
     <!-- Section 3: Start of Section for Partner With Us Frame -->
-
     <section id="partner" class="container-fluid container-md my-5">
       <div class="headingBar">
         <h1><span class="heading">Partner With Us</span></h1>
@@ -1164,12 +1158,12 @@
                       <input type="checkbox" id="tshirts" name="categoryFilter" value="tshirts" />
                       <label for="tshirts">T-Shirts</label><br />
                     </div>
-                    
-                      <!-- <a onclick="showMore()">Show more</a> -->
-                      <button src="../scripts/home.js" class="seamlessButton" onclick="showMore()">
-                        Show more
-                      </button>
-                    
+
+                    <!-- <a onclick="showMore()">Show more</a> -->
+                    <button src="../scripts/home.js" class="seamlessButton" onclick="showMore()">
+                      Show more
+                    </button>
+
                   </div>
                 </div>
               </div>
@@ -3377,7 +3371,8 @@
                 <a href="#">Designer Lehenga</a> | <a href="#">Sharara</a> | <a href="#">Phulkari Dupatta</a> | <a
                   href="#">Petticoats</a> | <a href="#">Abaya</a> | <a href="#">Black Kurta</a> | <a href="#">Velvet
                   Shawls</a> | <a href="#">Blouse Piece</a> | <a href="#">Kurti Fabric</a> | <a href="#">Designer
-                  Suits</a></p>
+                  Suits</a>
+              </p>
 
               <h7>Women Footwear</h7>
               <p><a href="#">Women Slippers</a> | <a href="#">Bellies</a> | <a href="#">Juttis & Mojaris</a></p>
@@ -3392,7 +3387,8 @@
                   href="#">Rucksacks</a> | <a href="#">Briefcases</a> | <a href="#">Small Travel Bags</a> | <a
                   href="#">Potlis</a> | <a href="#">Nosepins</a> | <a href="#">Gold Bangles</a> | <a href="#">Bridal
                   Anklets</a> | <a href="#">Chandbali Earrings</a> | <a href="#">Necklaces</a> | <a href="#">Multi
-                  Necklace</a></p>
+                  Necklace</a>
+              </p>
 
               <h7>Electronics & Accessories</h7>
               <p><a href="#">Android Smart Watches</a> | <a href="#">On Ear Headphones</a> | <a href="#">Bluetooth
@@ -3445,7 +3441,8 @@
                   href="#">Choppers</a> | <a href="#">Mashers</a> | <a href="#">Graters</a> | <a href="#">Cutlery</a> |
                 <a href="#">Chopping Boards</a> | <a href="#">Kitchen Scissors</a> | <a href="#">Ice Cube Trays</a> | <a
                   href="#">Measuring Cups</a> | <a href="#">Tongs</a> | <a href="#">Ice Cream Scoops</a> | <a
-                  href="#">Funnels</a> | <a href="#">Trivets</a></p>
+                  href="#">Funnels</a> | <a href="#">Trivets</a>
+              </p>
 
               <h7>Personal Care & Wellness</h7>
               <p><a href="#">Tummy trimmer</a> | <a href="#">Makeup Kits</a> | <a href="#">Hair Color</a> | <a
@@ -3453,7 +3450,8 @@
                   Oil</a> | <a href="#">Deodorants</a> | <a href="#">Eye Lenses</a> | <a href="#">Soap</a> | <a
                   href="#">Oximeter</a> | <a href="#">Bb Cream</a> | <a href="#">Body Scrub</a> | <a href="#">Olive
                   Oils</a> | <a href="#">Talcum Powder</a> | <a href="#">Face Steamers</a> | <a href="#">Compact</a> |
-                <a href="#">Nail Cutter</a> | <a href="#">Lip Balm</a></p>
+                <a href="#">Nail Cutter</a> | <a href="#">Lip Balm</a>
+              </p>
 
             </div>
           </div>
