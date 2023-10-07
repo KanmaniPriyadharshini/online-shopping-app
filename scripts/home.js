@@ -1,5 +1,23 @@
 let dark=false;
 window.onload = onLoadPage();
+var audio = document.getElementById("myaudio");
+var playPauseBtn = document.getElementById("playPauseBtn");
+audio.volume = 0.1;
+let music = true;
+function pausePlay(){
+    if(music === true){
+        audio.pause();
+        music = false;
+        playPauseBtn.classList.remove('fa-pause');
+        playPauseBtn.classList.add('fa-play');
+    }
+    else{
+        audio.play();
+        music=true;
+        playPauseBtn.classList.remove('fa-play');
+        playPauseBtn.classList.add('fa-pause');
+    }
+}
 
 // const couponTimeOut = setTimeout(closeCoupon, 10000);
 function onLoadPage(){

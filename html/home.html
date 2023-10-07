@@ -31,6 +31,12 @@
               alt="meesho-icon" /></a>
           <button onclick="changeMode()" class="no-format px-3"><i id="darkModeButton" class="fa-regular fa-moon">Dark
               Mode</i></button>
+              <span>
+              <audio autoplay id="myaudio" loop="true">
+                <source src="../audio/easy-lifestyle-137766.mp3">
+              </audio>
+              <i class="fa-solid fa-music"></i><button class="no-format" onclick="pausePlay()"><i id="playPauseBtn" class="fa-solid fa-pause"></i></button>
+            </span>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
             data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
             aria-label="Toggle navigation">
@@ -450,16 +456,19 @@
   </header>
 
   <main id="mainDiv">
-    <div id="coupon">
+    <!-- <div id="coupon">
       <a href="#"><button id="couponCloseBtn" onclick="closeCoupon()"><i class="fa-solid fa-xmark"></i></button><img
-          id="couponImage" src="https://i.ibb.co/JR9w6GH/meesho-Coupon.jpg" alt="meesho-Coupon"></a>
-    </div>
+          id="couponImage" class="img-fluid" src="https://i.ibb.co/JR9w6GH/meesho-Coupon.jpg" alt="meesho-Coupon"></a>
+    </div> -->
+    <a href="#"><div id="coupon">
+      <button id="couponCloseBtn" onclick="closeCoupon()"><i class="fa-solid fa-xmark"></i></button>
+      </div></a>
     <!-- SECTION 1: Start of Section for Download App Frame -->
     <section class="container-fluid my-5">
       <div class="container-fluid d-flex justify-content-center">
         <div id="downloadFrame" class="row">
           <!-- Start of left half frame -->
-          <div
+          <div id = "downloadAppLeftFrame"
             class="col-container col-xl-6 col-lg-6 col-md-6 d-flex flex-column bg-aliceblue justify-content-center half-full-container">
             <!-- Start of text area -->
             <div class="row fs-1 fw-bolder">
@@ -3102,7 +3111,7 @@
       </div>
       <!-- Section 4.3: End of right side content section -->
     </section>
-    <!-- Section 4: End of Section for Products For You Frame -->
+    <!-- Section 4: End of Section for Products For You Frame -->    
   </main>
 
   <div style="clear: both;"></div>

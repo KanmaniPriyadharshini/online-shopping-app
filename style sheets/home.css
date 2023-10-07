@@ -16,6 +16,7 @@ body {
   padding-top: 15vh;
   padding-left: 0;
   padding-right: 0;
+  box-sizing: border-box;
   /* font-family: 'Helvetica Neue', sans-serif; */
   font-family: sans-serif, 'Arial Narrow', Arial;
   background-color: white;
@@ -30,36 +31,7 @@ body {
   filter: grayscale(50%);
 }
 
-#coupon{
-  height: 300px;
-  width: 600px;
-  background-color: white;
-  position: absolute;
-  margin-top: 5%;
-  margin-left: 40%;
-  z-index: 1;
-  visibility: hidden;
-  width: max-content;
-  background-color: transparent;
-}
 
-#coupon a{
-  width: max-content;
-  background-color: transparent;
-}
-
-#couponCloseBtn{
-  position: relative;
-  top:10%;
-  left:93%;
-  z-index: 1;
-}
-
-#couponImage{
-  object-fit: contain;
-  height: 100%;
-  width: 100%;
-}
 
 header {
   background-color: white;
@@ -118,6 +90,9 @@ header {
 
 #top-header-bar div a{
   margin-right: 0;
+  /* margin-left: 0;
+  display: flex;
+  justify-content: center; */
 }
 
 #navbarSupportedContent ul li{
@@ -139,6 +114,11 @@ header {
   padding-left: 3%;
   padding-right: 3%;
   background-color: white !important;
+}
+
+#playPauseBtn{
+  color: grey;
+  margin-right: .5rem;
 }
 
 .bring-on-top{
@@ -350,6 +330,25 @@ header {
 }
 /* End of heading bar with title */
 
+#coupon{
+  height: 365px;
+  width: 650px;
+  padding: 0% !important;
+  background-image: url(https://i.ibb.co/JR9w6GH/meesho-Coupon.jpg);
+  background-size: 100%;
+  position: absolute;
+  margin-top: 5%;
+  margin-left: 20%;
+  z-index: 9;
+  visibility: hidden;
+  display: flex;
+  justify-content:flex-end;
+  align-items: flex-start;
+  /* width: max-content;
+  background-color: white;
+  overflow: hidden; */
+}
+
 /* Start of top categories section */
 
 .topCategoriesItems{
@@ -436,16 +435,6 @@ header {
   font-family:Arial, Helvetica, sans-serif;
   animation: partnerAnime 5s ease-out infinite;
 }
-
-/* @keyframes partnerAnime{
-  0%{
-    transform: scale(0.9);
-  }
-  
-  100%{
-    transform: scale(1);
-  }
-} */
 
 @keyframes partnerAnime {
 	0% {
@@ -865,8 +854,15 @@ footer{
     line-height: 2rem;
     padding:1em;
     margin: 0;  
+  }
+  #coupon{
+    height: 338px;
+    width: 600px;
+    margin-left: 15%;
   }  
 }
+
+
 
 /* Screen size adjust for drop down menu bar listed items in the grid */
 
@@ -874,6 +870,11 @@ footer{
   .dd-menubar-head {
     font-size: small;    
   }  
+  #coupon{
+    height: 83px;
+    width: 225px;
+    margin-left: 5%;
+  }
 }
 
 @media screen and (max-width: 500px) {
@@ -882,7 +883,7 @@ footer{
   }
   .dd-menubar-head {
     font-size: small;
-  }
+  }  
 }
 
 @media screen and (max-width: 350px) {
@@ -891,16 +892,27 @@ footer{
   }
   .dd-menubar-head {
     font-size: small;
-  }
+  }  
 }
 
 /* Screen size adjust for downloadApp frame of section1 */
 
 @media screen and (max-width: 782px) {
+  
   .half-full-container {
     width: 100%;
     padding-left: 0;
     padding-right: 0;
+    margin-left: 0;
+    margin-right: 0;
+  }
+  #downloadAppLeftFrame{
+    margin-bottom: 3%;
+  }
+  #coupon{
+    height: 292px;
+    width: 520px;
+    margin-left: 15%;
   }  
 }
 
@@ -930,6 +942,11 @@ footer{
     align-self: center;
     margin: 0;
   }
+  #coupon{
+    height: 224px;
+    width: 400px;
+    margin-left: 10%;
+  }  
   
   /* Screen size adjust for footer - top section */
   
@@ -967,9 +984,21 @@ footer{
   #rightContentFrame a{
     width: 49%;
   }
+  #coupon{
+    height: 224px;
+    width: 400px;
+    margin-left: 10%;
+  }
 }
 
 @media screen and (max-width: 600px) {
+  .half-full-container {
+    width: 100%;
+    padding-left: 0;
+    padding-right: 0;
+    margin-left: 0;
+    margin-right: 0;
+  }
   #leftFilterFrameOffcanvas{
     width: 55%;
   }
@@ -984,5 +1013,10 @@ footer{
   }
   #offcanvas-toggle-btn{
     font-size: 1rem;
+  }
+  #coupon{
+    height: 120px;
+    width: 210px;
+    margin-left: 10%;
   }
 }
