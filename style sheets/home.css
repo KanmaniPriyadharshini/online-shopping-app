@@ -330,14 +330,26 @@ header {
 }
 /* End of heading bar with title */
 
+#locality{
+  height: 7vh;
+}
+
+#displayLocality{
+  font-size: 1.5rem;
+  margin-top: 1.5vh;
+  font-style: oblique;
+}
+
 #coupon{
-  height: 365px;
-  width: 650px;
+  /* height: 450px; */
+  /* width: 800px; */
+  width: 60%;
+  aspect-ratio: 16/9;
   padding: 0% !important;
   background-image: url(https://i.ibb.co/JR9w6GH/meesho-Coupon.jpg);
   background-size: 100%;
   position: absolute;
-  margin-top: 5%;
+  margin-top: 3%;
   margin-left: 20%;
   z-index: 9;
   visibility: hidden;
@@ -445,7 +457,7 @@ header {
 	}
 }
 
-.partnerFrame img:hover, button:hover{
+.partnerFrame img:hover,.partnerFrame button:hover{
   transform: scale(1.1);
 }
 
@@ -652,6 +664,7 @@ header {
 
 .myCardImg img{
   width: 100%;
+  border-radius: .5rem .5rem 0 0;
 }
 
 .myCardImg button{
@@ -810,9 +823,10 @@ footer{
 
 /* End of Footer Section */
 
-/* Screen size adjust for top navbar toggle header section */
-
 @media screen and (max-width: 1200px) {
+
+  /* Screen size adjust for top navbar toggle header section */
+
   #top-header-bar div{
     margin-left: auto;
     margin-right: auto;    
@@ -824,7 +838,7 @@ footer{
     margin-bottom: 1.5em;
     background-color: white;
   }
-  .smallerSize{
+  .smallerSizeIcon{
     height: 2vh;
     width: 2vh;
   }
@@ -833,7 +847,22 @@ footer{
   }
 }
 
-/* Screen size adjust for top navbar toggle header section */
+@media screen and (max-width: 1000px) {
+
+  /* Screen size adjust for Products For You section */
+
+  #leftFilterFrame{
+    display: none;
+  }
+  #offcanvas-toggle-btn{
+    display: block;
+  }
+  #rightContentFrame{
+    width: 100%;
+    margin-left: 3%;
+    margin-right: 3%;
+  }
+}
 
 @media screen and (max-width: 991px) {
   #meesho-name-icon{
@@ -843,7 +872,7 @@ footer{
     margin-bottom: 1.5em;
     background-color: white;
   }
-  .smallerSize{
+  .smallerSizeIcon{
     height: 2vh;
     width: 2vh;
   }
@@ -853,46 +882,30 @@ footer{
     border: 1px solid gray;
     line-height: 2rem;
     padding:1em;
-    margin: 0;  
+    margin: 0;
+    width: fit-content;
+  }
+  .format-dropdown-content li{
+    display: flex;
+    flex-direction: column;
+    align-items:start;
+    width: 100%;
+    padding:1em;
+  }
+  .start-dropdown{
+    margin: 0;
+  }
+  .format-dropdown-content .top-header-btn
+  {
+    display: flex;
+    align-items:start;
+    width: 100%;
+    padding:1em;    
   }
   #coupon{
-    height: 338px;
-    width: 600px;
-    margin-left: 15%;
-  }  
-}
-
-
-
-/* Screen size adjust for drop down menu bar listed items in the grid */
-
-@media screen and (max-width: 550px) {  
-  .dd-menubar-head {
-    font-size: small;    
-  }  
-  #coupon{
-    height: 83px;
-    width: 225px;
-    margin-left: 5%;
+    width: 80%;
+    margin-left: 10%;
   }
-}
-
-@media screen and (max-width: 500px) {
-  .dd-item-grid {
-    grid-template-columns: repeat(2, max-content);
-  }
-  .dd-menubar-head {
-    font-size: small;
-  }  
-}
-
-@media screen and (max-width: 350px) {
-  .dd-item-grid {
-    grid-template-columns: repeat(1, max-content);
-  }
-  .dd-menubar-head {
-    font-size: small;
-  }  
 }
 
 /* Screen size adjust for downloadApp frame of section1 */
@@ -910,9 +923,21 @@ footer{
     margin-bottom: 3%;
   }
   #coupon{
-    height: 292px;
-    width: 520px;
-    margin-left: 15%;
+    width: 90%;
+    margin-left: 5%;
+  }
+}
+
+
+
+@media screen and (max-width: 700px) {
+  #rightContentFrame{
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+  }
+  #rightContentFrame a{
+    width: 49%;
   }  
 }
 
@@ -941,57 +966,8 @@ footer{
     display: flex;
     align-self: center;
     margin: 0;
-  }
-  #coupon{
-    height: 224px;
-    width: 400px;
-    margin-left: 10%;
   }  
-  
-  /* Screen size adjust for footer - top section */
-  
-  #footerLinksRow{
-    flex-wrap: wrap;
-  }
-  .footer-contact:last-child{
-    max-width: none;
-    width: auto;    
-  }
-}
 
-/* Screen size adjust for Products For You section */
-
-@media screen and (max-width: 1000px) {
-  #leftFilterFrame{
-    display: none;
-  }
-  #offcanvas-toggle-btn{
-    display: block;
-  }
-  #rightContentFrame{
-    width: 100%;
-    margin-left: 3%;
-    margin-right: 3%;
-  }
-}
-
-@media screen and (max-width: 700px) {
-  #rightContentFrame{
-    width: 100%;
-    margin-left: 0;
-    margin-right: 0;
-  }
-  #rightContentFrame a{
-    width: 49%;
-  }
-  #coupon{
-    height: 224px;
-    width: 400px;
-    margin-left: 10%;
-  }
-}
-
-@media screen and (max-width: 600px) {
   .half-full-container {
     width: 100%;
     padding-left: 0;
@@ -1005,7 +981,37 @@ footer{
   #offcanvas-toggle-btn{
     font-size: 1.2rem;
   }
+  
+  /* Screen size adjust for footer - top section */
+  
+  #footerLinksRow{
+    flex-wrap: wrap;
+  }
+  .footer-contact:last-child{
+    max-width: none;
+    width: auto;    
+  }
 }
+
+
+/* Screen size adjust for drop down menu bar listed items in the grid */
+
+@media screen and (max-width: 550px) {  
+  .dd-menubar-head {
+    font-size: small;    
+  }    
+}
+
+@media screen and (max-width: 500px) {
+  .dd-item-grid {
+    grid-template-columns: repeat(2, max-content);
+  }
+  .dd-menubar-head {
+    font-size: small;
+  }  
+}
+
+
 
 @media screen and (max-width: 450px) {
   #rightContentFrame a{
@@ -1013,10 +1019,16 @@ footer{
   }
   #offcanvas-toggle-btn{
     font-size: 1rem;
-  }
-  #coupon{
-    height: 120px;
-    width: 210px;
-    margin-left: 10%;
-  }
+  }  
 }
+
+@media screen and (max-width: 350px) {
+  .dd-item-grid {
+    grid-template-columns: repeat(1, max-content);
+  }
+  .dd-menubar-head {
+    font-size: small;
+  }  
+}
+
+

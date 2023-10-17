@@ -35,12 +35,12 @@
               <audio autoplay id="myaudio" loop="true">
                 <source src="../audio/easy-lifestyle-137766.mp3">
               </audio>
-              <i class="fa-solid fa-music"></i><button class="no-format" onclick="pausePlay()"><i id="playPauseBtn" class="fa-solid fa-pause"></i></button>
+              <i class="fa-solid fa-music"></i><button class="no-format" onclick="pausePlay()"><i id="playPauseBtn" class="fa-solid fa-play"></i></button>
             </span>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
             data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
             aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon smallerSize"></span>
+            <span class="navbar-toggler-icon smallerSizeIcon"></span>
           </button>
 
           <div class="collapse navbar-collapse bring-on-top format-dropdown-content" id="navbarSupportedContent">
@@ -78,10 +78,14 @@
               </li>
 
               <li class="nav-item d-flex align-items-center border-end">
+                <div class="dd-menubar-head-container">
                 <button class="download-icon-header top-header-btn no-format">Become a Supplier</button>
+              </div>
               </li>
               <li class="nav-item d-flex align-items-center border-end">
+                <div class="dd-menubar-head-container">
                 <button class="download-icon-header top-header-btn no-format">Newsroom</button>
+              </div>
               </li>
 
               <li class="nav-item d-flex align-items-center">
@@ -114,7 +118,7 @@
                 </div>
 
 
-                <div class="d-flex flex-column  justify-content-center align-items-center">
+                <div class="d-flex flex-column  justify-content-center align-items-center dd-menubar-head-container">
                   <a href="#"><img src="https://i.ibb.co/XX54WS3/cartIcon.png" alt="cartIcon"></a>
                   <button class="download-icon-header top-header-btn no-format"><span
                       class="top-header-btn">Cart</span></button>
@@ -463,8 +467,11 @@
     <a href="#"><div id="coupon">
       <button id="couponCloseBtn" onclick="closeCoupon()"><i class="fa-solid fa-xmark"></i></button>
       </div></a>
+      <div id="locality">
+        <marquee scrollamount="8" direction="left"><p id="displayLocality"></p></marquee>
+      </div>
     <!-- SECTION 1: Start of Section for Download App Frame -->
-    <section class="container-fluid my-5">
+    <section class="container-fluid">
       <div class="container-fluid d-flex justify-content-center">
         <div id="downloadFrame" class="row">
           <!-- Start of left half frame -->
@@ -775,12 +782,10 @@
                       <input type="checkbox" id="tshirts" name="categoryFilter" value="tshirts" />
                       <label for="tshirts">T-Shirts</label><br />
                     </div>
-                    <div>
-                      <!-- <a onclick="showMore()">Show more</a> -->
-                      <button src="../scripts/home.js" class="seamlessButton" onclick="showMore()" class="myBtn">
+                    <button src="../scripts/home.js" class="seamlessButton showMoreBtn" onclick="showMore()">
                         Show more
                       </button>
-                    </div>
+                    
                   </div>
                 </div>
               </div>
@@ -828,7 +833,7 @@
                       <input type="checkbox" id="banarasi" name="categoryFilter" value="banarasi" />
                       <label for="banarasi">Banarasi Silk</label><br />
                     </div>
-                    <div id="more">
+                    <div class="more">
                       <input type="checkbox" id="chanderiCotton" name="categoryFilter" value="chanderiCotton" />
                       <label for="chanderiCotton">Chanderi Cotton</label><br />
                       <input type="checkbox" id="chanderiSilk" name="categoryFilter" value="chanderiSilk" />
@@ -836,12 +841,11 @@
                       <input type="checkbox" id="cotton" name="categoryFilter" value="cotton" />
                       <label for="cotton">Cotton</label><br />
                     </div>
-                    <div>
-                      <!-- <a onclick="showMore()">Show more</a> -->
-                      <button src="../scripts/home.js" class="seamlessButton" onclick="showMore()" id="myBtn">
+                    
+                      <button src="../scripts/home.js" class="seamlessButton showMoreBtn" onclick="showMore()">
                         Show more
                       </button>
-                    </div>
+                    
                   </div>
                 </div>
               </div>
@@ -903,17 +907,17 @@
                     <button class="plainButton">Red</button>
                     <button class="plainButton">Khakhi</button>
                   </div>
-                  <div id="more">
+                  <div class="more">
                     <button class="plainButton">Boys</button>
                     <button class="plainButton">Girls</button>
                     <button class="plainButton">Men</button>
                     <button class="plainButton">Women</button>
                   </div>
-                  <div>
-                    <button src="../scripts/home.js" class="seamlessButton" onclick="showMore()" id="myBtn">
+                  
+                    <button src="../scripts/home.js" class="seamlessButton showMoreBtn" onclick="showMore()">
                       Show more
                     </button>
-                  </div>
+                  
                 </div>
               </div>
             </div>
@@ -960,14 +964,28 @@
                         class="fa-solid fa-indian-rupee-sign"></i> 199</button>
 
                   </div>
-                  <div id="more">
-
+                  <div class="more">
+                    <button class="plainButton"><i class="fa-solid fa-indian-rupee-sign"></i> 200 - <i
+                      class="fa-solid fa-indian-rupee-sign"></i> 249</button>
+                  <button class="plainButton"><i class="fa-solid fa-indian-rupee-sign"></i> 250 - <i
+                      class="fa-solid fa-indian-rupee-sign"></i> 299</button>
+                  <button class="plainButton"><i class="fa-solid fa-indian-rupee-sign"></i> 300 - <i
+                      class="fa-solid fa-indian-rupee-sign"></i> 399</button>                  
+                  <button class="plainButton"><i class="fa-solid fa-indian-rupee-sign"></i> 400 - <i
+                    class="fa-solid fa-indian-rupee-sign"></i> 499</button>
+                <button class="plainButton"><i class="fa-solid fa-indian-rupee-sign"></i> 500 - <i
+                    class="fa-solid fa-indian-rupee-sign"></i> 599</button>
+                <button class="plainButton"><i class="fa-solid fa-indian-rupee-sign"></i> 600 - <i
+                    class="fa-solid fa-indian-rupee-sign"></i> 699</button>
+                    <button class="plainButton"><i class="fa-solid fa-indian-rupee-sign"></i> 700 - <i
+                      class="fa-solid fa-indian-rupee-sign"></i> 799</button>
+                  <button class="plainButton"><i class="fa-solid fa-indian-rupee-sign"></i> 800 & Above</button>
                   </div>
-                  <div>
-                    <button src="../scripts/home.js" class="seamlessButton" onclick="showMore()" id="myBtn">
+                  
+                    <button src="../scripts/home.js" class="seamlessButton showMoreBtn" onclick="showMore()">
                       Show more
                     </button>
-                  </div>
+                  
                 </div>
               </div>
             </div>
@@ -1046,7 +1064,7 @@
                       <input type="checkbox" id="banarasi" name="categoryFilter" value="banarasi" />
                       <label for="banarasi">Aluminium</label><br />
                     </div>
-                    <div id="more">
+                    <div class="more">
                       <input type="checkbox" id="chanderiCotton" name="categoryFilter" value="chanderiCotton" />
                       <label for="chanderiCotton">Artificial Flowers</label><br />
                       <input type="checkbox" id="chanderiSilk" name="categoryFilter" value="chanderiSilk" />
@@ -1054,12 +1072,10 @@
                       <input type="checkbox" id="cotton" name="categoryFilter" value="cotton" />
                       <label for="cotton">Brass</label><br />
                     </div>
-                    <div>
-                      <!-- <a onclick="showMore()">Show more</a> -->
-                      <button src="../scripts/home.js" class="seamlessButton" onclick="showMore()" id="myBtn">
+                    <button src="../scripts/home.js" class="seamlessButton showMoreBtn" onclick="showMore()">
                         Show more
                       </button>
-                    </div>
+                    
                   </div>
                 </div>
               </div>
@@ -1168,8 +1184,7 @@
                       <label for="tshirts">T-Shirts</label><br />
                     </div>
 
-                    <!-- <a onclick="showMore()">Show more</a> -->
-                    <button src="../scripts/home.js" class="seamlessButton" onclick="showMore()">
+                    <button src="../scripts/home.js" class="seamlessButton showMoreBtn" onclick="showMore()">
                       Show more
                     </button>
 
@@ -1220,7 +1235,7 @@
                       <input type="checkbox" id="banarasi" name="categoryFilter" value="banarasi" />
                       <label for="banarasi">Banarasi Silk</label><br />
                     </div>
-                    <div id="more">
+                    <div class="more">
                       <input type="checkbox" id="chanderiCotton" name="categoryFilter" value="chanderiCotton" />
                       <label for="chanderiCotton">Chanderi Cotton</label><br />
                       <input type="checkbox" id="chanderiSilk" name="categoryFilter" value="chanderiSilk" />
@@ -1228,12 +1243,11 @@
                       <input type="checkbox" id="cotton" name="categoryFilter" value="cotton" />
                       <label for="cotton">Cotton</label><br />
                     </div>
-                    <div>
-                      <!-- <a onclick="showMore()">Show more</a> -->
-                      <button src="../scripts/home.js" class="seamlessButton" onclick="showMore()" id="myBtn">
+                    
+                      <button src="../scripts/home.js" class="seamlessButton showMoreBtn" onclick="showMore()">
                         Show more
                       </button>
-                    </div>
+                    
                   </div>
                 </div>
               </div>
@@ -1295,17 +1309,17 @@
                     <button class="plainButton">Red</button>
                     <button class="plainButton">Khakhi</button>
                   </div>
-                  <div id="more">
+                  <div class="more">
                     <button class="plainButton">Boys</button>
                     <button class="plainButton">Girls</button>
                     <button class="plainButton">Men</button>
                     <button class="plainButton">Women</button>
                   </div>
-                  <div>
-                    <button src="../scripts/home.js" class="seamlessButton" onclick="showMore()" id="myBtn">
+                  
+                    <button src="../scripts/home.js" class="seamlessButton showMoreBtn" onclick="showMore()">
                       Show more
                     </button>
-                  </div>
+                  
                 </div>
               </div>
             </div>
@@ -1352,14 +1366,28 @@
                         class="fa-solid fa-indian-rupee-sign"></i> 199</button>
 
                   </div>
-                  <div id="more">
-
+                  <div class="more">
+                    <button class="plainButton"><i class="fa-solid fa-indian-rupee-sign"></i> 200 - <i
+                      class="fa-solid fa-indian-rupee-sign"></i> 249</button>
+                  <button class="plainButton"><i class="fa-solid fa-indian-rupee-sign"></i> 250 - <i
+                      class="fa-solid fa-indian-rupee-sign"></i> 299</button>
+                  <button class="plainButton"><i class="fa-solid fa-indian-rupee-sign"></i> 300 - <i
+                      class="fa-solid fa-indian-rupee-sign"></i> 399</button>                  
+                  <button class="plainButton"><i class="fa-solid fa-indian-rupee-sign"></i> 400 - <i
+                    class="fa-solid fa-indian-rupee-sign"></i> 499</button>
+                <button class="plainButton"><i class="fa-solid fa-indian-rupee-sign"></i> 500 - <i
+                    class="fa-solid fa-indian-rupee-sign"></i> 599</button>
+                <button class="plainButton"><i class="fa-solid fa-indian-rupee-sign"></i> 600 - <i
+                    class="fa-solid fa-indian-rupee-sign"></i> 699</button>
+                    <button class="plainButton"><i class="fa-solid fa-indian-rupee-sign"></i> 700 - <i
+                      class="fa-solid fa-indian-rupee-sign"></i> 799</button>
+                  <button class="plainButton"><i class="fa-solid fa-indian-rupee-sign"></i> 800 & Above</button>
                   </div>
-                  <div>
-                    <button src="../scripts/home.js" class="seamlessButton" onclick="showMore()" id="myBtn">
+                  
+                    <button src="../scripts/home.js" class="seamlessButton showMoreBtn" onclick="showMore()">
                       Show more
                     </button>
-                  </div>
+                  
                 </div>
               </div>
             </div>
@@ -1438,7 +1466,7 @@
                       <input type="checkbox" id="banarasi" name="categoryFilter" value="banarasi" />
                       <label for="banarasi">Aluminium</label><br />
                     </div>
-                    <div id="more">
+                    <div class="more">
                       <input type="checkbox" id="chanderiCotton" name="categoryFilter" value="chanderiCotton" />
                       <label for="chanderiCotton">Artificial Flowers</label><br />
                       <input type="checkbox" id="chanderiSilk" name="categoryFilter" value="chanderiSilk" />
@@ -1446,12 +1474,10 @@
                       <input type="checkbox" id="cotton" name="categoryFilter" value="cotton" />
                       <label for="cotton">Brass</label><br />
                     </div>
-                    <div>
-                      <!-- <a onclick="showMore()">Show more</a> -->
-                      <button src="../scripts/home.js" class="seamlessButton" onclick="showMore()" id="myBtn">
+                    <button src="../scripts/home.js" class="seamlessButton showMoreBtn" onclick="showMore()">
                         Show more
                       </button>
-                    </div>
+                    
                   </div>
                 </div>
               </div>
@@ -1787,7 +1813,7 @@
                 </li>
                 <li class="cardListItem">
                   <button class="infoTag">
-                    <i class="fa-solid fa-indian-rupee-sign"></i> 93
+                    Delivery <i class="fa-solid fa-indian-rupee-sign"></i> 93
                   </button>
                 </li>
                 <li class="cardListItem">
