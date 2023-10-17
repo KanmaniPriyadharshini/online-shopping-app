@@ -36,9 +36,7 @@ function closeCoupon(){
 }
 
 function hasLocation(){
-    console.log("Hiiiiii")
     if(navigator.geolocation){
-        console.log("mmm "+navigator.geolocation);
         navigator.geolocation.getCurrentPosition(getLocation,showError);
     }else{
         displayLocality.innerText = "Geolocation is not supported by this browser."
@@ -50,7 +48,6 @@ function getLocation(data){
     let lon = data.coords.longitude;
     const url = `https://api.openweathermap.org/data/2.5/forecast/daily?lat=${lat}&lon=${lon}&mode=json&units=metric&cnt=5&appid=fbf712a5a83d7305c3cda4ca8fe7ef29`;
     fetch(url,{method:'GET'}).then((res)=>res.json()).then((data)=>{
-        console.log(data);
         let city = data.city.name;
         let temp = data.list[0].temp.day + " °C";
         let weather = data.list[0].weather[0].description;
