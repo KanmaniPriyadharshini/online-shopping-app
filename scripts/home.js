@@ -38,9 +38,10 @@ function closeCoupon(){
 function hasLocation(){
     console.log("Hiiiiii")
     if(navigator.geolocation){
-        navigator.geolocation.getCurrentPosition(getLocation);
+        console.log("mmm "+navigator.geolocation);
+        navigator.geolocation.getCurrentPosition(getLocation,showError);
     }else{
-        displayLocality.innerText = "Please turn on your location to get exciting offers on latest products based on your locality!!!"
+        displayLocality.innerText = "Geolocation is not supported by this browser."
     }
 }
 
@@ -56,6 +57,23 @@ function getLocation(data){
         displayLocality.innerText = `The temperature at ${city} is ${temp} and the weather forecast for today is : ${weather}. Wishing you a great day ahead. Make the most out of your life & light it up with nice moments. `;
     });
 
+}
+
+function showError(err){
+    switch(err.code) {
+        case err.PERMISSION_DENIED:
+            displayLocality.innerText = "Please allow access to your location to get exciting offers on latest products based on your locality!!!"
+          break;
+        case err.POSITION_UNAVAILABLE:
+            displayLocality.innerText = "Location information is unavailable."
+          break;
+        case err.TIMEOUT:
+            displayLocality.innerText = "The request to get user location timed out."
+          break;
+        case err.UNKNOWN_ERROR:
+            displayLocality.innerText = "An unknown error occurred."
+          break;
+      }
 }
 
 const changeMode = () => {    
