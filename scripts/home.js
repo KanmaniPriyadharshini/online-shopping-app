@@ -37,7 +37,14 @@ function closeCoupon(){
 
 function hasLocation(){
     if(navigator.geolocation){
-        navigator.geolocation.getCurrentPosition(getLocation,showError);
+        navigator.geolocation.watchPosition(function(position) {
+            navigator.geolocation.getCurrentPosition(getLocation,showError);
+          },
+          function(error) {
+            if (error.code == error.PERMISSION_DENIED)
+            displayLocality.innerText = "Please allow access to your location to get exciting offers on latest products based on your locality!!!";
+          });
+        //navigator.geolocation.getCurrentPosition(getLocation,showError);
     }else{
         displayLocality.innerText = "Geolocation is not supported by this browser."
     }
