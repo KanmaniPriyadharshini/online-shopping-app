@@ -56,17 +56,17 @@
                   <div class="start-dropdown">
                     <button class="download-icon-header top-header-btn dd-menubar-head no-format">
                       <img class="img-fluid" src="https://i.ibb.co/x7Jj5MV/download-Icon.png" alt="download icon">
-                      <span class="top-header-btn">Download App</span>
+                      <span class="top-header-btn">DownloadApp</span>
                     </button>
-                    <div class="dd-items-bg">
+                    <div class="dd-items-bg-top-hdr">
                       <div class="row">
                         <div class="column">
-                          <div class="dd-menuitems w-100">
+                          <div class="dd-menuitems">
                             <h3 class="dd-menuitem no-format disabled">Download From</h3>
-                            <a href="#" class="dd-menuitem no-format mx-3 my-3"><img
+                            <a href="#" class="dd-menuitem no-format"><img
                                 src="https://i.ibb.co/JdB0Ncp/playstore-Icon.png" alt="playstore icon"
                                 class="img-fluid" /></a>
-                            <a href="#" class="dd-menuitem no-format mx-3 my-3"><img
+                            <a href="#" class="dd-menuitem no-format"><img
                                 src="https://i.ibb.co/ckZtt1m/appstore-Icon.png" alt="appstore icon"
                                 class="img-fluid" /></a>
                           </div>
@@ -98,7 +98,7 @@
                       </div>
 
                     </button>
-                    <div class="dd-items-bg">
+                    <div class="dd-items-bg-top-hdr">
                       <div class="row profile-grid">
                         <div class="column">
                           <div class="dd-menuitems">
@@ -119,8 +119,10 @@
 
 
                 <div class="d-flex flex-column  justify-content-center align-items-center dd-menubar-head-container">
-                  <a href="#"><img src="https://i.ibb.co/XX54WS3/cartIcon.png" alt="cartIcon"></a>
-                  <button class="download-icon-header top-header-btn no-format"><span
+                  
+                  <button class="download-icon-header top-header-btn no-format">
+                    <a href="#"><img src="https://i.ibb.co/XX54WS3/cartIcon.png" alt="cartIcon"></a>
+                    <span
                       class="top-header-btn">Cart</span></button>
                 </div>
               </li>
@@ -671,7 +673,7 @@
     <!-- Section 3: End of Section for Partner With Us Frame -->
 
     <!-- Section 4: Start of Section for Products For You Frame -->
-    <section id="products" class="container-fluid container-md my-5">
+    <section id="products" class="container-fluid my-5">
       <div class="headingBar">
         <h1><span class="heading">Products For You</span></h1>
       </div><br><br>
@@ -689,7 +691,7 @@
           <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
         </div>
         <div class="form-floating my-3">
-          <select class="form-select" id="floatingSelect" aria-label="Floating label select example">
+          <select class="form-select" id="floatingSelectOffcanvas" aria-label="Floating label select example">
             <option value="relevance" selected>Relevance</option>
             <option value="newArrivals">New Arrivals</option>
             <option value="highToLowPrice">Price (High to Low)</option>
@@ -697,7 +699,7 @@
             <option value="ratings">Ratings</option>
             <option value="discount">Discount</option>
           </select>
-          <label for="floatingSelect">Sort by : </label>
+          <label class="sortByLabel" for="floatingSelectOffcanvas">Sort by : </label>
         </div>
 
         <div class="filters w-100">
@@ -893,7 +895,7 @@
                 </button>
               </h2>
               <div id="colorData" class="accordion-collapse collapse">
-                <div id="accordion-body accordBody">
+                <div class="accordion-body accordBody">
                   <div>
                     <button class="plainButton">Biege</button>
                     <button class="plainButton">Black</button>
@@ -1098,14 +1100,14 @@
             <option value="ratings">Ratings</option>
             <option value="discount">Discount</option>
           </select>
-          <label for="floatingSelect">Sort by : </label>
+          <label class="sortByLabel" for="floatingSelect">Sort by : </label>
         </div>
 
         <div class="filters w-100">
           <div class="accordion" id="filtersAccordion">
             <!-- Accordion Heading -->
             <div class="accordion-item">
-              <div class="accordion-body">
+              <div class="accordion-body accordBody">
                 <strong>FILTERS</strong><br />
                 <small>1000+ Products</small>
               </div>
@@ -1295,7 +1297,7 @@
                 </button>
               </h2>
               <div id="colorData" class="accordion-collapse collapse">
-                <div id="accordion-body accordBody">
+                <div class="accordion-body accordBody">
                   <div>
                     <button class="plainButton">Biege</button>
                     <button class="plainButton">Black</button>
@@ -1489,7 +1491,7 @@
       <!-- Section 4.2: End of left side filter section -->
 
       <!-- Section 4.3: Start of right side content section -->
-      <div id="rightContentFrame" class="d-flex flex-wrap justify-content-left align-content-start">
+      <div id="rightContentFrame">
 
         <a href="#" class="no-format">
           <div class="myCard img-fluid">
