@@ -121,6 +121,7 @@ const changeMode = () => {
             i.style.color = 'white';
         }
         document.getElementById("leftFilterFrame").style.backgroundColor = '#4c4c4c';
+        document.getElementById("leftFilterFrameOffcanvas").style.backgroundColor = '#4c4c4c';
         dark=true;
     }
     else{
@@ -160,6 +161,7 @@ const changeMode = () => {
             i.style.color = 'grey';
         }
         document.getElementById("leftFilterFrame").style.backgroundColor = 'white';
+        document.getElementById("leftFilterFrameOffcanvas").style.backgroundColor = 'white';
         dark=false;
     }    
 }
