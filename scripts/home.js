@@ -31,8 +31,14 @@ function onLoadPage(){
 
 function closeCoupon(){
     document.getElementById("coupon").style.visibility = 'hidden';
-    document.getElementById("downloadFrame").style.opacity = '1';
-    document.getElementById("topCategoriesSection").style.opacity = '1';
+    if(!dark){
+        document.getElementById("downloadFrame").style.opacity = '1';
+        document.getElementById("topCategoriesSection").style.opacity = '1';
+    }else{
+        document.getElementById("downloadFrame").style.opacity = '0.7';
+        document.getElementById("topCategoriesSection").style.opacity = '0.7';
+    }
+    
 }
 
 function hasLocation(){
@@ -122,6 +128,7 @@ const changeMode = () => {
         }
         document.getElementById("leftFilterFrame").style.backgroundColor = '#4c4c4c';
         document.getElementById("leftFilterFrameOffcanvas").style.backgroundColor = '#4c4c4c';
+        document.getElementById("footerAccordionBody").style.backgroundColor = 'lightsteelblue';
         dark=true;
     }
     else{
@@ -162,6 +169,7 @@ const changeMode = () => {
         }
         document.getElementById("leftFilterFrame").style.backgroundColor = 'white';
         document.getElementById("leftFilterFrameOffcanvas").style.backgroundColor = 'white';
+        document.getElementById("footerAccordionBody").style.backgroundColor = 'white';
         dark=false;
     }    
 }
