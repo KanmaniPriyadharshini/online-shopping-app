@@ -24,7 +24,7 @@ function pausePlay(){
 // const couponTimeOut = setTimeout(closeCoupon, 10000);
 function onLoadPage(){
     document.getElementById("coupon").style.visibility = 'visible';
-    document.getElementById("downloadFrame").style.opacity = '0.5';
+    document.getElementById("downloadSection").style.opacity = '0.5';
     document.getElementById("topCategoriesSection").style.opacity = '0.5';
     hasLocation();
 }
@@ -32,10 +32,10 @@ function onLoadPage(){
 function closeCoupon(){
     document.getElementById("coupon").style.visibility = 'hidden';
     if(!dark){
-        document.getElementById("downloadFrame").style.opacity = '1';
+        document.getElementById("downloadSection").style.opacity = '1';
         document.getElementById("topCategoriesSection").style.opacity = '1';
     }else{
-        document.getElementById("downloadFrame").style.opacity = '0.7';
+        document.getElementById("downloadSection").style.opacity = '0.7';
         document.getElementById("topCategoriesSection").style.opacity = '0.7';
     }
     
@@ -94,11 +94,22 @@ const changeMode = () => {
         document.getElementById('darkModeButton').classList.remove('fa-moon');
         document.getElementById('darkModeButton').classList.add('fa-sun');
         document.getElementById('darkModeButton').innerText = ' Light Mode';
+        document.getElementById('headerContent').style.backgroundColor = 'slategrey';        
         document.getElementById("displayLocality").style.color = 'white';
         document.getElementById("coupon").style.backgroundImage = 'linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.4)), url(https://i.ibb.co/JR9w6GH/meesho-Coupon.jpg)';
-        document.getElementById("downloadFrame").style.opacity = '0.7';
+        document.getElementById("downloadSection").style.opacity = '0.7';
         document.getElementById("topCategoriesSection").style.opacity = '0.7';
         document.getElementById("partner").style.opacity = '0.7';
+        document.getElementById("playPauseBtn").style.color = 'black';
+       document.querySelectorAll('.profile-grid')[0].style.backgroundColor = "lightsteelblue";
+        let dropdown = document.querySelectorAll('.dd-items-bg-top-hdr');
+        for(let i=0;i<dropdown.length;i++){
+            dropdown[i].style.backgroundColor = "lightsteelblue";            
+        }
+        let itemGrids = document.querySelectorAll('.dd-item-grid');
+        for(let i=0;i<itemGrids.length;i++){
+            itemGrids[i].style.backgroundColor = "lightsteelblue";            
+        }
         for(i of document.getElementsByClassName("form-floating"))
         {
             i.getElementsByTagName("select")[0].style.backgroundColor = "slategrey";
@@ -135,11 +146,22 @@ const changeMode = () => {
         document.getElementById('darkModeButton').classList.remove('fa-sun');
         document.getElementById('darkModeButton').classList.add('fa-moon');
         document.getElementById('darkModeButton').innerText = ' Dark Mode';
+        document.getElementById('headerContent').style.backgroundColor = 'white'; 
         document.getElementById("displayLocality").style.color = 'black';
         document.getElementById("coupon").style.backgroundImage = 'url(https://i.ibb.co/JR9w6GH/meesho-Coupon.jpg)';
-        document.getElementById("downloadFrame").style.opacity = '1';
+        document.getElementById("downloadSection").style.opacity = '1';
         document.getElementById("topCategoriesSection").style.opacity = '1';
         document.getElementById("partner").style.opacity = '1';
+        document.getElementById("playPauseBtn").style.color = 'gray';
+        document.querySelectorAll('.profile-grid')[0].style.backgroundColor = "white";
+        let dropdown = document.querySelectorAll('.dd-items-bg-top-hdr');
+        for(let i=0;i<dropdown.length;i++){
+            dropdown[i].style.backgroundColor = "white";            
+        }
+        let itemGrids = document.querySelectorAll('.dd-item-grid');
+        for(let i=0;i<itemGrids.length;i++){
+            itemGrids[i].style.backgroundColor = "white";            
+        }
         for(i of document.getElementsByClassName("form-floating"))
         {
             i.getElementsByTagName("select")[0].style.backgroundColor = "white";

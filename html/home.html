@@ -14,11 +14,10 @@
     integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"
     defer></script>
   <script src="https://kit.fontawesome.com/c4338603d0.js" crossorigin="anonymous" defer></script>
-  <link href="https://fonts.cdnfonts.com/css/helvetica-neue-5" rel="stylesheet">
+  <!-- <link href="https://fonts.cdnfonts.com/css/helvetica-neue-5" rel="stylesheet"> -->
 
   <link rel="stylesheet" href="../style sheets/home.css" />
-  <link href="https://i.ibb.co/mtWQSg1/meesho-small-icon.png" rel="icon" />
-  <script src="../scripts/home.js" defer></script>
+  <link href="https://i.ibb.co/mtWQSg1/meesho-small-icon.png" rel="icon" />  
 </head>
 
 <body>
@@ -27,7 +26,7 @@
       <!-- Start of top part of header bar -->
       <nav id="top-header-bar" class="navbar navbar-expand-lg bg-body-tertiary">
         <div class="container-fluid container-md">
-          <a class="navbar-brand" href="#"><img id="meesho-name-icon" src="https://i.ibb.co/2ZHQXpP/new-Meesho-Icon.png"
+          <a id="navbar-brand" href="#"><img id="meesho-name-icon" src="https://i.ibb.co/2ZHQXpP/new-Meesho-Icon.png"
               alt="meesho-icon" /></a>
           <button onclick="changeMode()" class="no-format px-3"><i id="darkModeButton" class="fa-regular fa-moon">Dark
               Mode</i></button>
@@ -84,7 +83,7 @@
               </li>
               <li class="nav-item d-flex align-items-center border-end">
                 <div class="dd-menubar-head-container">
-                <button class="download-icon-header top-header-btn no-format">Newsroom</button>
+                <button class="download-icon-header top-header-btn no-format">News room</button>
               </div>
               </li>
 
@@ -462,10 +461,6 @@
   </header>
 
   <main id="mainDiv">
-    <!-- <div id="coupon">
-      <a href="#"><button id="couponCloseBtn" onclick="closeCoupon()"><i class="fa-solid fa-xmark"></i></button><img
-          id="couponImage" class="img-fluid" src="https://i.ibb.co/JR9w6GH/meesho-Coupon.jpg" alt="meesho-Coupon"></a>
-    </div> -->
     <a href="#"><div id="coupon">
       <button id="couponCloseBtn" onclick="closeCoupon()"><i class="fa-solid fa-xmark"></i></button>
       </div></a>
@@ -473,12 +468,13 @@
         <marquee scrollamount="8" direction="left"><p id="displayLocality"></p></marquee>
       </div>
     <!-- SECTION 1: Start of Section for Download App Frame -->
-    <section class="container-fluid">
+    <section id="downloadSection" class="container-fluid">
+      <!-- DIV 1: Start of Download App Frame -->
       <div class="container-fluid d-flex justify-content-center">
         <div id="downloadFrame" class="row">
           <!-- Start of left half frame -->
           <div id = "downloadAppLeftFrame"
-            class="col-container col-xl-6 col-lg-6 col-md-6 d-flex flex-column bg-aliceblue justify-content-center half-full-container">
+            class="col-container col-xl-7 col-lg-7 col-md-7 d-flex flex-column bg-aliceblue justify-content-center half-full-container">
             <!-- Start of text area -->
             <div class="row fs-1 fw-bolder">
               <div>Lowest Prices</div>
@@ -489,19 +485,19 @@
             <div class="row rounded d-flex my-5 bg-white m-2">
               <div class="col border-end">
                 <span>
-                  <img src="https://i.ibb.co/98Cr6Lx/free-Delivery.png" alt="icon" />
+                  <img src="https://i.ibb.co/98Cr6Lx/free-Delivery.png" loading="lazy" alt="icon" />
                   <span>Free Delivery</span>
                 </span>
               </div>
               <div class="col border-end">
                 <span>
-                  <img src="https://i.ibb.co/ydZgNgh/cash-On-Delivery.png" alt="icon" />
+                  <img src="https://i.ibb.co/ydZgNgh/cash-On-Delivery.png" loading="lazy" alt="icon" />
                   <span>Cash On Delivery</span>
                 </span>
               </div>
               <div class="col">
                 <span>
-                  <img src="https://i.ibb.co/zJv5rMb/easy-Returns.png" alt="icon" />
+                  <img src="https://i.ibb.co/zJv5rMb/easy-Returns.png" loading="lazy" alt="icon" />
                   <span>Easy Returns</span>
                 </span>
               </div>
@@ -522,13 +518,62 @@
           <!-- End of left half frame -->
 
           <!--Start of right side image frame -->
-          <div class="col-container col-xl-6 col-lg-6 col-md-6 p-0 half-full-container">
-            <img src="https://i.ibb.co/CHTfRf9/meesho-makeover.webp" alt="Maha Savings Image"
+          <div class="col-container col-xl-5 col-lg-5 col-md-5 p-0 half-full-container" id="meesho-makeover-img-container">
+            <img src="../images/Meesho-Mega-Blockbuster-Sale.webp" loading="lazy" alt="Maha Savings Image"
               class="img-fluid half-full-container fullWidth" />
           </div>
           <!--End of right side image frame -->
         </div>
       </div>
+      <!-- DIV 1: End of Download App Frame -->
+      <!-- DIV 2: Start of Carousel Frame -->      
+        <div id="carouselExampleCaptions" class="carousel slide carousel-frame container-md" data-bs-ride="carousel">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="https://i.ibb.co/yBJXqFk/car1.webp" loading="lazy" class="d-block w-100" alt="Carousel Image">
+              <div class="carousel-caption">
+                <h5>AVAIL 30% OFF ON FIRST ORDER</h5>
+                <p>ORDER VIA  APP OR WEBSITE</p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="https://i.ibb.co/5xr25X2/caros4.png" loading="lazy" class="d-block w-100" alt="Carousel Image">
+              <div class="carousel-caption">
+                <h5>SHOP FROM 60LAKH+ PRODUCTS</h5>
+                <p>AT WHOLESALE PRICE</p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="https://i.ibb.co/jVJzLMj/caros5.jpg" loading="lazy" class="d-block w-100" alt="Carousel Image">
+              <div class="carousel-caption">
+                <h5>GO ALL OUT IN STYLE</h5>
+                <p>WITH THE LATEST TREND SETTING NEW ARRIVALS</p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="https://i.ibb.co/HC5fVTd/caros2.jpg" loading="lazy" class="d-block w-100" alt="Carousel Image">
+              <div class="carousel-caption">
+                <h5>POCKET FRIENDLY DISCOUNTS FOR YOU</h5>
+                <p>ON MEESHO MEGA SALE</p>
+              </div>
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>      
+      <!-- DIV 2: End of Carousel Frame -->
     </section>
     <!-- Section 1: End of Section for Download App Frame -->
 
@@ -541,13 +586,13 @@
       <section class="topCategoriesFrame container-md my-5">
         <div class="d-flex align-items-end justify-content-evenly topCategoriesItems fashionbg1">
           <div class="imgModel1">
-            <a href="#"><img src="https://i.ibb.co/N186Ft7/women-Store.jpg" alt="Women Store" class="img-fluid" /></a>
+            <a href="#"><img src="https://i.ibb.co/N186Ft7/women-Store.jpg" loading="lazy" alt="Women Store" class="img-fluid" /></a>
           </div>
           <div class="imgModel2">
-            <a href="#"><img src="https://i.ibb.co/ys2wDg4/menStore.webp" alt="Men Store" class="img-fluid" /></a>
+            <a href="#"><img src="https://i.ibb.co/ys2wDg4/menStore.webp" loading="lazy" alt="Men Store" class="img-fluid" /></a>
           </div>
           <div class="imgModel2">
-            <a href="#"><img src="https://i.ibb.co/S33wXHc/kidStore.jpg" alt="Kid Store" class="img-fluid" /></a>
+            <a href="#"><img src="https://i.ibb.co/S33wXHc/kidStore.jpg" loading="lazy" alt="Kid Store" class="img-fluid" /></a>
           </div>
         </div>
       </section>
@@ -564,21 +609,21 @@
           <div
             class="col-container col-xl-8 col-lg-8 col-md-8 col-sm-12 col-xs-12 d-flex justify-content-end p-2 half-full-container">
             <div class="d-flex flex-column align-items-center">
-              <a href="#"><img src="https://i.ibb.co/cQSWbHQ/home-Decor-Img.jpg" alt="home"
+              <a href="#"><img src="https://i.ibb.co/cQSWbHQ/home-Decor-Img.jpg" loading="lazy" alt="home"
                   class="imgModel3 img-fluid" /></a>
-              <a href="#"><img src="https://i.ibb.co/vXw6WxV/home-Label.webp" alt="Home Decor" class="img-fluid" /></a>
+              <a href="#"><img src="https://i.ibb.co/vXw6WxV/home-Label.webp" loading="lazy" alt="Home Decor" class="img-fluid" /></a>
             </div>
 
             <div class="d-flex flex-column align-items-center">
-              <a href="#"><img src="https://i.ibb.co/DPFtFsm/kitchen-Img.jpg" alt="kitchen"
+              <a href="#"><img src="https://i.ibb.co/DPFtFsm/kitchen-Img.jpg" loading="lazy" alt="kitchen"
                   class="imgModel3 img-fluid" /></a>
-              <a href="#"><img src="https://i.ibb.co/rM7MXby/kitchen-Label.webp" alt="Kitchen" class="img-fluid" /></a>
+              <a href="#"><img src="https://i.ibb.co/rM7MXby/kitchen-Label.webp" loading="lazy" alt="Kitchen" class="img-fluid" /></a>
             </div>
 
             <div class="d-flex flex-column align-items-center">
-              <a href="#"><img src="https://i.ibb.co/t3kYhzS/health-Img.jpg" alt="health"
+              <a href="#"><img src="https://i.ibb.co/t3kYhzS/health-Img.jpg" loading="lazy" alt="health"
                   class="imgModel3 img-fluid" /></a>
-              <a href="#"><img src="https://i.ibb.co/zP65hSG/health-Label.webp" alt="Health" class="img-fluid" /></a>
+              <a href="#"><img src="https://i.ibb.co/zP65hSG/health-Label.webp" loading="lazy" alt="Health" class="img-fluid" /></a>
             </div>
           </div>
         </div>
@@ -590,29 +635,29 @@
           class="col-container d-flex align-items-center col-sm-12 col-xs-12 flex-shrink-1 topCategoriesItems fashionbg3 flex-wrap-reverse">
           <div
             class="col-container col-xl-4 col-lg-4 col-md-4 col-sm-12 col-xs-12 d-flex align-items-center justify-content-center half-full-container">
-            <a href="#"><img src="https://i.ibb.co/dWMsT3p/viewallbutton.png" alt="View All"
+            <a href="#"><img src="https://i.ibb.co/dWMsT3p/viewallbutton.png" loading="lazy" alt="View All"
                 class="img-fluid viewBtn" /></a>
           </div>
           <div
             class="col-container col-xl-8 col-lg-8 col-md-8 col-sm-12 col-xs-12 d-flex justify-content-end p-2 half-full-container">
             <div class="d-flex flex-column align-items-center">
-              <a href="#"><img src="https://i.ibb.co/YXgpXzh/accessories-Img.jpg" alt="accessories"
+              <a href="#"><img src="https://i.ibb.co/YXgpXzh/accessories-Img.jpg" loading="lazy" alt="accessories"
                   class="imgModel3 img-fluid" /></a>
-              <a href="#"><img src="https://i.ibb.co/1v9dxGx/accessories-Label.webp" alt="accessories"
+              <a href="#"><img src="https://i.ibb.co/1v9dxGx/accessories-Label.webp" loading="lazy" alt="accessories"
                   class="img-fluid" /></a>
             </div>
 
             <div class="d-flex flex-column align-items-center">
-              <a href="#"><img src="https://i.ibb.co/WBfQ1Gv/footwear-Img.jpg" alt="footwear"
+              <a href="#"><img src="https://i.ibb.co/WBfQ1Gv/footwear-Img.jpg" loading="lazy" alt="footwear"
                   class="imgModel3 img-fluid" /></a>
-              <a href="#"><img src="https://i.ibb.co/nCMKPM6/footwear-Label.webp" alt="footwear"
+              <a href="#"><img src="https://i.ibb.co/nCMKPM6/footwear-Label.webp" loading="lazy" alt="footwear"
                   class="img-fluid" /></a>
             </div>
 
             <div class="d-flex flex-column align-items-center">
-              <a href="#"><img src="https://i.ibb.co/KD4zCYp/electronics-Img.jpg" alt="electronics"
+              <a href="#"><img src="https://i.ibb.co/KD4zCYp/electronics-Img.jpg" loading="lazy" alt="electronics"
                   class="imgModel3 img-fluid" /></a>
-              <a href="#"><img src="https://i.ibb.co/7gMjbJK/electronics-Label.webp" alt="electronics"
+              <a href="#"><img src="https://i.ibb.co/7gMjbJK/electronics-Label.webp" loading="lazy" alt="electronics"
                   class="img-fluid" /></a>
             </div>
           </div>
@@ -633,10 +678,10 @@
         <p class="resellerTagEnd">With Zero Investment</p>
         <div class="playstoreIcons" class="d-flex justify-content-end">
           <a href="#">
-            <img src="https://i.ibb.co/JdB0Ncp/playstore-Icon.png" alt="playstore icon" class="img-fluid" />
+            <img src="https://i.ibb.co/JdB0Ncp/playstore-Icon.png" loading="lazy" alt="playstore icon" class="img-fluid" />
           </a>
           <a href="#">
-            <img src="https://i.ibb.co/ckZtt1m/appstore-Icon.png" alt="appstore icon" class="img-fluid" />
+            <img src="https://i.ibb.co/ckZtt1m/appstore-Icon.png" loading="lazy" alt="appstore icon" class="img-fluid" />
           </a>
         </div>
       </div>
@@ -648,19 +693,19 @@
         <div id="supplierIcon" class="row rounded d-flex my-4 bg-transparent">
           <div class="col border-end">
             <span>
-              <img src="https://i.ibb.co/XjkjRxx/checkmark.png" alt="icon" />
+              <img src="https://i.ibb.co/XjkjRxx/checkmark.png" loading="lazy" alt="icon" />
               <span>Grow your business 10x</span>
             </span>
           </div>
           <div class="col border-end">
             <span>
-              <img src="https://i.ibb.co/XjkjRxx/checkmark.png" alt="icon" />
+              <img src="https://i.ibb.co/XjkjRxx/checkmark.png" loading="lazy" alt="icon" />
               <span>Enjoy 100% profit</span>
             </span>
           </div>
           <div class="col">
             <span>
-              <img src="https://i.ibb.co/XjkjRxx/checkmark.png" alt="icon" />
+              <img src="https://i.ibb.co/XjkjRxx/checkmark.png" loading="lazy" alt="icon" />
               <span>Sell all over India</span>
             </span>
           </div>
@@ -1496,11 +1541,11 @@
         <a href="#" class="no-format">
           <div class="myCard img-fluid">
             <div class="myCardImg">
-              <img src="https://i.ibb.co/v36884G/women-Gown.webp" alt="model" /><button class="infoTag">+3 more</button>
+              <img src="https://i.ibb.co/TRQm5W2/prod3.jpg" loading="lazy" alt="model" /><button class="infoTag">+3 more</button>
             </div>
             <div class="myCardBody">
               <h5 class="cardTitle">
-                <span class="d-inline-block text-truncate no-format" style="max-width: 150px;">
+                <span class="d-inline-block text-truncate no-format">
                   Buckly Women Dresses
                 </span>
               </h5>
@@ -1524,20 +1569,19 @@
         </a>
 
         <a href="#" class="no-format">
-          <div class="myCard img-fluid">
+          <div class="myCard">
             <div class="myCardImg">
-              <img src="https://i.ibb.co/hdGQ0Dw/prod2.webp" alt="prod2" alt="model" /><button class="infoTag">+4
-                more</button>
+              <img src="https://i.ibb.co/2vRPshk/prod5west.webp" loading="lazy" alt="model" /><button class="infoTag">+3 more</button>
             </div>
             <div class="myCardBody">
               <h5 class="cardTitle">
-                <span class="d-inline-block text-truncate no-format" style="max-width: 150px;">
-                  Myra Petite Women Kurta Sets
+                <span class="d-inline-block text-truncate no-format">
+                  Trendy Feminine Women Dresses
                 </span>
               </h5>
               <ul class="cardList">
                 <li class="cardListItem">
-                  <span class="price"><i class="fa-solid fa-indian-rupee-sign"></i> 384
+                  <span class="price"><i class="fa-solid fa-indian-rupee-sign"></i> 190
                   </span>
                   onwards
                 </li>
@@ -1546,22 +1590,22 @@
                 </li>
                 <li class="cardListItem">
                   <button type="button" class="button-addon1">
-                    4.5
-                    <i class="fa-solid fa-star"></i></button> 321526 Reviews
+                    3.7
+                    <i class="fa-solid fa-star"></i></button> 20354 Reviews
                 </li>
               </ul>
             </div>
           </div>
         </a>
-
+        
         <a href="#" class="no-format">
           <div class="myCard img-fluid">
             <div class="myCardImg">
-              <img src="https://i.ibb.co/S6FxfKv/prod3.webp" alt="model" /><button class="infoTag">+6 more</button>
+              <img src="https://i.ibb.co/S6FxfKv/prod3.webp" loading="lazy" alt="model" /><button class="infoTag">+6 more</button>
             </div>
             <div class="myCardBody">
               <h5 class="cardTitle">
-                <span class="d-inline-block text-truncate no-format" style="max-width: 150px;">
+                <span class="d-inline-block text-truncate no-format">
                   Gorgeous Fashionable Women Bags
                 </span>
               </h5>
@@ -1587,11 +1631,11 @@
         <a href="#" class="no-format">
           <div class="myCard img-fluid">
             <div class="myCardImg">
-              <img src="https://i.ibb.co/zsXhypK/prod4bag.webp" alt="model" /><button class="infoTag">+6 more</button>
+              <img src="https://i.ibb.co/zsXhypK/prod4bag.webp" loading="lazy" alt="model" /><button class="infoTag">+6 more</button>
             </div>
             <div class="myCardBody">
               <h5 class="cardTitle">
-                <span class="d-inline-block text-truncate no-format" style="max-width: 150px;">
+                <span class="d-inline-block text-truncate no-format">
                   Elegant Alluring Women Bags
                 </span>
               </h5>
@@ -1615,19 +1659,20 @@
         </a>
 
         <a href="#" class="no-format">
-          <div class="myCard">
+          <div class="myCard img-fluid">
             <div class="myCardImg">
-              <img src="https://i.ibb.co/2vRPshk/prod5west.webp" alt="model" /><button class="infoTag">+3 more</button>
+              <img src="https://i.ibb.co/hdGQ0Dw/prod2.webp" loading="lazy" alt="prod2" alt="model" /><button class="infoTag">+4
+                more</button>
             </div>
             <div class="myCardBody">
               <h5 class="cardTitle">
-                <span class="d-inline-block text-truncate no-format" style="max-width: 150px;">
-                  Trendy Feminine Women Dresses
+                <span class="d-inline-block text-truncate no-format">
+                  Myra Petite Women Kurta Sets
                 </span>
               </h5>
               <ul class="cardList">
                 <li class="cardListItem">
-                  <span class="price"><i class="fa-solid fa-indian-rupee-sign"></i> 190
+                  <span class="price"><i class="fa-solid fa-indian-rupee-sign"></i> 384
                   </span>
                   onwards
                 </li>
@@ -1636,22 +1681,23 @@
                 </li>
                 <li class="cardListItem">
                   <button type="button" class="button-addon1">
-                    3.7
-                    <i class="fa-solid fa-star"></i></button> 20354 Reviews
+                    4.5
+                    <i class="fa-solid fa-star"></i></button> 321526 Reviews
                 </li>
               </ul>
             </div>
           </div>
         </a>
 
+
         <a href="#" class="no-format">
           <div class="myCard">
             <div class="myCardImg">
-              <img src="https://i.ibb.co/5vTTc2r/prod6bag.webp" alt="model" /><button class="infoTag">+8 more</button>
+              <img src="https://i.ibb.co/5vTTc2r/prod6bag.webp" loading="lazy" alt="model" /><button class="infoTag">+8 more</button>
             </div>
             <div class="myCardBody">
               <h5 class="cardTitle">
-                <span class="d-inline-block text-truncate no-format" style="max-width: 150px;">
+                <span class="d-inline-block text-truncate no-format">
                   Stylish Backpacks
                 </span>
               </h5>
@@ -1677,11 +1723,11 @@
         <a href="#" class="no-format">
           <div class="myCard">
             <div class="myCardImg">
-              <img src="https://i.ibb.co/q7cKCzh/prod7sock.webp" alt="model" /><button class="infoTag">+12 more</button>
+              <img src="https://i.ibb.co/q7cKCzh/prod7sock.webp" loading="lazy" alt="model" /><button class="infoTag">+12 more</button>
             </div>
             <div class="myCardBody">
               <h5 class="cardTitle">
-                <span class="d-inline-block text-truncate no-format" style="max-width: 150px;">
+                <span class="d-inline-block text-truncate no-format">
                   Chrome and Coral Socks
                 </span>
               </h5>
@@ -1707,11 +1753,11 @@
         <a href="#" class="no-format">
           <div class="myCard">
             <div class="myCardImg">
-              <img src="https://i.ibb.co/8xp6F5g/prod8chain.webp" alt="model" /><button class="infoTag">+8 more</button>
+              <img src="https://i.ibb.co/8xp6F5g/prod8chain.webp" loading="lazy" alt="model" /><button class="infoTag">+8 more</button>
             </div>
             <div class="myCardBody">
               <h5 class="cardTitle">
-                <span class="d-inline-block text-truncate no-format" style="max-width: 150px;">
+                <span class="d-inline-block text-truncate no-format">
                   Sizzling Fancy Women Necklace
                 </span>
               </h5>
@@ -1737,11 +1783,11 @@
         <a href="#" class="no-format">
           <div class="myCard">
             <div class="myCardImg">
-              <img src="https://i.ibb.co/3p3n1F4/prod28men.webp" alt="model" /><button class="infoTag">+6 more</button>
+              <img src="https://i.ibb.co/3p3n1F4/prod28men.webp" loading="lazy" alt="model" /><button class="infoTag">+6 more</button>
             </div>
             <div class="myCardBody">
               <h5 class="cardTitle">
-                <span class="d-inline-block text-truncate no-format" style="max-width: 150px;">
+                <span class="d-inline-block text-truncate no-format">
                   Urbane Trendy Men Dresses
                 </span>
               </h5>
@@ -1767,12 +1813,12 @@
         <a href="#" class="no-format">
           <div class="myCard">
             <div class="myCardImg">
-              <img src="https://i.ibb.co/FhBdhvL/prod10chain.webp" alt="model" /><button class="infoTag">+3
+              <img src="https://i.ibb.co/FhBdhvL/prod10chain.webp" loading="lazy" alt="model" /><button class="infoTag">+3
                 more</button>
             </div>
             <div class="myCardBody">
               <h5 class="cardTitle">
-                <span class="d-inline-block text-truncate no-format" style="max-width: 150px;">
+                <span class="d-inline-block text-truncate no-format">
                   Allure Fancy Women Jewellery
                 </span>
               </h5>
@@ -1798,12 +1844,12 @@
         <a href="#" class="no-format">
           <div class="myCard">
             <div class="myCardImg">
-              <img src="https://i.ibb.co/C2GQhFh/prod11blututh.webp" alt="model" /><button class="infoTag">+3
+              <img src="https://i.ibb.co/C2GQhFh/prod11blututh.webp" loading="lazy" alt="model" /><button class="infoTag">+3
                 more</button>
             </div>
             <div class="myCardBody">
               <h5 class="cardTitle">
-                <span class="d-inline-block text-truncate no-format" style="max-width: 150px;">
+                <span class="d-inline-block text-truncate no-format">
                   Bluetooth Headphones And Wireless Earbuds
                 </span>
               </h5>
@@ -1831,12 +1877,12 @@
         <a href="#" class="no-format">
           <div class="myCard">
             <div class="myCardImg">
-              <img src="https://i.ibb.co/hmFcwJK/prod12sandals.webp" alt="model" /><button class="infoTag">+3
+              <img src="https://i.ibb.co/hmFcwJK/prod12sandals.webp" loading="lazy" alt="model" /><button class="infoTag">+3
                 more</button>
             </div>
             <div class="myCardBody">
               <h5 class="cardTitle">
-                <span class="d-inline-block text-truncate no-format" style="max-width: 150px;">
+                <span class="d-inline-block text-truncate no-format">
                   Graceful Women Sandals
                 </span>
               </h5>
@@ -1864,12 +1910,12 @@
         <a href="#" class="no-format">
           <div class="myCard">
             <div class="myCardImg">
-              <img src="https://i.ibb.co/wYKvkDp/prod13tshirt.webp" alt="model" /><button class="infoTag">+4
+              <img src="https://i.ibb.co/wYKvkDp/prod13tshirt.webp" loading="lazy" alt="model" /><button class="infoTag">+4
                 more</button>
             </div>
             <div class="myCardBody">
               <h5 class="cardTitle">
-                <span class="d-inline-block text-truncate no-format" style="max-width: 150px;">
+                <span class="d-inline-block text-truncate no-format">
                   Modern Stylus Kids Dresses
                 </span>
               </h5>
@@ -1895,12 +1941,12 @@
         <a href="#" class="no-format">
           <div class="myCard">
             <div class="myCardImg">
-              <img src="https://i.ibb.co/P9mpwjh/prod14tshirt.webp" alt="model" /><button class="infoTag">+5
+              <img src="https://i.ibb.co/P9mpwjh/prod14tshirt.webp" loading="lazy" alt="model" /><button class="infoTag">+5
                 more</button>
             </div>
             <div class="myCardBody">
               <h5 class="cardTitle">
-                <span class="d-inline-block text-truncate no-format" style="max-width: 150px;">
+                <span class="d-inline-block text-truncate no-format">
                   Comfy Women Tshirts
                 </span>
               </h5>
@@ -1926,11 +1972,11 @@
         <a href="#" class="no-format">
           <div class="myCard">
             <div class="myCardImg">
-              <img src="https://i.ibb.co/7nQb6JR/prod15bag.webp" alt="model" /><button class="infoTag">+8 more</button>
+              <img src="https://i.ibb.co/7nQb6JR/prod15bag.webp" loading="lazy" alt="model" /><button class="infoTag">+8 more</button>
             </div>
             <div class="myCardBody">
               <h5 class="cardTitle">
-                <span class="d-inline-block text-truncate no-format" style="max-width: 150px;">
+                <span class="d-inline-block text-truncate no-format">
                   Versatile Women Handbags
                 </span>
               </h5>
@@ -1956,11 +2002,11 @@
         <a href="#" class="no-format">
           <div class="myCard">
             <div class="myCardImg">
-              <img src="https://i.ibb.co/sVDfdY4/prod16gown.webp" alt="model" /><button class="infoTag">+8 more</button>
+              <img src="https://i.ibb.co/sVDfdY4/prod16gown.webp" loading="lazy" alt="model" /><button class="infoTag">+8 more</button>
             </div>
             <div class="myCardBody">
               <h5 class="cardTitle">
-                <span class="d-inline-block text-truncate no-format" style="max-width: 150px;">
+                <span class="d-inline-block text-truncate no-format">
                   Trendy Ravishing Women Dresses
                 </span>
               </h5>
@@ -1986,11 +2032,11 @@
         <a href="#" class="no-format">
           <div class="myCard">
             <div class="myCardImg">
-              <img src="https://i.ibb.co/2yd2VHf/prod17belt.webp" alt="model" /><button class="infoTag">+6 more</button>
+              <img src="https://i.ibb.co/2yd2VHf/prod17belt.webp" loading="lazy" alt="model" /><button class="infoTag">+6 more</button>
             </div>
             <div class="myCardBody">
               <h5 class="cardTitle">
-                <span class="d-inline-block text-truncate no-format" style="max-width: 150px;">
+                <span class="d-inline-block text-truncate no-format">
                   Styles Trends Men Belts
                 </span>
               </h5>
@@ -2016,12 +2062,12 @@
         <a href="#" class="no-format">
           <div class="myCard">
             <div class="myCardImg">
-              <img src="https://i.ibb.co/18nV5H9/prod18tshirt.webp" alt="model" /><button class="infoTag">+3
+              <img src="https://i.ibb.co/18nV5H9/prod18tshirt.webp" loading="lazy" alt="model" /><button class="infoTag">+3
                 more</button>
             </div>
             <div class="myCardBody">
               <h5 class="cardTitle">
-                <span class="d-inline-block text-truncate no-format" style="max-width: 150px;">
+                <span class="d-inline-block text-truncate no-format">
                   Agile Elegant Boys Tops
                 </span>
               </h5>
@@ -2047,12 +2093,12 @@
         <a href="#" class="no-format">
           <div class="myCard">
             <div class="myCardImg">
-              <img src="https://i.ibb.co/BcW9wJ8/prod19phone.webp" alt="model" /><button class="infoTag">+9
+              <img src="https://i.ibb.co/BcW9wJ8/prod19phone.webp" loading="lazy" alt="model" /><button class="infoTag">+9
                 more</button>
             </div>
             <div class="myCardBody">
               <h5 class="cardTitle">
-                <span class="d-inline-block text-truncate no-format" style="max-width: 150px;">
+                <span class="d-inline-block text-truncate no-format">
                   Vibrant Mobile Cases And Covers
                 </span>
               </h5>
@@ -2078,12 +2124,12 @@
         <a href="#" class="no-format">
           <div class="myCard">
             <div class="myCardImg">
-              <img src="https://i.ibb.co/6B3sJx7/prod20longtop.webp" alt="model" /><button class="infoTag">+8
+              <img src="https://i.ibb.co/6B3sJx7/prod20longtop.webp" loading="lazy" alt="model" /><button class="infoTag">+8
                 more</button>
             </div>
             <div class="myCardBody">
               <h5 class="cardTitle">
-                <span class="d-inline-block text-truncate no-format" style="max-width: 150px;">
+                <span class="d-inline-block text-truncate no-format">
                   Aakarsha Fabulous Kurtis
                 </span>
               </h5>
@@ -2109,12 +2155,12 @@
         <a href="#" class="no-format">
           <div class="myCard">
             <div class="myCardImg">
-              <img src="https://i.ibb.co/XDSpbCQ/prod21tshirt.webp" alt="model" /><button class="infoTag">+4
+              <img src="https://i.ibb.co/XDSpbCQ/prod21tshirt.webp" loading="lazy" alt="model" /><button class="infoTag">+4
                 more</button>
             </div>
             <div class="myCardBody">
               <h5 class="cardTitle">
-                <span class="d-inline-block text-truncate no-format" style="max-width: 150px;">
+                <span class="d-inline-block text-truncate no-format">
                   Swanky Boys Tshirts
                 </span>
               </h5>
@@ -2140,11 +2186,11 @@
         <a href="#" class="no-format">
           <div class="myCard">
             <div class="myCardImg">
-              <img src="https://i.ibb.co/7K09s40/prod22watch.webp" alt="model" />
+              <img src="https://i.ibb.co/7K09s40/prod22watch.webp" loading="lazy" alt="model" />
             </div>
             <div class="myCardBody">
               <h5 class="cardTitle">
-                <span class="d-inline-block text-truncate no-format" style="max-width: 150px;">
+                <span class="d-inline-block text-truncate no-format">
                   Stylish Men Analog Watches
                 </span>
               </h5>
@@ -2170,11 +2216,11 @@
         <a href="#" class="no-format">
           <div class="myCard">
             <div class="myCardImg">
-              <img src="https://i.ibb.co/kXg03fb/prod23glass.webp" alt="model" />
+              <img src="https://i.ibb.co/kXg03fb/prod23glass.webp" loading="lazy" alt="model" />
             </div>
             <div class="myCardBody">
               <h5 class="cardTitle">
-                <span class="d-inline-block text-truncate no-format" style="max-width: 150px;">
+                <span class="d-inline-block text-truncate no-format">
                   Casual Latest Sunglasses
                 </span>
               </h5>
@@ -2200,12 +2246,12 @@
         <a href="#" class="no-format">
           <div class="myCard">
             <div class="myCardImg">
-              <img src="https://i.ibb.co/swLd5dm/prod24frock.webp" alt="model" /><button class="infoTag">+3
+              <img src="https://i.ibb.co/swLd5dm/prod24frock.webp" loading="lazy" alt="model" /><button class="infoTag">+3
                 more</button>
             </div>
             <div class="myCardBody">
               <h5 class="cardTitle">
-                <span class="d-inline-block text-truncate no-format" style="max-width: 150px;">
+                <span class="d-inline-block text-truncate no-format">
                   Aakarsha Refined Kurtis
                 </span>
               </h5>
@@ -2231,12 +2277,12 @@
         <a href="#" class="no-format">
           <div class="myCard">
             <div class="myCardImg">
-              <img src="https://i.ibb.co/bQV67LP/prod25kurti.webp" alt="model" /><button class="infoTag">+3
+              <img src="https://i.ibb.co/bQV67LP/prod25kurti.webp" loading="lazy" alt="model" /><button class="infoTag">+3
                 more</button>
             </div>
             <div class="myCardBody">
               <h5 class="cardTitle">
-                <span class="d-inline-block text-truncate no-format" style="max-width: 150px;">
+                <span class="d-inline-block text-truncate no-format">
                   Chitrarekha Voguish Kurtis
                 </span>
               </h5>
@@ -2262,12 +2308,12 @@
         <a href="#" class="no-format">
           <div class="myCard">
             <div class="myCardImg">
-              <img src="https://i.ibb.co/Dzk36Cv/prod26watch.webp" alt="model" /><button class="infoTag">+3
+              <img src="https://i.ibb.co/Dzk36Cv/prod26watch.webp" loading="lazy" alt="model" /><button class="infoTag">+3
                 more</button>
             </div>
             <div class="myCardBody">
               <h5 class="cardTitle">
-                <span class="d-inline-block text-truncate no-format" style="max-width: 150px;">
+                <span class="d-inline-block text-truncate no-format">
                   Classy Men Watches
                 </span>
               </h5>
@@ -2293,11 +2339,11 @@
         <a href="#" class="no-format">
           <div class="myCard">
             <div class="myCardImg">
-              <img src="https://i.ibb.co/Cm5ZTt8/prod27kids.webp" alt="model" /><button class="infoTag">+6 more</button>
+              <img src="https://i.ibb.co/Cm5ZTt8/prod27kids.webp" loading="lazy" alt="model" /><button class="infoTag">+6 more</button>
             </div>
             <div class="myCardBody">
               <h5 class="cardTitle">
-                <span class="d-inline-block text-truncate no-format" style="max-width: 150px;">
+                <span class="d-inline-block text-truncate no-format">
                   Comfy Kids Boys Wear
                 </span>
               </h5>
@@ -2323,11 +2369,11 @@
         <a href="#" class="no-format">
           <div class="myCard">
             <div class="myCardImg">
-              <img src="https://i.ibb.co/dfDB32T/prod9kurti.webp" alt="model" /><button class="infoTag">+9 more</button>
+              <img src="https://i.ibb.co/dfDB32T/prod9kurti.webp" loading="lazy" alt="model" /><button class="infoTag">+9 more</button>
             </div>
             <div class="myCardBody">
               <h5 class="cardTitle">
-                <span class="d-inline-block text-truncate no-format" style="max-width: 150px;">
+                <span class="d-inline-block text-truncate no-format">
                   Charvi Voguish Salwar Suits
                 </span>
               </h5>
@@ -2355,11 +2401,11 @@
         <a href="#" class="no-format">
           <div class="myCard">
             <div class="myCardImg">
-              <img src="https://i.ibb.co/nMJHyTw/prod29men.webp" alt="model" /><button class="infoTag">+9 more</button>
+              <img src="https://i.ibb.co/nMJHyTw/prod29men.webp" loading="lazy" alt="model" /><button class="infoTag">+9 more</button>
             </div>
             <div class="myCardBody">
               <h5 class="cardTitle">
-                <span class="d-inline-block text-truncate no-format" style="max-width: 150px;">
+                <span class="d-inline-block text-truncate no-format">
                   Cool Fashionable Men Dresses
                 </span>
               </h5>
@@ -2385,12 +2431,12 @@
         <a href="#" class="no-format">
           <div class="myCard">
             <div class="myCardImg">
-              <img src="https://i.ibb.co/pdWSLzN/prod30kurti.webp" alt="model" /><button class="infoTag">+5
+              <img src="https://i.ibb.co/pdWSLzN/prod30kurti.webp" loading="lazy" alt="model" /><button class="infoTag">+5
                 more</button>
             </div>
             <div class="myCardBody">
               <h5 class="cardTitle">
-                <span class="d-inline-block text-truncate no-format" style="max-width: 150px;">
+                <span class="d-inline-block text-truncate no-format">
                   Aishani Voguish Kurti
                 </span>
               </h5>
@@ -2416,12 +2462,12 @@
         <a href="#" class="no-format">
           <div class="myCard">
             <div class="myCardImg">
-              <img src="https://i.ibb.co/6W0S3GQ/prod31shoes.webp" alt="model" /><button class="infoTag">+4
+              <img src="https://i.ibb.co/6W0S3GQ/prod31shoes.webp" loading="lazy" alt="model" /><button class="infoTag">+4
                 more</button>
             </div>
             <div class="myCardBody">
               <h5 class="cardTitle">
-                <span class="d-inline-block text-truncate no-format" style="max-width: 150px;">
+                <span class="d-inline-block text-truncate no-format">
                   Sprightly Sports Shoes
                 </span>
               </h5>
@@ -2447,12 +2493,12 @@
         <a href="#" class="no-format">
           <div class="myCard">
             <div class="myCardImg">
-              <img src="https://i.ibb.co/Df0rxX3/prod32kurti.webp" alt="model" /><button class="infoTag">+6
+              <img src="https://i.ibb.co/Df0rxX3/prod32kurti.webp" loading="lazy" alt="model" /><button class="infoTag">+6
                 more</button>
             </div>
             <div class="myCardBody">
               <h5 class="cardTitle">
-                <span class="d-inline-block text-truncate no-format" style="max-width: 150px;">
+                <span class="d-inline-block text-truncate no-format">
                   Adrika Graceful Kurtis
                 </span>
               </h5>
@@ -2478,12 +2524,12 @@
         <a href="#" class="no-format">
           <div class="myCard">
             <div class="myCardImg">
-              <img src="https://i.ibb.co/J7BftSx/prod33kurti.webp" alt="model" /><button class="infoTag">+3
+              <img src="https://i.ibb.co/J7BftSx/prod33kurti.webp" loading="lazy" alt="model" /><button class="infoTag">+3
                 more</button>
             </div>
             <div class="myCardBody">
               <h5 class="cardTitle">
-                <span class="d-inline-block text-truncate no-format" style="max-width: 150px;">
+                <span class="d-inline-block text-truncate no-format">
                   Holiday Fashion Kurti
                 </span>
               </h5>
@@ -2509,11 +2555,11 @@
         <a href="#" class="no-format">
           <div class="myCard">
             <div class="myCardImg">
-              <img src="https://i.ibb.co/bbqnVR5/prod34men.webp" alt="model" /><button class="infoTag">+3 more</button>
+              <img src="https://i.ibb.co/bbqnVR5/prod34men.webp" loading="lazy" alt="model" /><button class="infoTag">+3 more</button>
             </div>
             <div class="myCardBody">
               <h5 class="cardTitle">
-                <span class="d-inline-block text-truncate no-format" style="max-width: 150px;">
+                <span class="d-inline-block text-truncate no-format">
                   Cool Trendy Dresses
                 </span>
               </h5>
@@ -2539,12 +2585,12 @@
         <a href="#" class="no-format">
           <div class="myCard">
             <div class="myCardImg">
-              <img src="https://i.ibb.co/pJfMXf9/prod35kurti.webp" alt="model" /><button class="infoTag">+3
+              <img src="https://i.ibb.co/pJfMXf9/prod35kurti.webp" loading="lazy" alt="model" /><button class="infoTag">+3
                 more</button>
             </div>
             <div class="myCardBody">
               <h5 class="cardTitle">
-                <span class="d-inline-block text-truncate no-format" style="max-width: 150px;">
+                <span class="d-inline-block text-truncate no-format">
                   Kashvi Petite Kurtis
                 </span>
               </h5>
@@ -2570,12 +2616,12 @@
         <a href="#" class="no-format">
           <div class="myCard">
             <div class="myCardImg">
-              <img src="https://i.ibb.co/j4Lvj7H/prod36bedsheets.webp" alt="model" /><button class="infoTag">+5
+              <img src="https://i.ibb.co/j4Lvj7H/prod36bedsheets.webp" loading="lazy" alt="model" /><button class="infoTag">+5
                 more</button>
             </div>
             <div class="myCardBody">
               <h5 class="cardTitle">
-                <span class="d-inline-block text-truncate no-format" style="max-width: 150px;">
+                <span class="d-inline-block text-truncate no-format">
                   Eva Stylish Bedsheets
                 </span>
               </h5>
@@ -2601,11 +2647,11 @@
         <a href="#" class="no-format">
           <div class="myCard">
             <div class="myCardImg">
-              <img src="https://i.ibb.co/DwKDnSz/prod37kid.webp" alt="model" /><button class="infoTag">+8 more</button>
+              <img src="https://i.ibb.co/DwKDnSz/prod37kid.webp" loading="lazy" alt="model" /><button class="infoTag">+8 more</button>
             </div>
             <div class="myCardBody">
               <h5 class="cardTitle">
-                <span class="d-inline-block text-truncate no-format" style="max-width: 150px;">
+                <span class="d-inline-block text-truncate no-format">
                   Elegant Girls Dresses
                 </span>
               </h5>
@@ -2631,12 +2677,12 @@
         <a href="#" class="no-format">
           <div class="myCard">
             <div class="myCardImg">
-              <img src="https://i.ibb.co/Y2vv4bJ/prod38kurti.webp" alt="model" /><button class="infoTag">+5
+              <img src="https://i.ibb.co/Y2vv4bJ/prod38kurti.webp" loading="lazy" alt="model" /><button class="infoTag">+5
                 more</button>
             </div>
             <div class="myCardBody">
               <h5 class="cardTitle">
-                <span class="d-inline-block text-truncate no-format" style="max-width: 150px;">
+                <span class="d-inline-block text-truncate no-format">
                   Abhisarika Modern Kurtis
                 </span>
               </h5>
@@ -2662,12 +2708,12 @@
         <a href="#" class="no-format">
           <div class="myCard">
             <div class="myCardImg">
-              <img src="https://i.ibb.co/Lz4tw78/prod39saree.png" alt="prod39saree" /><button class="infoTag">+8
+              <img src="https://i.ibb.co/Lz4tw78/prod39saree.png" loading="lazy" alt="prod39saree" /><button class="infoTag">+8
                 more</button>
             </div>
             <div class="myCardBody">
               <h5 class="cardTitle">
-                <span class="d-inline-block text-truncate no-format" style="max-width: 150px;">
+                <span class="d-inline-block text-truncate no-format">
                   Aagyeyi Pretty Sarees
                 </span>
               </h5>
@@ -2693,11 +2739,11 @@
         <a href="#" class="no-format">
           <div class="myCard">
             <div class="myCardImg">
-              <img src="https://i.ibb.co/SrvSmLG/prod40skirt.png" alt="model" /><button class="infoTag">+6 more</button>
+              <img src="https://i.ibb.co/SrvSmLG/prod40skirt.png" loading="lazy" alt="model" /><button class="infoTag">+6 more</button>
             </div>
             <div class="myCardBody">
               <h5 class="cardTitle">
-                <span class="d-inline-block text-truncate no-format" style="max-width: 150px;">
+                <span class="d-inline-block text-truncate no-format">
                   Pretty Fabulous Skirts
                 </span>
               </h5>
@@ -2723,17 +2769,17 @@
         <a href="#" class="no-format">
           <div class="myCard">
             <div class="myCardImg">
-              <img src="https://i.ibb.co/1ZmQbZR/prod41men.png" alt="model" /><button class="infoTag">+14 more</button>
+              <img src="https://i.ibb.co/1ZmQbZR/prod41men.png" loading="lazy" alt="model" /><button class="infoTag">+8 more</button>
             </div>
             <div class="myCardBody">
               <h5 class="cardTitle">
-                <span class="d-inline-block text-truncate no-format" style="max-width: 150px;">
-                  Austin Wood Men Dresses
+                <span class="d-inline-block text-truncate no-format">
+                  Designer Men Shirts
                 </span>
               </h5>
               <ul class="cardList">
                 <li class="cardListItem">
-                  <span class="price"><i class="fa-solid fa-indian-rupee-sign"></i> 322
+                  <span class="price"><i class="fa-solid fa-indian-rupee-sign"></i> 349
                   </span>
                   onwards
                 </li>
@@ -2742,8 +2788,8 @@
                 </li>
                 <li class="cardListItem">
                   <button type="button" class="button-addon1">
-                    4.3
-                    <i class="fa-solid fa-star"></i></button> 32454 Reviews
+                    4.0
+                    <i class="fa-solid fa-star"></i></button> 24156 Reviews
                 </li>
               </ul>
             </div>
@@ -2753,17 +2799,17 @@
         <a href="#" class="no-format">
           <div class="myCard">
             <div class="myCardImg">
-              <img src="https://i.ibb.co/6Njdnn1/prod42kid.webp" alt="model" /><button class="infoTag">+14 more</button>
+              <img src="https://i.ibb.co/6Njdnn1/prod42kid.webp" loading="lazy" alt="model" /><button class="infoTag">+5 more</button>
             </div>
             <div class="myCardBody">
               <h5 class="cardTitle">
-                <span class="d-inline-block text-truncate no-format" style="max-width: 150px;">
-                  Austin Wood Men Dresses
+                <span class="d-inline-block text-truncate no-format">
+                  New Gen Boys Festive Collection
                 </span>
               </h5>
               <ul class="cardList">
                 <li class="cardListItem">
-                  <span class="price"><i class="fa-solid fa-indian-rupee-sign"></i> 322
+                  <span class="price"><i class="fa-solid fa-indian-rupee-sign"></i> 204
                   </span>
                   onwards
                 </li>
@@ -2773,7 +2819,7 @@
                 <li class="cardListItem">
                   <button type="button" class="button-addon1">
                     4.3
-                    <i class="fa-solid fa-star"></i></button> 32454 Reviews
+                    <i class="fa-solid fa-star"></i></button> 52846 Reviews
                 </li>
               </ul>
             </div>
@@ -2783,17 +2829,17 @@
         <a href="#" class="no-format">
           <div class="myCard">
             <div class="myCardImg">
-              <img src="https://i.ibb.co/8KKDYRx/prod43men.webp" alt="model" /><button class="infoTag">+14 more</button>
+              <img src="https://i.ibb.co/8KKDYRx/prod43men.webp" loading="lazy" alt="model" /><button class="infoTag">+14 more</button>
             </div>
             <div class="myCardBody">
               <h5 class="cardTitle">
-                <span class="d-inline-block text-truncate no-format" style="max-width: 150px;">
-                  Austin Wood Men Dresses
+                <span class="d-inline-block text-truncate no-format">
+                  Ravishing Men Tshirts
                 </span>
               </h5>
               <ul class="cardList">
                 <li class="cardListItem">
-                  <span class="price"><i class="fa-solid fa-indian-rupee-sign"></i> 322
+                  <span class="price"><i class="fa-solid fa-indian-rupee-sign"></i> 220
                   </span>
                   onwards
                 </li>
@@ -2802,8 +2848,8 @@
                 </li>
                 <li class="cardListItem">
                   <button type="button" class="button-addon1">
-                    4.3
-                    <i class="fa-solid fa-star"></i></button> 32454 Reviews
+                    3.9
+                    <i class="fa-solid fa-star"></i></button> 8251 Reviews
                 </li>
               </ul>
             </div>
@@ -2813,18 +2859,18 @@
         <a href="#" class="no-format">
           <div class="myCard">
             <div class="myCardImg">
-              <img src="https://i.ibb.co/y09tWsp/prod44dupatta.webp" alt="model" /><button class="infoTag">+14
+              <img src="https://i.ibb.co/y09tWsp/prod44dupatta.webp" loading="lazy" alt="model" /><button class="infoTag">+10
                 more</button>
             </div>
             <div class="myCardBody">
               <h5 class="cardTitle">
-                <span class="d-inline-block text-truncate no-format" style="max-width: 150px;">
-                  Austin Wood Men Dresses
+                <span class="d-inline-block text-truncate no-format">
+                  Embroidered Dupattas
                 </span>
               </h5>
               <ul class="cardList">
                 <li class="cardListItem">
-                  <span class="price"><i class="fa-solid fa-indian-rupee-sign"></i> 322
+                  <span class="price"><i class="fa-solid fa-indian-rupee-sign"></i> 120
                   </span>
                   onwards
                 </li>
@@ -2834,7 +2880,7 @@
                 <li class="cardListItem">
                   <button type="button" class="button-addon1">
                     4.3
-                    <i class="fa-solid fa-star"></i></button> 32454 Reviews
+                    <i class="fa-solid fa-star"></i></button> 52103 Reviews
                 </li>
               </ul>
             </div>
@@ -2843,17 +2889,17 @@
         <a href="#" class="no-format">
           <div class="myCard">
             <div class="myCardImg">
-              <img src="https://i.ibb.co/mCb7YqM/prod45men.webp" alt="model" /><button class="infoTag">+14 more</button>
+              <img src="https://i.ibb.co/mCb7YqM/prod45men.webp" loading="lazy" alt="model" /><button class="infoTag">+4 more</button>
             </div>
             <div class="myCardBody">
               <h5 class="cardTitle">
-                <span class="d-inline-block text-truncate no-format" style="max-width: 150px;">
-                  Austin Wood Men Dresses
+                <span class="d-inline-block text-truncate no-format">
+                  Classy Retro Men Wears
                 </span>
               </h5>
               <ul class="cardList">
                 <li class="cardListItem">
-                  <span class="price"><i class="fa-solid fa-indian-rupee-sign"></i> 322
+                  <span class="price"><i class="fa-solid fa-indian-rupee-sign"></i> 489
                   </span>
                   onwards
                 </li>
@@ -2863,7 +2909,7 @@
                 <li class="cardListItem">
                   <button type="button" class="button-addon1">
                     4.3
-                    <i class="fa-solid fa-star"></i></button> 32454 Reviews
+                    <i class="fa-solid fa-star"></i></button> 5644 Reviews
                 </li>
               </ul>
             </div>
@@ -2872,17 +2918,17 @@
         <a href="#" class="no-format">
           <div class="myCard">
             <div class="myCardImg">
-              <img src="https://i.ibb.co/2q4MMdp/prod52kid.webp" alt="model" /><button class="infoTag">+14 more</button>
+              <img src="https://i.ibb.co/2q4MMdp/prod52kid.webp" loading="lazy" alt="model" /><button class="infoTag">+4 more</button>
             </div>
             <div class="myCardBody">
               <h5 class="cardTitle">
-                <span class="d-inline-block text-truncate no-format" style="max-width: 150px;">
-                  Austin Wood Men Dresses
+                <span class="d-inline-block text-truncate no-format">
+                  Princess Classy Girls Dresses
                 </span>
               </h5>
               <ul class="cardList">
                 <li class="cardListItem">
-                  <span class="price"><i class="fa-solid fa-indian-rupee-sign"></i> 322
+                  <span class="price"><i class="fa-solid fa-indian-rupee-sign"></i> 267
                   </span>
                   onwards
                 </li>
@@ -2891,8 +2937,8 @@
                 </li>
                 <li class="cardListItem">
                   <button type="button" class="button-addon1">
-                    4.3
-                    <i class="fa-solid fa-star"></i></button> 32454 Reviews
+                    4.0
+                    <i class="fa-solid fa-star"></i></button> 952 Reviews
                 </li>
               </ul>
             </div>
@@ -2901,17 +2947,17 @@
         <a href="#" class="no-format">
           <div class="myCard">
             <div class="myCardImg">
-              <img src="https://i.ibb.co/QQzVv8H/prod48kid.webp" alt="model" /><button class="infoTag">+14 more</button>
+              <img src="https://i.ibb.co/QQzVv8H/prod48kid.webp" loading="lazy" alt="model" /><button class="infoTag">+6 more</button>
             </div>
             <div class="myCardBody">
               <h5 class="cardTitle">
-                <span class="d-inline-block text-truncate no-format" style="max-width: 150px;">
-                  Austin Wood Men Dresses
+                <span class="d-inline-block text-truncate no-format">
+                  Stylus Boys Wear
                 </span>
               </h5>
               <ul class="cardList">
                 <li class="cardListItem">
-                  <span class="price"><i class="fa-solid fa-indian-rupee-sign"></i> 322
+                  <span class="price"><i class="fa-solid fa-indian-rupee-sign"></i> 363
                   </span>
                   onwards
                 </li>
@@ -2920,8 +2966,8 @@
                 </li>
                 <li class="cardListItem">
                   <button type="button" class="button-addon1">
-                    4.3
-                    <i class="fa-solid fa-star"></i></button> 32454 Reviews
+                    3.7
+                    <i class="fa-solid fa-star"></i></button> 34457 Reviews
                 </li>
               </ul>
             </div>
@@ -2930,18 +2976,18 @@
         <a href="#" class="no-format">
           <div class="myCard">
             <div class="myCardImg">
-              <img src="https://i.ibb.co/FsRx8wC/prod49kurti.webp" alt="model" /><button class="infoTag">+14
+              <img src="https://i.ibb.co/FsRx8wC/prod49kurti.webp" loading="lazy" alt="model" /><button class="infoTag">+14
                 more</button>
             </div>
             <div class="myCardBody">
               <h5 class="cardTitle">
-                <span class="d-inline-block text-truncate no-format" style="max-width: 150px;">
-                  Austin Wood Men Dresses
+                <span class="d-inline-block text-truncate no-format">
+                  Bonita Ensembles For Women
                 </span>
               </h5>
               <ul class="cardList">
                 <li class="cardListItem">
-                  <span class="price"><i class="fa-solid fa-indian-rupee-sign"></i> 322
+                  <span class="price"><i class="fa-solid fa-indian-rupee-sign"></i> 413
                   </span>
                   onwards
                 </li>
@@ -2950,8 +2996,8 @@
                 </li>
                 <li class="cardListItem">
                   <button type="button" class="button-addon1">
-                    4.3
-                    <i class="fa-solid fa-star"></i></button> 32454 Reviews
+                    3.7
+                    <i class="fa-solid fa-star"></i></button> 6251 Reviews
                 </li>
               </ul>
             </div>
@@ -2960,18 +3006,18 @@
         <a href="#" class="no-format">
           <div class="myCard">
             <div class="myCardImg">
-              <img src="https://i.ibb.co/sF18nDn/prod50west.webp" alt="model" /><button class="infoTag">+14
+              <img src="https://i.ibb.co/sF18nDn/prod50west.webp" loading="lazy" alt="model" /><button class="infoTag">+6
                 more</button>
             </div>
             <div class="myCardBody">
               <h5 class="cardTitle">
-                <span class="d-inline-block text-truncate no-format" style="max-width: 150px;">
-                  Austin Wood Men Dresses
+                <span class="d-inline-block text-truncate no-format">
+                  Stylish Retro Women Dresses
                 </span>
               </h5>
               <ul class="cardList">
                 <li class="cardListItem">
-                  <span class="price"><i class="fa-solid fa-indian-rupee-sign"></i> 322
+                  <span class="price"><i class="fa-solid fa-indian-rupee-sign"></i> 299
                   </span>
                   onwards
                 </li>
@@ -2980,8 +3026,8 @@
                 </li>
                 <li class="cardListItem">
                   <button type="button" class="button-addon1">
-                    4.3
-                    <i class="fa-solid fa-star"></i></button> 32454 Reviews
+                    3.9
+                    <i class="fa-solid fa-star"></i></button> 4751 Reviews
                 </li>
               </ul>
             </div>
@@ -2990,17 +3036,17 @@
         <a href="#" class="no-format">
           <div class="myCard">
             <div class="myCardImg">
-              <img src="https://i.ibb.co/Fhzcr71/prod51men.webp" alt="model" /><button class="infoTag">+14 more</button>
+              <img src="https://i.ibb.co/Fhzcr71/prod51men.webp" loading="lazy" alt="model" /><button class="infoTag">+3 more</button>
             </div>
             <div class="myCardBody">
               <h5 class="cardTitle">
-                <span class="d-inline-block text-truncate no-format" style="max-width: 150px;">
-                  Austin Wood Men Dresses
+                <span class="d-inline-block text-truncate no-format">
+                  Fabulous Men Tshirts
                 </span>
               </h5>
               <ul class="cardList">
                 <li class="cardListItem">
-                  <span class="price"><i class="fa-solid fa-indian-rupee-sign"></i> 322
+                  <span class="price"><i class="fa-solid fa-indian-rupee-sign"></i> 206
                   </span>
                   onwards
                 </li>
@@ -3009,8 +3055,8 @@
                 </li>
                 <li class="cardListItem">
                   <button type="button" class="button-addon1">
-                    4.3
-                    <i class="fa-solid fa-star"></i></button> 32454 Reviews
+                    3.7
+                    <i class="fa-solid fa-star"></i></button> 8909 Reviews
                 </li>
               </ul>
             </div>
@@ -3019,17 +3065,17 @@
         <a href="#" class="no-format">
           <div class="myCard">
             <div class="myCardImg">
-              <img src="https://i.ibb.co/28RPc3D/prod53kid.webp" alt="model" /><button class="infoTag">+14 more</button>
+              <img src="https://i.ibb.co/28RPc3D/prod53kid.webp" loading="lazy" alt="model" /><button class="infoTag">+3 more</button>
             </div>
             <div class="myCardBody">
               <h5 class="cardTitle">
-                <span class="d-inline-block text-truncate no-format" style="max-width: 150px;">
-                  Austin Wood Men Dresses
+                <span class="d-inline-block text-truncate no-format">
+                  Cutiepie Stylish Girls
                 </span>
               </h5>
               <ul class="cardList">
                 <li class="cardListItem">
-                  <span class="price"><i class="fa-solid fa-indian-rupee-sign"></i> 322
+                  <span class="price"><i class="fa-solid fa-indian-rupee-sign"></i> 264
                   </span>
                   onwards
                 </li>
@@ -3038,8 +3084,8 @@
                 </li>
                 <li class="cardListItem">
                   <button type="button" class="button-addon1">
-                    4.3
-                    <i class="fa-solid fa-star"></i></button> 32454 Reviews
+                    4.1
+                    <i class="fa-solid fa-star"></i></button> 6219 Reviews
                 </li>
               </ul>
             </div>
@@ -3048,18 +3094,18 @@
         <a href="#" class="no-format">
           <div class="myCard">
             <div class="myCardImg">
-              <img src="https://i.ibb.co/JsKjy0f/prod54dupatta.webp" alt="model" /><button class="infoTag">+14
+              <img src="https://i.ibb.co/JsKjy0f/prod54dupatta.webp" loading="lazy" alt="model" /><button class="infoTag">+9
                 more</button>
             </div>
             <div class="myCardBody">
               <h5 class="cardTitle">
-                <span class="d-inline-block text-truncate no-format" style="max-width: 150px;">
-                  Austin Wood Men Dresses
+                <span class="d-inline-block text-truncate no-format">
+                  Classy Dupatta Sets
                 </span>
               </h5>
               <ul class="cardList">
                 <li class="cardListItem">
-                  <span class="price"><i class="fa-solid fa-indian-rupee-sign"></i> 322
+                  <span class="price"><i class="fa-solid fa-indian-rupee-sign"></i> 175
                   </span>
                   onwards
                 </li>
@@ -3068,8 +3114,8 @@
                 </li>
                 <li class="cardListItem">
                   <button type="button" class="button-addon1">
-                    4.3
-                    <i class="fa-solid fa-star"></i></button> 32454 Reviews
+                    3.8
+                    <i class="fa-solid fa-star"></i></button> 1682 Reviews
                 </li>
               </ul>
             </div>
@@ -3078,17 +3124,17 @@
         <a href="#" class="no-format">
           <div class="myCard">
             <div class="myCardImg">
-              <img src="https://i.ibb.co/XZhBTJd/prod55men.webp" alt="model" /><button class="infoTag">+14 more</button>
+              <img src="https://i.ibb.co/XZhBTJd/prod55men.webp" loading="lazy" alt="model" /><button class="infoTag">+6 more</button>
             </div>
             <div class="myCardBody">
               <h5 class="cardTitle">
-                <span class="d-inline-block text-truncate no-format" style="max-width: 150px;">
-                  Austin Wood Men Dresses
+                <span class="d-inline-block text-truncate no-format">
+                  Elegant Men Trousers
                 </span>
               </h5>
               <ul class="cardList">
                 <li class="cardListItem">
-                  <span class="price"><i class="fa-solid fa-indian-rupee-sign"></i> 322
+                  <span class="price"><i class="fa-solid fa-indian-rupee-sign"></i> 340
                   </span>
                   onwards
                 </li>
@@ -3097,8 +3143,8 @@
                 </li>
                 <li class="cardListItem">
                   <button type="button" class="button-addon1">
-                    4.3
-                    <i class="fa-solid fa-star"></i></button> 32454 Reviews
+                    3.9
+                    <i class="fa-solid fa-star"></i></button> 22454 Reviews
                 </li>
               </ul>
             </div>
@@ -3107,18 +3153,18 @@
         <a href="#" class="no-format">
           <div class="myCard">
             <div class="myCardImg">
-              <img src="https://i.ibb.co/ysVxs2L/prod56west.webp" alt="model" /><button class="infoTag">+14
+              <img src="https://i.ibb.co/ysVxs2L/prod56west.webp" loading="lazy" alt="model" /><button class="infoTag">+12
                 more</button>
             </div>
             <div class="myCardBody">
               <h5 class="cardTitle">
-                <span class="d-inline-block text-truncate no-format" style="max-width: 150px;">
-                  Austin Wood Men Dresses
+                <span class="d-inline-block text-truncate no-format">
+                  Alluring Women Western
                 </span>
               </h5>
               <ul class="cardList">
                 <li class="cardListItem">
-                  <span class="price"><i class="fa-solid fa-indian-rupee-sign"></i> 322
+                  <span class="price"><i class="fa-solid fa-indian-rupee-sign"></i> 219
                   </span>
                   onwards
                 </li>
@@ -3127,8 +3173,8 @@
                 </li>
                 <li class="cardListItem">
                   <button type="button" class="button-addon1">
-                    4.3
-                    <i class="fa-solid fa-star"></i></button> 32454 Reviews
+                    4.1
+                    <i class="fa-solid fa-star"></i></button> 12654 Reviews
                 </li>
               </ul>
             </div>
@@ -3498,6 +3544,7 @@
     </section>
     <!-- Section: End of More About Meesho part in footer -->
   </footer>
+  <script src="../scripts/home.js"></script>
 </body>
 
 </html>
