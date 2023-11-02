@@ -5,6 +5,17 @@ let music = false;
 let displayLocality = document.getElementById("displayLocality");
 audio.volume = 0.2;
 window.onload = onLoadPage();
+function changeBackgroundColor(){
+    let activeElement = event.target;
+    console.log(activeElement);
+    if (!dark){
+        activeElement.style.backgroundColor= 'white';
+    }else{
+        activeElement.style.backgroundColor= 'slategrey';
+    }
+    
+}
+
 
 function pausePlay(){
     if(music === true){
@@ -35,8 +46,8 @@ function closeCoupon(){
         document.getElementById("downloadSection").style.opacity = '1';
         document.getElementById("topCategoriesSection").style.opacity = '1';
     }else{
-        document.getElementById("downloadSection").style.opacity = '0.7';
-        document.getElementById("topCategoriesSection").style.opacity = '0.7';
+        document.getElementById("downloadSection").style.opacity = '0.8';
+        document.getElementById("topCategoriesSection").style.opacity = '0.8';
     }
     
 }
@@ -97,9 +108,9 @@ const changeMode = () => {
         document.getElementById('headerContent').style.backgroundColor = 'slategrey';        
         document.getElementById("displayLocality").style.color = 'white';
         document.getElementById("coupon").style.backgroundImage = 'linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.4)), url(https://i.ibb.co/JR9w6GH/meesho-Coupon.jpg)';
-        document.getElementById("downloadSection").style.opacity = '0.7';
-        document.getElementById("topCategoriesSection").style.opacity = '0.7';
-        document.getElementById("partner").style.opacity = '0.7';
+        document.getElementById("downloadSection").style.opacity = '0.8';
+        document.getElementById("topCategoriesSection").style.opacity = '0.8';
+        document.getElementById("partner").style.opacity = '0.8';
         document.getElementById("playPauseBtn").style.color = 'black';
        document.querySelectorAll('.profile-grid')[0].style.backgroundColor = "lightsteelblue";
         let dropdown = document.querySelectorAll('.dd-items-bg-top-hdr');
@@ -126,7 +137,7 @@ const changeMode = () => {
         }
         for(i of document.getElementsByClassName("accordBody"))
         {
-            i.style.backgroundColor = 'lightsteelblue';
+            i.style.backgroundColor = 'black';
             for(j of i.getElementsByTagName("div")){
                 for(k of j.getElementsByTagName("label")){
                     k.style.color = 'white';
@@ -137,8 +148,9 @@ const changeMode = () => {
         {
             i.style.color = 'white';
         }
-        document.getElementById("leftFilterFrame").style.backgroundColor = '#4c4c4c';
-        document.getElementById("leftFilterFrameOffcanvas").style.backgroundColor = '#4c4c4c';
+        document.getElementById("leftFilterFrame").style.backgroundColor = 'black';
+        document.getElementById("leftFilterFrameOffcanvas").style.backgroundColor = 'black';
+        document.getElementsByTagName("footer")[0].style.backgroundColor = '#454545';
         document.getElementById("footerAccordionBody").style.backgroundColor = 'lightsteelblue';
         dark=true;
     }
@@ -191,6 +203,7 @@ const changeMode = () => {
         }
         document.getElementById("leftFilterFrame").style.backgroundColor = 'white';
         document.getElementById("leftFilterFrameOffcanvas").style.backgroundColor = 'white';
+        document.getElementsByTagName("footer")[0].style.backgroundColor = 'var(--BG_COLOR_BLUE)';
         document.getElementById("footerAccordionBody").style.backgroundColor = 'white';
         dark=false;
     }    

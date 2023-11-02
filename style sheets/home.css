@@ -23,7 +23,8 @@ body {
 }
 
 .darkMode{
-  background: rgba(0,0,0,0.7);
+  /* background: rgba(0,0,0,0.7); */
+  background: black;
   /* filter: invert(1) hue-rotate(180deg); */
 }
 
@@ -666,11 +667,29 @@ header {
 
 .accordion-header>button:focus{
   /* box-shadow: none !important; */
-  background-color: var(--BG_COLOR_BLUE) !important;
+  background-color: whitesmoke !important;
   border-color: gray;
   outline: 0;
   -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 2px rgba(22, 24, 26, 0.6);
           box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 2px rgba(22, 24, 26, 0.6);
+}
+
+.accordion-header>button:not(:focus){
+  border-color: gray !important;
+}
+
+.accordion-searchbox{
+  background-color: whitesmoke !important;
+}
+
+.accordion-searchbox:focus{
+  border-color: gray;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.filtersHeading{
+  color: gray;
 }
 
 .accordTitle{
@@ -837,7 +856,7 @@ header {
 .price{
   font-weight: bold;
   font-size:x-large;
-  color: black;
+  color: gray;
 }
 
 .infoTag{
