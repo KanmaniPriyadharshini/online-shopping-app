@@ -1,0 +1,34 @@
+[
+    {
+        "id":1,
+        "category":"Women"
+    },    
+    {
+        "id":2,
+        "category":"Men"
+    },
+    {
+        "id":3,
+        "category":"Kids"
+    },
+    {
+        "id":4,
+        "category":"Home & Kitchen"
+    },
+    {
+        "id":5,
+        "category":"Beauty & Health"
+    },
+    {
+        "id":6,
+        "category":"Jewellery & Accessories" 
+    },
+    {
+        "id":7,
+        "category":"Bags & Footwear"
+    },
+    {
+        "id":8,
+        "category":"Electronics"
+    }
+]

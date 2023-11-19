@@ -1,0 +1,139 @@
+[
+    {
+        "filterId": 1,
+        "filterName": "Category",
+        "list": [
+            {"id":1,"name":"Analog Watches"},
+            {"id":2,"name":"Bangles & Bracelets"},
+            {"id":3,"name":"Bedsheets"},
+            {"id":4,"name":"Bike Covers"},
+            {"id":5,"name":"Blouses"},
+            {"id":6,"name":"Bluetooth Headphones"},
+            {"id":7,"name":"Cups & mugs"},
+            {"id":8,"name":"Dresses"},
+            {"id":9,"name":"Dupattas"},
+            {"id":10,"name":"Earrings & Studs"},
+            {"id":11,"name":"Flipflops & Slippers"},
+            {"id":13,"name":"Gowns"},
+            {"id":14,"name":"Hair Accessories"},
+            {"id":15,"name":"Hair Oil"},
+            {"id":16,"name":"Hand Bags"},
+            {"id":17,"name":"Idols & Figurines"},
+            {"id":18,"name":"Jeans"},
+            {"id":19,"name":"Jewellery Sets"},
+            {"id":20,"name":"Kitchen Storage"},
+            {"id":21,"name":"Kitchen Tools"},
+            {"id":22,"name":"Kurta Sets"},
+            {"id":23,"name":"Kurtis"},
+            {"id":24,"name":"Lehengas"},
+            {"id":25,"name":"Lunchbox & Bottles"},
+            {"id":26,"name":"Men Jewellery"},
+            {"id":27,"name":"Mobile Accessories"},
+            {"id":28,"name":"Mobile Cases & Covers"},
+            {"id":29,"name":"Sarees"},
+            {"id":30,"name":"Shirts"},
+            {"id":31,"name":"Shoes"},
+            {"id":32,"name":"Shorts"},
+            {"id":33,"name":"Suits & Dress Materials"},
+            {"id":34,"name":"Sun Glasses"},
+            {"id":35,"name":"T-shirts"},
+            {"id":36,"name":"Women Lehengas"}
+        ]
+    },
+    {
+        "filterId": 2,
+        "filterName": "Gender",
+        "list": [
+            {"id":1,"name":"Boys"},
+            {"id":2,"name":"Girls"},
+            {"id":3,"name":"Men"},
+            {"id":4,"name":"Women"}
+        ]
+    },
+    {
+        "filterId": 3,
+        "filterName": "Fabric",
+        "list": [
+            {"id":1,"name":"Acrylic"},
+            {"id":2,"name":"Art Silk"},
+            {"id":3,"name":"Banarasi"},
+            {"id":4,"name":"Banarasi Silk"},
+            {"id":5,"name":"Chanderi Cotton"},
+            {"id":6,"name":"Chanderi Silk"},
+            {"id":7,"name":"Chiffon"},
+            {"id":8,"name":"Cotton"},
+            {"id":9,"name":"Crepe"},
+            {"id":10,"name":"Denim"},
+            {"id":11,"name":"Georgette"},
+            {"id":12,"name":"Leather"},
+            {"id":13,"name":"Net"},
+            {"id":14,"name":"Silk"}
+        ]
+    },
+    {
+        "filterId": 4,
+        "filterName": "Color",
+        "list": [
+            {"id":1,"name":"Biege"},
+            {"id":2,"name":"Black"},
+            {"id":3,"name":"Blue"},
+            {"id":4,"name":"Brown"},
+            {"id":5,"name":"Coral"},
+            {"id":6,"name":"Gold"},
+            {"id":7,"name":"Grey"},
+            {"id":8,"name":"Khaki"},
+            {"id":9,"name":"Lavendar"},
+            {"id":10,"name":"Light Pink"},
+            {"id":11,"name":"Maroon"},
+            {"id":12,"name":"Multicolor"},
+            {"id":13,"name":"Nude"},
+            {"id":14,"name":"Olive"},
+            {"id":15,"name":"Orange"},
+            {"id":16,"name":"Peach"},
+            {"id":17,"name":"Pink"},
+            {"id":18,"name":"Purple"},
+            {"id":19,"name":"Red"},
+            {"id":20,"name":"Silver"},
+            {"id":21,"name":"Skin"},
+            {"id":22,"name":"Transparent"},
+            {"id":23,"name":"White"},
+            {"id":24,"name":"Yellow"}
+        ]
+    },
+    {
+        "filterId": 5,
+        "filterName": "Price",
+        "list": [
+            {"id":1,"name":"Under ₹ 149"},
+            {"id":2,"name":"Under ₹ 199"},
+            {"id":3,"name":"Under ₹ 249"},
+            {"id":4,"name":"Under ₹ 299"},
+            {"id":5,"name":"Under ₹ 349"},
+            {"id":6,"name":"Under ₹ 399"},
+            {"id":7,"name":"Under ₹ 449"},
+            {"id":8,"name":"Under ₹ 499"},
+            {"id":9,"name":"Under ₹ 99"},
+            {"id":10,"name":"₹ 0 - ₹ 99"},
+            {"id":11,"name":"₹ 100 - ₹ 149"},
+            {"id":12,"name":"₹ 150 - ₹ 199"},
+            {"id":13,"name":"₹ 200 - ₹ 249"},
+            {"id":14,"name":"₹ 250 - ₹ 299"},
+            {"id":15,"name":"₹ 300 - ₹ 399"},
+            {"id":16,"name":"₹ 400 - ₹ 499"},
+            {"id":17,"name":"₹ 500 - ₹ 599"},
+            {"id":18,"name":"₹ 600 - ₹ 699"},
+            {"id":19,"name":"₹ 700 - ₹ 799"},
+            {"id":20,"name":"₹ 800 & Above"}
+        ]
+    },
+    {
+        "filterId": 6,
+        "filterName": "Rating",
+        "list": [
+            {"id":1,"name":"2.0 & Above"},
+            {"id":2,"name":"3.0 & Above"},
+            {"id":3,"name":"3.5 & Above"},
+            {"id":4,"name":"4.0 & Above"}
+        ]
+    }
+]

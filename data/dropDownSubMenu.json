@@ -1,0 +1,319 @@
+[
+    {
+        "categoryId": 1,
+        "subCategories": [
+            {
+                "subCategoryId": 1,                
+                "name": "Sarees",
+                "list": [
+                    {"dropDownListId":1,"dropDownListName":"All Sarees"},
+                    {"dropDownListId":2,"dropDownListName":"Silk Sarees"},
+                    {"dropDownListId":3,"dropDownListName":"Cotton Sarees"},
+                    {"dropDownListId":4,"dropDownListName":"Georgette Sarees"},
+                    {"dropDownListId":5,"dropDownListName":"Chiffon Sarees"}
+                ]
+            },
+            {
+                "subCategoryId": 2,
+                "name": "Kurtis",
+                "list": [
+                    {"dropDownListId":1,"dropDownListName":"All Kurtis"},
+                    {"dropDownListId":2,"dropDownListName":"Anarkali Kurtis"},
+                    {"dropDownListId":3,"dropDownListName":"Cotton Kurtis"},
+                    {"dropDownListId":4,"dropDownListName":"Embroidered Kurtis"}
+                ]
+            },
+            {
+                "subCategoryId": 3,
+                "name": "Western",
+                "list": [
+                    {"dropDownListId":1,"dropDownListName":"Tops"},
+                    {"dropDownListId":2,"dropDownListName":"Jeans"},
+                    {"dropDownListId":3,"dropDownListName":"Jeggings"},
+                    {"dropDownListId":4,"dropDownListName":"Skirts"}
+                ]
+            },
+            {
+                "subCategoryId": 4,
+                "name": "Suits & Dress Material",
+                "list": [
+                    {"dropDownListId":1,"dropDownListName":"All Suits & Dress Material"},
+                    {"dropDownListId":2,"dropDownListName":"Cotton Suits"},
+                    {"dropDownListId":3,"dropDownListName":"Embroidered Suits"},
+                    {"dropDownListId":4,"dropDownListName":"Chanderi Suits"}
+                ]
+            },
+            {
+                "subCategoryId": 5,
+                "name": "Other Ethnic",
+                "list": [
+                    {"dropDownListId":1,"dropDownListName":"Blouses"},
+                    {"dropDownListId":2,"dropDownListName":"Dupattas"},
+                    {"dropDownListId":3,"dropDownListName":"Lehengas"},
+                    {"dropDownListId":4,"dropDownListName":"Gowns"},
+                    {"dropDownListId":5,"dropDownListName":"Ethnic Bottom Wear"}
+                ]
+            }
+        ]
+    },    
+    {
+        "categoryId": 2,
+        "subCategories": [
+            {
+                "subCategoryId": 1,
+                "name": "Top Wear",
+                "list": [
+                    {"dropDownListId":1,"dropDownListName":"All Top Wear"},
+                    {"dropDownListId":2,"dropDownListName":"T-shirts"},
+                    {"dropDownListId":3,"dropDownListName":"Shirts"}
+                ]
+            },
+            {
+                "subCategoryId": 2,
+                "name": "Bottom Wear",
+                "list": [
+                    {"dropDownListId":1,"dropDownListName":"Track Pants"},
+                    {"dropDownListId":2,"dropDownListName":"Jeans"},
+                    {"dropDownListId":3,"dropDownListName":"Trousers"}
+                ]
+            },
+            {
+                "subCategoryId": 3,
+                "name": "Men Accessories",
+                "list": [
+                    {"dropDownListId":1,"dropDownListName":"All Men Accessories"},
+                    {"dropDownListId":2,"dropDownListName":"Watches"},
+                    {"dropDownListId":3,"dropDownListName":"Belts"},
+                    {"dropDownListId":4,"dropDownListName":"Wallets"},
+                    {"dropDownListId":5,"dropDownListName":"Jewellery"},
+                    {"dropDownListId":6,"dropDownListName":"Sun Glasses"},
+                    {"dropDownListId":7,"dropDownListName":"Bags"}
+                ]
+            },
+            {
+                "subCategoryId": 4,
+                "name": "Men Foot Wear",
+                "list": [
+                    {"dropDownListId":1,"dropDownListName":"Casual Shoes"},
+                    {"dropDownListId":2,"dropDownListName":"Sports Shoes"},
+                    {"dropDownListId":3,"dropDownListName":"Sandals"},
+                    {"dropDownListId":4,"dropDownListName":"Formal Shoes"}
+                ]
+            },
+            {
+                "subCategoryId": 5,
+                "name": "Ethnic Wear",
+                "list": [
+                    {"dropDownListId":1,"dropDownListName":"Men Kurtas"},
+                    {"dropDownListId":2,"dropDownListName":"Ethnic Jackets"}
+                ]
+            },
+            {
+                "subCategoryId": 6,
+                "name": "Inner & Sleep Wear",
+                "list": [
+                    {"dropDownListId":1,"dropDownListName":"All Inner & Sleep Wear"},
+                    {"dropDownListId":2,"dropDownListName":"Vests"}
+                ]
+            }
+        ]
+    },
+    {
+        "categoryId": 3,
+        "subCategories": [
+            {
+                "subCategoryId": 1,
+                "name": "Boys & Girls 2+ Years",
+                "list": [
+                    {"dropDownListId":1,"dropDownListName":"Dresses"}
+                ]
+            },
+            {
+                "subCategoryId": 2,
+                "name": "Infant 0-2 Years",
+                "list": [
+                    {"dropDownListId":1,"dropDownListName":"Rompers"}
+                ]
+            },
+            {
+                "subCategoryId": 3,
+                "name": "Toys & Accessories",
+                "list": [
+                    {"dropDownListId":1,"dropDownListName":"Soft Toys"},
+                    {"dropDownListId":2,"dropDownListName":"Foot Wear"},
+                    {"dropDownListId":3,"dropDownListName":"Stationery"},
+                    {"dropDownListId":4,"dropDownListName":"Watches"},
+                    {"dropDownListId":5,"dropDownListName":"Bags & Bag Packs"}
+                ]
+            },
+            {
+                "subCategoryId": 4,
+                "name": "Baby Care",
+                "list": [
+                    {"dropDownListId":1,"dropDownListName":"All Baby Care"}
+                ]
+            }
+        ]
+    },
+    {
+        "categoryId": 4,
+        "subCategories": [
+            {
+                "subCategoryId": 1,
+                "name": "Home Furnishing",
+                "list": [
+                    {"dropDownListId":1,"dropDownListName":"Bedsheets"},
+                    {"dropDownListId":2,"dropDownListName":"Door Mats"},
+                    {"dropDownListId":3,"dropDownListName":"Curtains & Sheers"},
+                    {"dropDownListId":4,"dropDownListName":"Cushions & Cushion Covers"},
+                    {"dropDownListId":5,"dropDownListName":"Mattress Protectors"}
+                ]
+            },
+            {
+                "subCategoryId": 2,
+                "name": "Home Decor",
+                "list": [
+                    {"dropDownListId":1,"dropDownListName":"All Home Decor"},
+                    {"dropDownListId":2,"dropDownListName":"Stickers"},
+                    {"dropDownListId":3,"dropDownListName":"Clocks"},
+                    {"dropDownListId":4,"dropDownListName":"Show Pieces"}
+                ]
+            },
+            {
+                "subCategoryId": 3,
+                "name": "Kitchen & Dining",
+                "list": [
+                    {"dropDownListId":1,"dropDownListName":"Kitchen Storage"},
+                    {"dropDownListId":2,"dropDownListName":"Cookware & Bakeware"}
+                ]
+            }
+        ]
+    },
+    {
+        "categoryId": 5,
+        "subCategories": [
+            {
+                "subCategoryId": 1,
+                "name": "Makeup",
+                "list": [
+                    {"dropDownListId":1,"dropDownListName":"Face"},
+                    {"dropDownListId":2,"dropDownListName":"Eyes"},
+                    {"dropDownListId":3,"dropDownListName":"Lips"},
+                    {"dropDownListId":4,"dropDownListName":"Nails"}
+                ]
+            },
+            {
+                "subCategoryId": 2,
+                "name": "Wellness",
+                "list": [
+                    {"dropDownListId":1,"dropDownListName":"Sanitizers"},
+                    {"dropDownListId":2,"dropDownListName":"Oral Care"},
+                    {"dropDownListId":3,"dropDownListName":"Feminine Hygiene"}
+                ]
+            },
+            {
+                "subCategoryId": 3,
+                "name": "Skin Care",
+                "list": [
+                    {"dropDownListId":1,"dropDownListName":"Deodorants"}
+                ]
+            }
+        ]
+    },
+    {
+        "categoryId": 6,
+        "subCategories": [
+            {
+                "subCategoryId": 1,
+                "name": "Jewellery",
+                "list": [
+                    {"dropDownListId":1,"dropDownListName":"Jewellery Sets"},
+                    {"dropDownListId":2,"dropDownListName":"Earrings"},
+                    {"dropDownListId":3,"dropDownListName":"Mangalsutras"},
+                    {"dropDownListId":4,"dropDownListName":"Studs"},
+                    {"dropDownListId":5,"dropDownListName":"Bangles"},
+                    {"dropDownListId":6,"dropDownListName":"Necklaces"},
+                    {"dropDownListId":7,"dropDownListName":"Rings"},
+                    {"dropDownListId":8,"dropDownListName":"Anklets"}
+                ]
+            },
+            {
+                "subCategoryId": 2,
+                "name": "Women Accessories",
+                "list": [
+                    {"dropDownListId":1,"dropDownListName":"Bags"},
+                    {"dropDownListId":2,"dropDownListName":"Watches"},
+                    {"dropDownListId":3,"dropDownListName":"Hair Accessories"},
+                    {"dropDownListId":4,"dropDownListName":"Sun Glasses"},
+                    {"dropDownListId":5,"dropDownListName":"Socks"}
+                ]
+            }
+        ]
+    },
+    {
+        "categoryId": 7,
+        "subCategories": [
+            {
+                "subCategoryId": 1,
+                "name": "Women Bags",
+                "list": [
+                    {"dropDownListId":1,"dropDownListName":"All Women Bags"},
+                    {"dropDownListId":2,"dropDownListName":"Hand Bags"},
+                    {"dropDownListId":3,"dropDownListName":"Clutches"},
+                    {"dropDownListId":4,"dropDownListName":"Sling Bags"}
+                ]
+            },
+            {
+                "subCategoryId": 2,
+                "name": "Men Bags",
+                "list": [
+                    {"dropDownListId":1,"dropDownListName":"All Men Bags"},
+                    {"dropDownListId":2,"dropDownListName":"Men Wallets"}
+                ]
+            },
+            {
+                "subCategoryId": 3,
+                "name": "Men Foot Wear",
+                "list": [
+                    {"dropDownListId":1,"dropDownListName":"Sports Shoes"},
+                    {"dropDownListId":2,"dropDownListName":"Casual Shoes"},
+                    {"dropDownListId":3,"dropDownListName":"Formal Shoes"},
+                    {"dropDownListId":4,"dropDownListName":"Sandals"}
+                ]
+            },
+            {
+                "subCategoryId": 4,
+                "name": "Women Foot Wear",
+                "list": [
+                    {"dropDownListId":1,"dropDownListName":"Flats"},
+                    {"dropDownListId":2,"dropDownListName":"Bellies"},
+                    {"dropDownListId":3,"dropDownListName":"Juttis"}
+                ]
+            }
+        ]
+    },
+    {
+        "categoryId": 8,
+        "subCategories": [
+            {
+                "subCategoryId": 1,
+                "name": "Mobile Accessories",
+                "list": [
+                    {"dropDownListId":1,"dropDownListName":"All Mobile Accessories"},
+                    {"dropDownListId":2,"dropDownListName":"Smart Watches"},
+                    {"dropDownListId":3,"dropDownListName":"Mobile Holders"},
+                    {"dropDownListId":4,"dropDownListName":"Mobile Cases & Covers"}
+                ]
+            },
+            {
+                "subCategoryId": 2,
+                "name": "Appliances",
+                "list": [
+                    {"dropDownListId":1,"dropDownListName":"All Appliances"},
+                    {"dropDownListId":2,"dropDownListName":"Grooming"},
+                    {"dropDownListId":3,"dropDownListName":"Home Appliances"}
+                ]
+            }
+        ]
+    }
+]

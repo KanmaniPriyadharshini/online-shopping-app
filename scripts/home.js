@@ -126,7 +126,7 @@ const changeMode = () => {
             i.getElementsByTagName("select")[0].style.backgroundColor = "slategrey";
             i.getElementsByTagName("select")[0].style.color = "white";
             for(j of i.getElementsByTagName("select")[0].getElementsByTagName("option")){
-                j.style.backgroundColor = "lightsteelblue";
+                j.style.backgroundColor = "black";
             }
         }
         for(i of document.getElementsByClassName("accordion-header"))
